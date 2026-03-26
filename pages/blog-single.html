@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Why Your LinkedIn Photo Costs You Interviews | FramedPro</title>
+  <meta name="description" content="Research shows profiles with professional headshots receive 14× more views. We break down what makes a LinkedIn photo work for corporate professionals.">
+  <link rel="canonical" href="https://framedpro.com/pages/blog-single.html">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={darkMode:'class',theme:{extend:{colors:{brand:{50:'#f9f8f6',500:'#c9a96e',900:'#1a1a1a'}},fontFamily:{display:['"Playfair Display"','serif'],body:['"Inter"','sans-serif']}}}}</script>
+  <!-- Icon Libraries -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="font-body bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+  
+  <!-- Navbar Mount -->
+  <nav id="main-navbar" class="navbar-transparent fixed top-0 inset-x-0 z-50 h-20" role="navigation" aria-label="Main navigation">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between gap-4">
+
+      <!-- Logo -->
+      <a href="../index.html" class="flex items-center gap-2 shrink-0" aria-label="FramedPro Home">
+        <span class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white" style="font-family:'Playfair Display',serif;">
+          Framed<span class="text-amber-600">Pro</span>
+        </span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <div class="hidden lg:flex items-center gap-1 h-full" role="menubar">
+
+        <!-- Home Dropdown -->
+        <div class="relative group h-full flex items-center">
+          <button
+            id="home-dropdown-btn"
+            class="flex items-center gap-1 px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors"
+            aria-haspopup="true" aria-expanded="false">
+            Home
+            <i data-lucide="chevron-down" class="w-3.5 h-3.5 opacity-50 group-hover:rotate-180 transition-transform duration-300"></i>
+          </button>
+          <div class="absolute top-[80%] start-0 w-48 bg-white dark:bg-gray-900 rounded-xl shadow-2xl border border-gray-100 dark:border-gray-800 py-2 hidden group-hover:block transition-all" role="menu">
+            <a href="../index.html" class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800" role="menuitem">Home 1</a>
+            <a href="home-2.html" class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800" role="menuitem">Home 2</a>
+          </div>
+        </div>
+
+        <div class="h-full flex items-center"><a href="portfolio.html" class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Portfolio</a></div>
+        <div class="h-full flex items-center"><a href="services.html"  class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Services</a></div>
+        <div class="h-full flex items-center"><a href="pricing.html"   class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Pricing</a></div>
+        <div class="h-full flex items-center"><a href="blog.html"      class="px-4 py-2 text-sm font-semibold text-amber-700 dark:text-amber-400 rounded-lg transition-colors">Blog</a></div>
+        <div class="h-full flex items-center"><a href="contact.html"   class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Contact</a></div>
+
+        <!-- Dashboard Dropdown -->
+        <div class="relative group h-full flex items-center">
+          <button
+            class="flex items-center gap-1 px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors"
+            aria-haspopup="true" aria-expanded="false">
+            Dashboard
+            <i data-lucide="chevron-down" class="w-3.5 h-3.5 opacity-50 group-hover:rotate-180 transition-transform duration-300"></i>
+          </button>
+          <div class="absolute top-[80%] start-0 w-48 bg-white dark:bg-gray-900 rounded-xl shadow-2xl border border-gray-100 dark:border-gray-800 py-2 hidden group-hover:block transition-all" role="menu">
+            <a href="../dashboard/index.html" class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800" role="menuitem">User Dashboard</a>
+            <a href="../admin/index.html" class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800" role="menuitem">Admin Dashboard</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Actions -->
+      <div class="flex items-center gap-4 shrink-0 h-full">
+        <!-- Dark Mode Toggle -->
+        <button data-theme-toggle class="p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Toggle dark mode">
+          <i data-lucide="moon" class="w-5 h-5 dark:hidden"></i>
+          <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
+        </button>
+
+        <!-- Client Login -->
+        <a href="../auth/login.html" class="hidden lg:inline-flex items-center gap-2 bg-amber-700 hover:bg-amber-800 text-white text-sm font-bold px-6 py-2.5 rounded-xl transition-all shadow-lg shadow-amber-900/20 active:scale-95">
+          <i data-lucide="user" class="w-4 h-4"></i>
+          Client Login
+        </a>
+
+        <!-- Hamburger (mobile) -->
+        <button id="hamburger-btn" class="lg:hidden p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-drawer" class="fixed inset-0 z-[100] translate-x-full lg:hidden transition-transform duration-300 pointer-events-none" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <div id="drawer-overlay" class="absolute inset-0 bg-black/50 opacity-0 transition-opacity hidden pointer-events-auto" aria-hidden="true"></div>
+    <div class="absolute right-0 top-0 bottom-0 w-80 bg-white dark:bg-gray-900 shadow-2xl pointer-events-auto overflow-hidden flex flex-col">
+      <!-- Drawer Header -->
+      <div class="flex items-center justify-between px-6 py-5 border-b border-gray-100 dark:border-gray-800">
+        <span class="text-xl font-bold text-gray-900 dark:text-white" style="font-family:'Playfair Display',serif;">Framed<span class="text-amber-600">Pro</span></span>
+        <button id="drawer-close-btn" class="p-2 rounded-lg text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Close menu">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Drawer Nav -->
+      <nav class="flex-1 px-4 py-4 overflow-y-auto">
+        <p class="px-4 text-[11px] font-bold tracking-[.2em] text-gray-400 uppercase mb-3">Home</p>
+        <a href="../index.html" class="flex items-center gap-3 px-4 py-3.5 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Home 1</a>
+        <a href="home-2.html" class="flex items-center gap-3 px-4 py-3.5 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Home 2</a>
+        
+        <p class="px-4 text-[11px] font-bold tracking-[.2em] text-gray-400 uppercase mt-6 mb-3">Explore</p>
+        <a href="portfolio.html" class="flex items-center gap-3 px-4 py-3.5 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Portfolio</a>
+        <a href="services.html"  class="flex items-center gap-3 px-4 py-3.5 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Services</a>
+        <a href="pricing.html"   class="flex items-center gap-3 px-4 py-3.5 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Pricing</a>
+        <a href="blog.html"      class="flex items-center gap-3 px-4 py-3.5 text-sm font-semibold text-amber-700 dark:text-amber-400 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Blog</a>
+        <a href="contact.html"   class="flex items-center gap-3 px-4 py-3.5 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Contact</a>
+
+        <p class="px-4 text-[11px] font-bold tracking-[.2em] text-gray-400 uppercase mt-6 mb-3">Dashboards</p>
+        <a href="../dashboard/index.html" class="flex items-center gap-3 px-4 py-3.5 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">User Dashboard</a>
+        <a href="../admin/index.html" class="flex items-center gap-3 px-4 py-3.5 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Admin Dashboard</a>
+      </nav>
+
+      <!-- Drawer Footer -->
+      <div class="px-6 py-6 border-t border-gray-100 dark:border-gray-800">
+        <a href="../auth/login.html" class="flex items-center justify-center w-full bg-amber-700 hover:bg-amber-800 text-white text-sm font-bold px-4 py-4 rounded-xl transition-colors shadow-xl shadow-amber-900/20">
+          <i data-lucide="user" class="w-4 h-4 mr-2"></i>
+          Client Login
+        </a>
+      </div>
+    </div>
+  </div>
+  <main id="main-content" class="pt-[72px]">
+
+  <!-- Article Header -->
+  <header class="bg-gray-50 dark:bg-gray-900/50 py-16 mb-12" aria-label="Article header">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="flex items-center justify-center gap-2 mb-4">
+        <span class="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-amber-50 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300 border border-amber-100 dark:border-amber-800">LinkedIn Tips</span>
+        <span class="flex items-center gap-1.5 text-xs text-gray-400"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> Mar 12, 2025</span>
+        <span class="text-xs text-gray-400">·</span>
+        <span class="flex items-center gap-1.5 text-xs text-gray-400"><i data-lucide="clock" class="w-3.5 h-3.5"></i> 6 min read</span>
+      </div>
+      <h1 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white leading-tight mb-5">Why Your LinkedIn Photo Costs You Interviews — And How to Fix It</h1>
+      <div class="flex items-center justify-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-amber-700 flex items-center justify-center text-white text-sm font-bold">MR</div>
+        <div class="text-start">
+          <p class="text-sm font-semibold text-gray-900 dark:text-white">Marcus Reid</p>
+          <p class="text-xs text-gray-500">Corporate Photographer · FramedPro</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Article Content + Sidebar -->
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+    <div class="grid lg:grid-cols-3 gap-12">
+
+      <!-- Article Body -->
+      <article class="lg:col-span-2 prose prose-lg dark:prose-invert max-w-none">
+        <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=900&q=80" alt="Professional reviewing LinkedIn profile on laptop showing executive headshot" class="w-full rounded-2xl object-cover aspect-video mb-8 shadow-lg" width="900" height="506" loading="eager">
+
+        <p class="text-lg text-gray-700 dark:text-gray-200 leading-relaxed mb-6">Research from LinkedIn themselves shows that profiles with professional headshots receive <strong>14× more views</strong> and <strong>9× more connection requests</strong> than those without. For corporate professionals, this isn't a vanity statistic — it's a career metric.</p>
+
+        <h2 class="font-display text-2xl font-bold text-gray-900 dark:text-white mb-4 mt-8">The silent filter you didn't know existed</h2>
+        <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">Recruiters and hiring managers spend an average of 7.4 seconds on a LinkedIn profile before deciding whether to read further. In most cases, the photo is the first thing they see. A low-quality, poorly lit, or overly casual photo triggers a negative first impression that's remarkably difficult to overcome with compelling written content below it.</p>
+
+        <!-- Pull Quote -->
+        <blockquote class="border-s-4 border-amber-700 bg-amber-50 dark:bg-amber-900/20 ps-6 py-4 my-8 rounded-e-xl">
+          <p class="font-display text-xl italic text-gray-800 dark:text-gray-200 leading-relaxed">"A recruiter who passes on your profile based on a bad photo will never know they missed out on the right candidate."</p>
+        </blockquote>
+
+        <h2 class="font-display text-2xl font-bold text-gray-900 dark:text-white mb-4 mt-8">What a professional headshot actually communicates</h2>
+        <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">A well-executed corporate headshot communicates three things before a single word is read:</p>
+        <ul class="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300 mb-6">
+          <li><strong>Competence</strong> — you take your professional presence seriously</li>
+          <li><strong>Approachability</strong> — a warm, natural expression signals someone who's easy to work with</li>
+          <li><strong>Consistency</strong> — matching your photo to your company's other team headshots shows you're an aligned, team-aware professional</li>
+        </ul>
+
+        <h2 class="font-display text-2xl font-bold text-gray-900 dark:text-white mb-4 mt-8">The five most common mistakes we see</h2>
+        <ol class="list-decimal list-inside space-y-3 text-gray-600 dark:text-gray-300 mb-6">
+          <li><strong>Using a cropped social photo.</strong> Low resolution, distracting backgrounds, and off-brand aesthetic.</li>
+          <li><strong>Poor lighting.</strong> Office overhead lighting creates unflattering shadows. Studio lighting is specifically designed to eliminate this.</li>
+          <li><strong>Wrong crop.</strong> LinkedIn frames photos square and tightly. Most people upload a photo that's far too zoomed out.</li>
+          <li><strong>Outdated photos.</strong> A photo from 10 years ago creates a jarring disconnect in meetings and video calls.</li>
+          <li><strong>Inconsistency across the team.</strong> When executives have polished headshots but junior team members have casual selfies, it sends a mixed message about the company's brand standards.</li>
+        </ol>
+
+        <h2 class="font-display text-2xl font-bold text-gray-900 dark:text-white mb-4 mt-8">What HR managers can do right now</h2>
+        <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">The most effective HR teams treat headshot photography as a branding initiative, not a one-off project. Booking an annual headshot day — and making it easy for every team member to participate — is one of the highest-leverage things you can do for company-wide LinkedIn consistency.</p>
+
+        <div class="bg-amber-50 dark:bg-amber-900/20 rounded-2xl p-6 border border-amber-200 dark:border-amber-800 mb-8">
+          <h3 class="font-display text-lg font-bold text-gray-900 dark:text-white mb-3">Ready to sort your team's headshots?</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">Our team shoots are designed specifically for HR teams. 48-hour delivery, client portal for proofing, bulk download for the whole team.</p>
+          <a href="../pages/contact.html" class="inline-block bg-amber-700 hover:bg-amber-800 text-white font-semibold px-5 py-2.5 rounded-xl transition-all text-sm">Request a Quote</a>
+        </div>
+      </article>
+
+      <!-- Sidebar -->
+      <aside>
+        <div class="sticky top-24 space-y-6">
+          <!-- Author card -->
+          <div class="bg-gray-50 dark:bg-gray-800 rounded-2xl p-5 border border-gray-100 dark:border-gray-700">
+            <h3 class="font-display text-lg font-bold text-gray-900 dark:text-white mb-3">About the Author</h3>
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-12 h-12 rounded-full overflow-hidden"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&q=80" alt="Marcus Reid" class="w-full h-full object-cover" width="120" height="120" loading="lazy"></div>
+              <div>
+                <p class="font-semibold text-gray-900 dark:text-white text-sm">Marcus Reid</p>
+                <p class="text-xs text-gray-500">12+ years corporate photography</p>
+              </div>
+            </div>
+            <p class="text-xs text-gray-500 dark:text-gray-400">Photographer at FramedPro, specializing in corporate headshots for HR teams across New York.</p>
+          </div>
+
+          <!-- Related Posts -->
+          <div class="bg-gray-50 dark:bg-gray-800 rounded-2xl p-5 border border-gray-100 dark:border-gray-700">
+            <h3 class="font-display text-lg font-bold text-gray-900 dark:text-white mb-4">Related Posts</h3>
+            <div class="space-y-4">
+              <a href="../pages/blog.html" class="flex gap-3 group">
+                <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=80&q=70" alt="Wardrobe guide" class="w-14 h-14 rounded-lg object-cover shrink-0" width="80" height="80" loading="lazy">
+                <div>
+                  <p class="text-sm font-medium text-gray-900 dark:text-white group-hover:text-amber-700 transition-colors leading-snug">What to Wear for a Corporate Headshot</p>
+                  <p class="text-xs text-gray-400 mt-1">Feb 28, 2025</p>
+                </div>
+              </a>
+              <a href="../pages/blog.html" class="flex gap-3 group">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=80&q=70" alt="Team headshot day" class="w-14 h-14 rounded-lg object-cover shrink-0" width="80" height="80" loading="lazy">
+                <div>
+                  <p class="text-sm font-medium text-gray-900 dark:text-white group-hover:text-amber-700 transition-colors leading-snug">How to Organize a 100-Person Headshot Day</p>
+                  <p class="text-xs text-gray-400 mt-1">Feb 14, 2025</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  </main>
+  <!-- Footer Mount -->
+  <footer class="bg-gray-900 border-t border-white/5 text-gray-400 py-8 lg:py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Main Footer Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-16 pb-8">
+        
+        <!-- Brand Column -->
+        <div class="space-y-5">
+          <a href="../index.html" class="inline-block" aria-label="FramedPro Home">
+            <span class="text-3xl font-bold text-white tracking-tight" style="font-family:'Playfair Display',serif;">
+              Framed<span class="text-amber-500">Pro</span>
+            </span>
+          </a>
+          <p class="text-gray-500 text-sm leading-relaxed pr-4">
+            Premium corporate headshots and executive portraits for innovative teams since 2012. Our mission is built on precision, authority, and exceptional visual identity.
+          </p>
+          <!-- Social Icons -->
+          <div class="flex items-center gap-3">
+            <a href="#" class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 transition-all duration-300" aria-label="Facebook">
+              <i data-lucide="facebook" class="w-4 h-4"></i>
+            </a>
+            <a href="#" class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 transition-all duration-300" aria-label="Instagram">
+              <i data-lucide="instagram" class="w-4 h-4"></i>
+            </a>
+            <a href="#" class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 transition-all duration-300" aria-label="Twitter">
+              <i data-lucide="twitter" class="w-4 h-4"></i>
+            </a>
+            <a href="#" class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 transition-all duration-300" aria-label="LinkedIn">
+              <i data-lucide="linkedin" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="space-y-5 lg:pl-4">
+          <h4 class="text-white text-[10px] font-bold uppercase tracking-[.3em]">Quick Links</h4>
+          <ul class="space-y-3 text-sm font-semibold">
+            <li><a href="../index.html" class="text-gray-500 hover:text-white transition-colors">Home</a></li>
+            <li><a href="about.html" class="text-gray-500 hover:text-white transition-colors">About Us</a></li>
+            <li><a href="portfolio.html" class="text-gray-500 hover:text-white transition-colors">Portfolio</a></li>
+            <li><a href="pricing.html" class="text-gray-500 hover:text-white transition-colors">Pricing</a></li>
+            <li><a href="services.html" class="text-gray-500 hover:text-white transition-colors">Services</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Resources -->
+        <div class="space-y-5 lg:pl-4">
+          <h4 class="text-white text-[10px] font-bold uppercase tracking-[.3em]">Resources</h4>
+          <ul class="space-y-3 text-sm font-semibold">
+            <li><a href="blog.html" class="text-white transition-colors">Insights & Blog</a></li>
+            <li><a href="../auth/login.html" class="text-gray-500 hover:text-white transition-colors">Client Portal</a></li>
+            <li><a href="#" class="text-gray-500 hover:text-white transition-colors">Wardrobe Guide</a></li>
+            <li><a href="contact.html" class="text-amber-500 hover:text-amber-400 transition-colors">Book session</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Newsletter -->
+        <div class="space-y-5">
+          <h4 class="text-white text-[10px] font-bold uppercase tracking-[.3em]">Newsletter</h4>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            Stay updated with our latest photography tips and industry insights.
+          </p>
+          <form action="#" method="POST" class="relative">
+            <div class="flex items-center bg-white/[0.03] border border-white/10 rounded-lg overflow-hidden focus-within:border-amber-600 focus-within:ring-1 focus-within:ring-amber-600/50 transition-all duration-300 h-10">
+              <input 
+                type="email" 
+                placeholder="Email address" 
+                required 
+                class="flex-1 min-w-0 bg-transparent px-4 text-xs text-white focus:outline-none placeholder:text-gray-600"
+              >
+              <button type="submit" class="shrink-0 h-full bg-amber-700 hover:bg-amber-800 text-white font-bold px-6 text-[10px] uppercase tracking-[0.2em] transition-all active:scale-95 whitespace-nowrap">
+                JOIN
+              </button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-6 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6 text-[9px] font-bold tracking-[.4em] text-gray-600 uppercase">
+        <p>© 2025 <span class="text-gray-400">FRAMEDPRO</span>. ALL RIGHTS RESERVED.</p>
+        <div class="flex items-center gap-8">
+          <a href="#" class="hover:text-white transition-colors">PRIVACY POLICY</a>
+          <a href="#" class="hover:text-white transition-colors">TERMS OF SERVICE</a>
+          <a href="#" class="hover:text-white transition-colors">COOKIES</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      }
+    });
+  </script>
+
+</body>
+</html>

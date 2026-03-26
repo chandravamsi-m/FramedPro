@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Overview | FramedPro Client Portal</title>
+  <meta name="robots" content="noindex">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={darkMode:'class',theme:{extend:{colors:{brand:{50:'#f9f8f6',500:'#c9a96e',900:'#1a1a1a'}},fontFamily:{display:['"Playfair Display"','serif'],body:['"Inter"','sans-serif']}}}}</script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="font-body bg-gray-100 dark:bg-gray-950 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+  <!-- Sidebar -->
+  <aside id="db-sidebar" class="fixed inset-y-0 left-0 w-[240px] bg-white dark:bg-gray-900 border-e border-gray-100 dark:border-gray-800 z-40 transition-transform -translate-x-full lg:translate-x-0" aria-label="Dashboard navigation">
+    <div class="h-full flex flex-col p-6">
+      
+      <!-- Logo -->
+      <div class="mb-8">
+        <a href="../index.html" class="flex items-center gap-2" aria-label="FramedPro Home">
+          <span class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style="font-family:'Playfair Display',serif;">
+            Framed<span class="text-amber-600">Pro</span>
+          </span>
+        </a>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="flex-1 space-y-1 overflow-y-auto pr-2 scrollbar-thin" role="menubar">
+        <p class="px-4 text-[10px] font-bold tracking-[.2em] text-gray-400 uppercase mb-3">Main</p>
+        <a href="index.html" class="flex items-center gap-3 px-4 py-2.5 rounded-xl bg-amber-50 dark:bg-amber-900/20 text-amber-700 dark:text-amber-400 font-bold transition-all" role="menuitem">
+          <i data-lucide="layout-dashboard" class="w-4 h-4"></i>
+          <span class="text-sm">Overview</span>
+        </a>
+        <a href="galleries.html" class="flex items-center gap-3 px-4 py-2.5 rounded-xl text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-gray-900 dark:hover:text-white transition-all" role="menuitem">
+          <i data-lucide="image" class="w-4 h-4"></i>
+          <span class="text-sm">My Galleries</span>
+        </a>
+        <a href="approved.html" class="flex items-center gap-3 px-4 py-2.5 rounded-xl text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-gray-900 dark:hover:text-white transition-all" role="menuitem">
+          <i data-lucide="check-circle" class="w-4 h-4"></i>
+          <span class="text-sm">Approved Photos</span>
+        </a>
+        <a href="downloads.html" class="flex items-center gap-3 px-4 py-2.5 rounded-xl text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-gray-900 dark:hover:text-white transition-all" role="menuitem">
+          <i data-lucide="download" class="w-4 h-4"></i>
+          <span class="text-sm">Downloads</span>
+        </a>
+        <a href="reorder.html" class="flex items-center gap-3 px-4 py-2.5 rounded-xl text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-gray-900 dark:hover:text-white transition-all" role="menuitem">
+          <i data-lucide="shopping-cart" class="w-4 h-4"></i>
+          <span class="text-sm">Reorder Prints</span>
+        </a>
+        <a href="orders.html" class="flex items-center gap-3 px-4 py-2.5 rounded-xl text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-gray-900 dark:hover:text-white transition-all" role="menuitem">
+          <i data-lucide="package" class="w-4 h-4"></i>
+          <span class="text-sm">Order History</span>
+        </a>
+        <a href="invoices.html" class="flex items-center gap-3 px-4 py-2.5 rounded-xl text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-gray-900 dark:hover:text-white transition-all" role="menuitem">
+          <i data-lucide="file-text" class="w-4 h-4"></i>
+          <span class="text-sm">Invoices</span>
+        </a>
+        <a href="team.html" class="flex items-center gap-3 px-4 py-2.5 rounded-xl text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-gray-900 dark:hover:text-white transition-all" role="menuitem">
+          <i data-lucide="users" class="w-4 h-4"></i>
+          <span class="text-sm">Team Members</span>
+        </a>
+
+        <p class="px-4 text-[10px] font-bold tracking-[.2em] text-gray-400 uppercase mt-6 mb-3">Account</p>
+        <a href="settings.html" class="flex items-center gap-3 px-4 py-2.5 rounded-xl text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-gray-900 dark:hover:text-white transition-all" role="menuitem">
+          <i data-lucide="settings" class="w-4 h-4"></i>
+          <span class="text-sm">Settings</span>
+        </a>
+        <a href="support.html" class="flex items-center gap-3 px-4 py-2.5 rounded-xl text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-gray-900 dark:hover:text-white transition-all" role="menuitem">
+          <i data-lucide="help-circle" class="w-4 h-4"></i>
+          <span class="text-sm">Support</span>
+        </a>
+      </nav>
+
+      <!-- Sidebar Footer -->
+      <div class="pt-4 border-t border-gray-100 dark:border-gray-800">
+        <a href="../auth/login.html" class="flex items-center gap-3 px-4 py-3 rounded-xl text-red-500 hover:bg-red-50 dark:hover:bg-red-900/10 transition-all font-semibold">
+          <i data-lucide="log-out" class="w-4 h-4"></i>
+          <span class="text-sm">Logout</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <div class="lg:ml-[240px] transition-[margin] min-h-screen flex flex-col" id="db-layout">
+    <!-- Top bar -->
+    <header class="h-[72px] flex items-center justify-between px-6 bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800 sticky top-0 z-30" role="banner">
+      <div class="flex items-center gap-3">
+        <button id="sidebar-mobile-toggle" class="p-2 rounded-lg text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 lg:hidden transition-colors" aria-label="Open sidebar">
+          <i data-lucide="menu" class="w-5 h-5"></i>
+        </button>
+        <div>
+          <h1 class="text-lg font-display font-bold text-gray-900 dark:text-white leading-none mb-1">Dashboard</h1>
+          <p class="text-[11px] text-gray-500 dark:text-gray-400 hidden sm:block">Welcome back, Jane</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-2">
+        <!-- Dark mode toggle -->
+        <button id="dark-mode-toggle" class="p-2 rounded-lg text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+          <i data-lucide="sun" class="w-4 h-4 dark:hidden"></i>
+          <i data-lucide="moon" class="w-4 h-4 hidden dark:block"></i>
+        </button>
+        <button class="relative p-2 rounded-lg text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+          <i data-lucide="bell" class="w-5 h-5"></i>
+          <span class="absolute top-2 right-2 w-2 h-2 bg-red-500 rounded-full"></span>
+        </button>
+        <div class="w-8 h-8 rounded-full bg-amber-700 flex items-center justify-center text-white text-xs font-bold shrink-0">JD</div>
+      </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="flex-1 p-6" id="main-content">
+
+      <!-- Stats row -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+        <div class="bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-xl p-5 hover:shadow-lg transition-all">
+          <div class="flex items-center justify-between mb-3 text-gray-400">
+            <p class="text-xs font-bold uppercase tracking-wider">Total Photos</p>
+            <span class="text-xl">📷</span>
+          </div>
+          <p class="text-2xl font-display font-bold text-gray-900 dark:text-white">120</p>
+          <p class="text-[11px] text-green-600 mt-1 font-medium">+120 — New Delivery</p>
+        </div>
+        <div class="bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-xl p-5 hover:shadow-lg transition-all">
+          <div class="flex items-center justify-between mb-3 text-gray-400">
+            <p class="text-xs font-bold uppercase tracking-wider">Approved</p>
+            <span class="text-xl">✅</span>
+          </div>
+          <p class="text-2xl font-display font-bold text-green-600">47</p>
+          <p class="text-[11px] text-gray-500 mt-1 font-medium">39% of gallery</p>
+        </div>
+        <div class="bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-xl p-5 hover:shadow-lg transition-all">
+          <div class="flex items-center justify-between mb-3 text-gray-400">
+            <p class="text-xs font-bold uppercase tracking-wider">Pending</p>
+            <span class="text-xl">⏳</span>
+          </div>
+          <p class="text-2xl font-display font-bold text-amber-600">73</p>
+          <p class="text-[11px] text-gray-500 mt-1 font-medium">Awaiting Review</p>
+        </div>
+        <div class="bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-xl p-5 hover:shadow-lg transition-all">
+          <div class="flex items-center justify-between mb-3 text-gray-400">
+            <p class="text-xs font-bold uppercase tracking-wider">Downloads</p>
+            <span class="text-xl">⬇️</span>
+          </div>
+          <p class="text-2xl font-display font-bold text-gray-900 dark:text-white">12</p>
+          <p class="text-[11px] text-gray-500 mt-1 font-medium">This week</p>
+        </div>
+      </div>
+
+      <!-- Gallery status + Quick actions row -->
+      <div class="grid lg:grid-cols-3 gap-6 mb-6">
+
+        <!-- Gallery status card (2/3) -->
+        <div class="lg:col-span-2 bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-2xl p-6">
+          <div class="flex items-center justify-between mb-5">
+            <div>
+              <h2 class="font-display text-lg font-bold text-gray-900 dark:text-white mb-1">Annual Shoot 2025</h2>
+              <p class="text-[11px] text-gray-500 dark:text-gray-400">Delivered Mar 12, 2025 · 120 photos</p>
+            </div>
+            <span class="inline-flex px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-amber-50 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300 border border-amber-100 dark:border-amber-800">Proofing</span>
+          </div>
+
+          <!-- Approval progress -->
+          <div class="mb-6">
+            <div class="flex items-center justify-between text-[11px] font-bold uppercase tracking-wider text-gray-400 mb-2">
+              <span>Approval progress</span>
+              <span class="text-gray-900 dark:text-white">47 / 120 (39%)</span>
+            </div>
+            <div class="h-1.5 bg-gray-100 dark:bg-gray-800 rounded-full overflow-hidden">
+              <div class="h-full bg-amber-600 rounded-full" style="width:39%"></div>
+            </div>
+          </div>
+
+          <!-- Photo strip -->
+          <div class="flex gap-2 mb-6 overflow-x-auto pb-2 scrollbar-none">
+            <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden shrink-0 relative group ring-2 ring-green-500 ring-offset-2 dark:ring-offset-gray-900">
+              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&q=70" alt="Approved" class="w-full h-full object-cover">
+              <div class="absolute inset-0 bg-green-500/20 flex items-center justify-center">
+                <span class="text-white text-[10px] font-bold bg-green-500 rounded-full w-4 h-4 flex items-center justify-center">✓</span>
+              </div>
+            </div>
+            <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden shrink-0 relative group ring-2 ring-green-500 ring-offset-2 dark:ring-offset-gray-900">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&q=70" alt="Approved" class="w-full h-full object-cover">
+              <div class="absolute inset-0 bg-green-500/20 flex items-center justify-center">
+                <span class="text-white text-[10px] font-bold bg-green-500 rounded-full w-4 h-4 flex items-center justify-center">✓</span>
+              </div>
+            </div>
+            <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden shrink-0 opacity-40">
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=70" alt="Pending" class="w-full h-full object-cover">
+            </div>
+            <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden shrink-0 opacity-40">
+              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&q=70" alt="Pending" class="w-full h-full object-cover">
+            </div>
+            <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl bg-gray-50 dark:bg-gray-800 shrink-0 flex items-center justify-center text-xs font-bold text-gray-400">+116</div>
+          </div>
+
+          <div class="flex gap-3">
+            <a href="../dashboard/galleries.html" class="flex-1 text-center text-xs font-bold bg-amber-700 hover:bg-amber-800 text-white py-3 rounded-xl transition-all uppercase tracking-widest">View Gallery</a>
+            <a href="../dashboard/downloads.html" class="flex-1 text-center text-xs font-bold border border-gray-100 dark:border-gray-800 hover:border-amber-400 text-gray-600 dark:text-gray-400 py-3 rounded-xl transition-all uppercase tracking-widest">Download</a>
+          </div>
+        </div>
+
+        <!-- Quick actions -->
+        <div class="bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-2xl p-6">
+          <h2 class="font-display text-lg font-bold text-gray-900 dark:text-white mb-4">Quick Actions</h2>
+          <nav class="space-y-1.5 overflow-hidden">
+            <a href="../dashboard/galleries.html" class="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors group">
+              <span class="w-8 h-8 bg-amber-50 dark:bg-amber-900/20 rounded-lg flex items-center justify-center text-sm group-hover:scale-110 transition-transform">🖼</span>
+              <span class="text-sm font-medium text-gray-600 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">Proof Gallery</span>
+              <svg class="w-3.5 h-3.5 ms-auto text-gray-300 group-hover:text-amber-600 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="../dashboard/downloads.html" class="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors group">
+              <span class="w-8 h-8 bg-blue-50 dark:bg-blue-900/20 rounded-lg flex items-center justify-center text-sm group-hover:scale-110 transition-transform">⬇️</span>
+              <span class="text-sm font-medium text-gray-600 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">Download Files</span>
+              <svg class="w-3.5 h-3.5 ms-auto text-gray-300 group-hover:text-amber-600 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="../dashboard/reorder.html" class="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors group">
+              <span class="w-8 h-8 bg-green-50 dark:bg-green-900/20 rounded-lg flex items-center justify-center text-sm group-hover:scale-110 transition-transform">🖨</span>
+              <span class="text-sm font-medium text-gray-600 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">Reorder Prints</span>
+              <svg class="w-3.5 h-3.5 ms-auto text-gray-300 group-hover:text-amber-600 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="../dashboard/support.html" class="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors group">
+              <span class="w-8 h-8 bg-orange-50 dark:bg-orange-900/20 rounded-lg flex items-center justify-center text-sm group-hover:scale-110 transition-transform">💬</span>
+              <span class="text-sm font-medium text-gray-600 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">Get Support</span>
+              <svg class="w-3.5 h-3.5 ms-auto text-gray-300 group-hover:text-amber-600 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Recent activity -->
+      <div class="bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-2xl p-6">
+        <h2 class="font-display text-lg font-bold text-gray-900 dark:text-white mb-4">Recent Activity</h2>
+        <ul class="space-y-4" role="list">
+          <li class="flex items-center gap-4" role="listitem">
+            <div class="w-9 h-9 bg-green-50 dark:bg-green-900/20 rounded-xl flex items-center justify-center shrink-0 text-green-600 text-xs font-bold ring-1 ring-green-100 dark:ring-green-900/50">✓</div>
+            <div class="min-w-0 flex-1">
+              <p class="text-sm font-bold text-gray-900 dark:text-white mb-0.5">Gallery ready: Annual Shoot 2025</p>
+              <p class="text-[11px] text-gray-400 font-medium">Delivered ahead of schedule</p>
+            </div>
+            <span class="text-[10px] font-bold text-gray-300 uppercase shrink-0">Mar 12</span>
+          </li>
+          <li class="flex items-center gap-4" role="listitem">
+            <div class="w-9 h-9 bg-amber-50 dark:bg-amber-900/20 rounded-xl flex items-center justify-center shrink-0 text-amber-600 text-sm ring-1 ring-amber-100 dark:ring-amber-900/50">🖼</div>
+            <div class="min-w-0 flex-1">
+              <p class="text-sm font-bold text-gray-900 dark:text-white mb-0.5">47 photos approved</p>
+              <p class="text-[11px] text-gray-400 font-medium tracking-wide">Pending review for 73 files</p>
+            </div>
+            <span class="text-[10px] font-bold text-gray-300 uppercase shrink-0">Mar 13</span>
+          </li>
+          <li class="flex items-center gap-4" role="listitem">
+            <div class="w-9 h-9 bg-blue-50 dark:bg-blue-900/20 rounded-xl flex items-center justify-center shrink-0 text-blue-600 text-sm ring-1 ring-blue-100 dark:ring-blue-900/50">⬇️</div>
+            <div class="min-w-0 flex-1">
+              <p class="text-sm font-bold text-gray-900 dark:text-white mb-0.5">Web pack downloaded</p>
+              <p class="text-[11px] text-gray-400 font-medium">12 high-res files (45.2 MB)</p>
+            </div>
+            <span class="text-[10px] font-bold text-gray-300 uppercase shrink-0">Mar 14</span>
+          </li>
+        </ul>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../assets/js/main.js" defer></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      }
+    });
+  </script>
+</body>
+</html>

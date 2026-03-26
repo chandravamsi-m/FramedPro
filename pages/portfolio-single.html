@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vantage Group Case Study | FramedPro Portfolio</title>
+  <meta name="description" content="How FramedPro photographed 80 executives at Vantage Group in a single day — with gallery delivery in 38 hours and 100% team approval through the client portal.">
+  <link rel="canonical" href="https://framedpro.com/pages/portfolio-single.html">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={darkMode:'class',theme:{extend:{colors:{brand:{50:'#f9f8f6',500:'#c9a96e',900:'#1a1a1a'}},fontFamily:{display:['"Playfair Display"','serif'],body:['"Inter"','sans-serif']}}}}</script>
+  <!-- Icon Libraries -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="font-body bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+  
+  <!-- Navbar Mount -->
+  <nav id="main-navbar" class="navbar-transparent fixed top-0 inset-x-0 z-50 h-20" role="navigation" aria-label="Main navigation">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between gap-4">
+
+      <!-- Logo -->
+      <a href="../index.html" class="flex items-center gap-2 shrink-0" aria-label="FramedPro Home">
+        <span class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white" style="font-family:'Playfair Display',serif;">
+          Framed<span class="text-amber-600">Pro</span>
+        </span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <div class="hidden lg:flex items-center gap-1 h-full" role="menubar">
+
+        <!-- Home Dropdown -->
+        <div class="relative group h-full flex items-center">
+          <button
+            id="home-dropdown-btn"
+            class="flex items-center gap-1 px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors"
+            aria-haspopup="true" aria-expanded="false">
+            Home
+            <i data-lucide="chevron-down" class="w-3.5 h-3.5 opacity-50 group-hover:rotate-180 transition-transform duration-300"></i>
+          </button>
+          <div class="absolute top-[80%] start-0 w-48 bg-white dark:bg-gray-900 rounded-xl shadow-2xl border border-gray-100 dark:border-gray-800 py-2 hidden group-hover:block transition-all" role="menu">
+            <a href="../index.html" class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800" role="menuitem">Home 1</a>
+            <a href="home-2.html" class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800" role="menuitem">Home 2</a>
+          </div>
+        </div>
+
+        <div class="h-full flex items-center"><a href="portfolio.html" class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 text-amber-700 dark:text-amber-400 rounded-lg transition-colors">Portfolio</a></div>
+        <div class="h-full flex items-center"><a href="services.html"  class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Services</a></div>
+        <div class="h-full flex items-center"><a href="pricing.html"   class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Pricing</a></div>
+        <div class="h-full flex items-center"><a href="blog.html"      class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Blog</a></div>
+        <div class="h-full flex items-center"><a href="contact.html"   class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Contact</a></div>
+
+        <!-- Dashboard Dropdown -->
+        <div class="relative group h-full flex items-center">
+          <button
+            class="flex items-center gap-1 px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors"
+            aria-haspopup="true" aria-expanded="false">
+            Dashboard
+            <i data-lucide="chevron-down" class="w-3.5 h-3.5 opacity-50 group-hover:rotate-180 transition-transform duration-300"></i>
+          </button>
+          <div class="absolute top-[80%] start-0 w-48 bg-white dark:bg-gray-900 rounded-xl shadow-2xl border border-gray-100 dark:border-gray-800 py-2 hidden group-hover:block transition-all" role="menu">
+            <a href="../dashboard/index.html" class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800" role="menuitem">User Dashboard</a>
+            <a href="../admin/index.html" class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800" role="menuitem">Admin Dashboard</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Actions -->
+      <div class="flex items-center gap-4 shrink-0 h-full">
+        <!-- Dark Mode Toggle -->
+        <button data-theme-toggle class="p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Toggle dark mode">
+          <i data-lucide="moon" class="w-5 h-5 dark:hidden"></i>
+          <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
+        </button>
+
+        <!-- Client Login -->
+        <a href="../auth/login.html" class="hidden lg:inline-flex items-center gap-2 bg-amber-700 hover:bg-amber-800 text-white text-sm font-bold px-6 py-2.5 rounded-xl transition-all shadow-lg shadow-amber-900/20 active:scale-95">
+          <i data-lucide="user" class="w-4 h-4"></i>
+          Client Login
+        </a>
+
+        <!-- Hamburger (mobile) -->
+        <button id="hamburger-btn" class="lg:hidden p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-drawer" class="fixed inset-0 z-[100] translate-x-full lg:hidden transition-transform duration-300 pointer-events-none" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <div id="drawer-overlay" class="absolute inset-0 bg-black/50 opacity-0 transition-opacity hidden pointer-events-auto" aria-hidden="true"></div>
+    <div class="absolute right-0 top-0 bottom-0 w-80 bg-white dark:bg-gray-900 shadow-2xl pointer-events-auto overflow-hidden flex flex-col">
+      <!-- Drawer Header -->
+      <div class="flex items-center justify-between px-6 py-5 border-b border-gray-100 dark:border-gray-800">
+        <span class="text-xl font-bold text-gray-900 dark:text-white" style="font-family:'Playfair Display',serif;">Framed<span class="text-amber-600">Pro</span></span>
+        <button id="drawer-close-btn" class="p-2 rounded-lg text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Close menu">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Drawer Nav -->
+      <nav class="flex-1 px-4 py-4 overflow-y-auto">
+        <p class="px-4 text-[11px] font-bold tracking-[.2em] text-gray-400 uppercase mb-3">Home</p>
+        <a href="../index.html" class="flex items-center gap-3 px-4 py-3.5 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Home 1</a>
+        <a href="home-2.html" class="flex items-center gap-3 px-4 py-3.5 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Home 2</a>
+        
+        <p class="px-4 text-[11px] font-bold tracking-[.2em] text-gray-400 uppercase mt-6 mb-3">Explore</p>
+        <a href="portfolio.html" class="flex items-center gap-3 px-4 py-3.5 text-sm font-semibold text-amber-700 dark:text-amber-400 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Portfolio</a>
+        <a href="services.html"  class="flex items-center gap-3 px-4 py-3.5 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Services</a>
+        <a href="pricing.html"   class="flex items-center gap-3 px-4 py-3.5 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Pricing</a>
+        <a href="blog.html"      class="flex items-center gap-3 px-4 py-3.5 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Blog</a>
+        <a href="contact.html"   class="flex items-center gap-3 px-4 py-3.5 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Contact</a>
+
+        <p class="px-4 text-[11px] font-bold tracking-[.2em] text-gray-400 uppercase mt-6 mb-3">Dashboards</p>
+        <a href="../dashboard/index.html" class="flex items-center gap-3 px-4 py-3.5 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">User Dashboard</a>
+        <a href="../admin/index.html" class="flex items-center gap-3 px-4 py-3.5 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Admin Dashboard</a>
+      </nav>
+
+      <!-- Drawer Footer -->
+      <div class="px-6 py-6 border-t border-gray-100 dark:border-gray-800">
+        <a href="../auth/login.html" class="flex items-center justify-center w-full bg-amber-700 hover:bg-amber-800 text-white text-sm font-bold px-4 py-4 rounded-xl transition-colors shadow-xl shadow-amber-900/20">
+          <i data-lucide="user" class="w-4 h-4 mr-2"></i>
+          Client Login
+        </a>
+      </div>
+    </div>
+  </div>
+  <main id="main-content" class="pt-[72px]">
+
+  <!-- Case Study Hero -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <!-- Breadcrumb -->
+    <nav class="text-sm text-gray-500 dark:text-gray-400 mb-8" aria-label="Breadcrumb">
+      <ol class="flex items-center gap-2">
+        <li><a href="../pages/portfolio.html" class="hover:text-amber-700 transition-colors">Portfolio</a></li>
+        <li aria-hidden="true">/</li>
+        <li class="text-gray-900 dark:text-white font-medium">Vantage Group Case Study</li>
+      </ol>
+    </nav>
+
+    <div class="grid lg:grid-cols-3 gap-12">
+      <!-- Main content -->
+      <div class="lg:col-span-2">
+        <span class="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-amber-50 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300 border border-amber-100 dark:border-amber-800 mb-4">Team Shoot</span>
+        <h1 class="font-display text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4 leading-tight">80 Executives, One Day, 38-Hour Delivery</h1>
+        <p class="text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-8">How Vantage Group HR coordinated an entire company rebrand photoshoot using the FramedPro client portal — with zero email chaos and 100% team approval.</p>
+
+        <!-- Hero Image -->
+        <div class="rounded-2xl overflow-hidden aspect-video mb-10 shadow-xl">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&q=80" alt="Corporate office space set up for team headshot photography day at Vantage Group" class="w-full h-full object-cover" width="900" height="506" loading="eager">
+        </div>
+
+        <!-- Challenge -->
+        <section class="mb-10" aria-labelledby="challenge-heading">
+          <h2 id="challenge-heading" class="font-display text-2xl font-bold text-gray-900 dark:text-white mb-4">The Challenge</h2>
+          <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">Vantage Group had just completed a major brand refresh. Their existing team headshots were three to six years old and completely inconsistent — a mix of office selfies, outdated white-background shots, and a few good headshots that made the inconsistency even more obvious.</p>
+          <p class="text-gray-600 dark:text-gray-300 leading-relaxed">HR Director Sarah Chen needed to photograph 80 people across two departments in a single day, manage the approval workflow without her inbox exploding, and have everyone's photos ready within 72 hours due to a board presentation the following week.</p>
+        </section>
+
+        <!-- Solution -->
+        <section class="mb-10" aria-labelledby="solution-heading">
+          <h2 id="solution-heading" class="font-display text-2xl font-bold text-gray-900 dark:text-white mb-4">What We Did</h2>
+          <ul class="space-y-4">
+            <li class="flex gap-4">
+              <span class="text-amber-600 font-bold shrink-0 mt-0.5">01</span>
+              <div>
+                <p class="font-semibold text-gray-900 dark:text-white mb-1">Set up two shooting bays in adjacent conference rooms</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400">Two-bay setup allowed us to photograph two people simultaneously, cutting the single-day session time from 11 hours to 6.5 hours.</p>
+              </div>
+            </li>
+            <li class="flex gap-4">
+              <span class="text-amber-600 font-bold shrink-0 mt-0.5">02</span>
+              <div>
+                <p class="font-semibold text-gray-900 dark:text-white mb-1">Provided HR with a scheduling template</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400">A shared sign-up sheet let employees book their 6-minute slot autonomously. HR had full oversight without chasing anyone manually.</p>
+              </div>
+            </li>
+            <li class="flex gap-4">
+              <span class="text-amber-600 font-bold shrink-0 mt-0.5">03</span>
+              <div>
+                <p class="font-semibold text-gray-900 dark:text-white mb-1">Delivered proofed gallery in 38 hours</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400">All 80 gallery sets were fully edited and uploaded to the client portal within 38 hours of the shoot day wrapping.</p>
+              </div>
+            </li>
+            <li class="flex gap-4">
+              <span class="text-amber-600 font-bold shrink-0 mt-0.5">04</span>
+              <div>
+                <p class="font-semibold text-gray-900 dark:text-white mb-1">100% approval through the portal in 6 hours</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400">Sarah sent one team-wide notification. All 80 employees reviewed and approved their photos in under 6 hours. Zero back-and-forth with HR.</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Photo Gallery -->
+        <section class="mb-10" aria-labelledby="gallery-heading">
+          <h2 id="gallery-heading" class="font-display text-2xl font-bold text-gray-900 dark:text-white mb-6">A Selection from the Shoot</h2>
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            <div class="aspect-square rounded-xl overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80" alt="Executive headshot, Vantage Group" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width="400" height="400" loading="lazy">
+            </div>
+            <div class="aspect-square rounded-xl overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80" alt="Director headshot, Vantage Group" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width="400" height="400" loading="lazy">
+            </div>
+            <div class="aspect-square rounded-xl overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80" alt="Manager headshot, Vantage Group" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width="400" height="400" loading="lazy">
+            </div>
+            <div class="aspect-square rounded-xl overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80" alt="Senior headshot, Vantage Group" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width="400" height="400" loading="lazy">
+            </div>
+            <div class="aspect-square rounded-xl overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1473492201326-7c01dd2e596b?w=400&q=80" alt="VP headshot, Vantage Group" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width="400" height="400" loading="lazy">
+            </div>
+            <div class="aspect-square rounded-xl overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1548142813-c348350df52b?w=400&q=80" alt="Associate headshot, Vantage Group" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width="400" height="400" loading="lazy">
+            </div>
+          </div>
+        </section>
+
+        <!-- Testimonial -->
+        <blockquote class="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-2xl p-7">
+          <div class="flex gap-1 mb-4 text-amber-500" aria-label="5 stars">
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          </div>
+          <p class="font-display text-xl italic text-gray-800 dark:text-gray-200 leading-relaxed mb-5">"I've coordinated headshot days at three different companies. This was by far the smoothest. The portal alone is worth it — our entire team was approved and downloaded in a day. No one emailed me about their photos once."</p>
+          <footer class="flex items-center gap-3">
+            <div class="w-11 h-11 rounded-full bg-amber-200 dark:bg-amber-800 flex items-center justify-center font-bold text-amber-800 dark:text-amber-200">SC</div>
+            <div>
+              <p class="font-semibold text-gray-900 dark:text-white">Sarah Chen</p>
+              <p class="text-sm text-gray-500">VP People Operations · Vantage Group</p>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+
+      <!-- Sidebar -->
+      <aside>
+        <div class="sticky top-24 space-y-6">
+          <!-- Project Details -->
+          <div class="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700">
+            <h3 class="font-display text-lg font-bold text-gray-900 dark:text-white mb-4">Project Details</h3>
+            <dl class="space-y-3 text-sm">
+              <div><dt class="text-gray-500 dark:text-gray-400 text-xs uppercase tracking-wider mb-1">Client</dt><dd class="font-medium text-gray-900 dark:text-white">Vantage Group</dd></div>
+              <div><dt class="text-gray-500 dark:text-gray-400 text-xs uppercase tracking-wider mb-1">Package</dt><dd class="font-medium text-gray-900 dark:text-white">Team · 80 people</dd></div>
+              <div><dt class="text-gray-500 dark:text-gray-400 text-xs uppercase tracking-wider mb-1">Location</dt><dd class="font-medium text-gray-900 dark:text-white">On-site, Manhattan</dd></div>
+              <div><dt class="text-gray-500 dark:text-gray-400 text-xs uppercase tracking-wider mb-1">Shoot Duration</dt><dd class="font-medium text-gray-900 dark:text-white">6.5 hours</dd></div>
+              <div><dt class="text-gray-500 dark:text-gray-400 text-xs uppercase tracking-wider mb-1">Gallery Delivered</dt><dd class="font-medium text-green-600">38 hours</dd></div>
+              <div><dt class="text-gray-500 dark:text-gray-400 text-xs uppercase tracking-wider mb-1">Approval Rate</dt><dd class="font-medium text-green-600">100%</dd></div>
+            </dl>
+          </div>
+
+          <!-- CTA -->
+          <div class="bg-gray-900 rounded-2xl p-6 relative overflow-hidden group">
+            <div class="relative z-10">
+              <h3 class="font-display text-lg font-bold text-white mb-2">Scale this to your team</h3>
+              <p class="text-sm text-gray-400 mb-4">Get a quote for your own team shoot with the same 48-hour delivery guarantee.</p>
+              <a href="../pages/contact.html" class="block w-full text-center bg-amber-600 hover:bg-amber-500 text-white font-bold py-3 rounded-xl transition-all text-sm">Request a Quote</a>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- More Projects Nav -->
+  <div class="bg-gray-50 dark:bg-gray-900/50 border-t border-gray-100 dark:border-gray-800 py-10 mt-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <a href="../pages/portfolio.html" class="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-amber-700 transition-colors text-sm font-semibold group">
+        <i data-lucide="arrow-left" class="w-4 h-4 group-hover:-translate-x-1 transition-transform"></i> All Projects
+      </a>
+      <a href="../pages/contact.html" class="flex items-center gap-2 bg-amber-700 hover:bg-amber-800 text-white font-semibold px-4 py-2 rounded-lg text-sm transition-all group">
+        Book Your Shoot <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+      </a>
+    </div>
+  </div>
+
+  </main>
+  <!-- Footer Mount -->
+  <footer class="bg-gray-900 border-t border-white/5 text-gray-400 py-8 lg:py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Main Footer Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-16 pb-8">
+        
+        <!-- Brand Column -->
+        <div class="space-y-5">
+          <a href="../index.html" class="inline-block" aria-label="FramedPro Home">
+            <span class="text-3xl font-bold text-white tracking-tight" style="font-family:'Playfair Display',serif;">
+              Framed<span class="text-amber-500">Pro</span>
+            </span>
+          </a>
+          <p class="text-gray-500 text-sm leading-relaxed pr-4">
+            Premium corporate headshots and executive portraits for innovative teams since 2012. Our mission is built on precision, authority, and exceptional visual identity.
+          </p>
+          <!-- Social Icons -->
+          <div class="flex items-center gap-3">
+            <a href="#" class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 transition-all duration-300" aria-label="Facebook">
+              <i data-lucide="facebook" class="w-4 h-4"></i>
+            </a>
+            <a href="#" class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 transition-all duration-300" aria-label="Instagram">
+              <i data-lucide="instagram" class="w-4 h-4"></i>
+            </a>
+            <a href="#" class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 transition-all duration-300" aria-label="Twitter">
+              <i data-lucide="twitter" class="w-4 h-4"></i>
+            </a>
+            <a href="#" class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 transition-all duration-300" aria-label="LinkedIn">
+              <i data-lucide="linkedin" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="space-y-5 lg:pl-4">
+          <h4 class="text-white text-[10px] font-bold uppercase tracking-[.3em]">Quick Links</h4>
+          <ul class="space-y-3 text-sm font-semibold">
+            <li><a href="../index.html" class="text-gray-500 hover:text-white transition-colors">Home</a></li>
+            <li><a href="about.html" class="text-gray-500 hover:text-white transition-colors">About Us</a></li>
+            <li><a href="portfolio.html" class="text-white transition-colors">Portfolio</a></li>
+            <li><a href="pricing.html" class="text-gray-500 hover:text-white transition-colors">Pricing</a></li>
+            <li><a href="services.html" class="text-gray-500 hover:text-white transition-colors">Services</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Resources -->
+        <div class="space-y-5 lg:pl-4">
+          <h4 class="text-white text-[10px] font-bold uppercase tracking-[.3em]">Resources</h4>
+          <ul class="space-y-3 text-sm font-semibold">
+            <li><a href="blog.html" class="text-gray-500 hover:text-white transition-colors">Insights & Blog</a></li>
+            <li><a href="../auth/login.html" class="text-gray-500 hover:text-white transition-colors">Client Portal</a></li>
+            <li><a href="#" class="text-gray-500 hover:text-white transition-colors">Wardrobe Guide</a></li>
+            <li><a href="contact.html" class="text-amber-500 hover:text-amber-400 transition-colors">Book session</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Newsletter -->
+        <div class="space-y-5">
+          <h4 class="text-white text-[10px] font-bold uppercase tracking-[.3em]">Newsletter</h4>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            Stay updated with our latest photography tips and industry insights.
+          </p>
+          <form action="#" method="POST" class="relative">
+            <div class="flex items-center bg-white/[0.03] border border-white/10 rounded-lg overflow-hidden focus-within:border-amber-600 focus-within:ring-1 focus-within:ring-amber-600/50 transition-all duration-300 h-10">
+              <input 
+                type="email" 
+                placeholder="Email address" 
+                required 
+                class="flex-1 min-w-0 bg-transparent px-4 text-xs text-white focus:outline-none placeholder:text-gray-600"
+              >
+              <button type="submit" class="shrink-0 h-full bg-amber-700 hover:bg-amber-800 text-white font-bold px-6 text-[10px] uppercase tracking-[0.2em] transition-all active:scale-95 whitespace-nowrap">
+                JOIN
+              </button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-6 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6 text-[9px] font-bold tracking-[.4em] text-gray-600 uppercase">
+        <p>© 2025 <span class="text-gray-400">FRAMEDPRO</span>. ALL RIGHTS RESERVED.</p>
+        <div class="flex items-center gap-8">
+          <a href="#" class="hover:text-white transition-colors">PRIVACY POLICY</a>
+          <a href="#" class="hover:text-white transition-colors">TERMS OF SERVICE</a>
+          <a href="#" class="hover:text-white transition-colors">COOKIES</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      }
+    });
+  </script>
+
+</body>
+</html>

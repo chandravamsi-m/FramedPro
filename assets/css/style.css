@@ -1,0 +1,96 @@
+/* 
+ * style.css
+ * Consolidated stylesheet for FramedPro.
+ * Combines global typography, custom animations, and layout overrides.
+ */
+
+/* ── Google Fonts ─────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ── Typography & Variables ────────────── */
+:root {
+  --color-brand-500:   #c9a96e;
+  --font-display:      'Playfair Display', serif;
+  --font-body:         'Inter', sans-serif;
+  --transition:        0.25s ease;
+  
+  /* Dashboard Specifics */
+  --sidebar-w:    240px;
+  --sidebar-w-sm:  64px;
+}
+
+h1, h2, h3, h4, h5 { font-family: var(--font-display); }
+
+/* ── Global Animations ─────────────────── */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+@keyframes shimmer {
+  0%   { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+.skeleton {
+  background: linear-gradient(90deg, #e0ddd8 25%, #f0ede8 50%, #e0ddd8 75%);
+  background-size: 800px 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+}
+
+@keyframes pulse-ring {
+  0%   { box-shadow: 0 0 0 0 rgba(201,169,110,0.5); }
+  70%  { box-shadow: 0 0 0 12px rgba(201,169,110,0); }
+  100% { box-shadow: 0 0 0 0 rgba(201,169,110,0); }
+}
+.btn-pulse { animation: pulse-ring 2.5s ease-out infinite; }
+
+/* ── UI Components ─────────────────────── */
+
+/* Navbar Dropdowns (Hover Transitions on Desktop) */
+#main-navbar .dropdown-panel { display: none; }
+@media (min-width: 1024px) {
+  #main-navbar .relative:hover .dropdown-panel { display: block; }
+}
+
+/* ── Dashboard Layout ─────────────────── */
+.db-sidebar {
+  width: var(--sidebar-w);
+  transition: width 0.25s ease;
+}
+.db-sidebar.collapsed { width: var(--sidebar-w-sm); }
+
+.db-content {
+  margin-left: var(--sidebar-w);
+  transition: margin-left 0.25s ease;
+}
+.db-sidebar.collapsed ~ .db-content {
+  margin-left: var(--sidebar-w-sm);
+}
+
+@media (max-width: 1023px) {
+  .db-sidebar { transform: translateX(-100%); }
+  .db-sidebar.mobile-open { transform: translateX(0); }
+  .db-content { margin-left: 0 !important; }
+}
+
+/* Proof Grid Status Indicators */
+.proof-card.selected { outline: 2px solid var(--color-brand-500); }
+.proof-card.approved { border: 2px solid #22c55e; }
+.proof-card.flagged  { border: 2px solid #ef4444; }
+
+@keyframes stamp-in {
+  0%   { transform: scale(2) rotate(-15deg); opacity: 0; }
+  60%  { transform: scale(0.9) rotate(2deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+.stamp-approved, .stamp-flagged {
+  display: none;
+  animation: stamp-in 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+.proof-card.approved .stamp-approved { display: block; }
+.proof-card.flagged  .stamp-flagged  { display: block; }

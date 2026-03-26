@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | FramedPro Corporate Headshot Photography</title>
+  <meta name="description" content="Browse FramedPro's corporate headshot portfolio — executives, legal partners, healthcare professionals, and technology leaders across diverse industries.">
+  <link rel="canonical" href="https://framedpro.com/pages/portfolio.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={darkMode:'class',theme:{extend:{colors:{brand:{50:'#f9f8f6',500:'#c9a96e',900:'#1a1a1a'}},fontFamily:{display:['"Playfair Display"','serif'],body:['"Inter"','sans-serif']}}}}</script>
+  <!-- Icon Libraries -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="font-body bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+  
+  <!-- Navbar Mount -->
+  <nav id="main-navbar" class="navbar-transparent fixed top-0 inset-x-0 z-50 h-20" role="navigation" aria-label="Main navigation">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between gap-4">
+
+      <!-- Logo -->
+      <a href="../index.html" class="flex items-center gap-2 shrink-0" aria-label="FramedPro Home">
+        <span class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white" style="font-family:'Playfair Display',serif;">
+          Framed<span class="text-amber-600">Pro</span>
+        </span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <div class="hidden lg:flex items-center gap-1 h-full" role="menubar">
+
+        <!-- Home Dropdown -->
+        <div class="relative group h-full flex items-center">
+          <button
+            id="home-dropdown-btn"
+            class="flex items-center gap-1 px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors"
+            aria-haspopup="true" aria-expanded="false">
+            Home
+            <i data-lucide="chevron-down" class="w-3.5 h-3.5 opacity-50 group-hover:rotate-180 transition-transform duration-300"></i>
+          </button>
+          <div class="absolute top-[80%] start-0 w-48 bg-white dark:bg-gray-900 rounded-xl shadow-2xl border border-gray-100 dark:border-gray-800 py-2 hidden group-hover:block transition-all" role="menu">
+            <a href="../index.html" class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800" role="menuitem">Home 1</a>
+            <a href="home-2.html" class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800" role="menuitem">Home 2</a>
+          </div>
+        </div>
+
+        <div class="h-full flex items-center"><a href="portfolio.html" class="px-4 py-2 text-sm font-semibold text-amber-700 dark:text-amber-400 rounded-lg transition-colors">Portfolio</a></div>
+        <div class="h-full flex items-center"><a href="services.html"  class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Services</a></div>
+        <div class="h-full flex items-center"><a href="pricing.html"   class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Pricing</a></div>
+        <div class="h-full flex items-center"><a href="blog.html"      class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Blog</a></div>
+        <div class="h-full flex items-center"><a href="contact.html"   class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Contact</a></div>
+
+        <!-- Dashboard Dropdown -->
+        <div class="relative group h-full flex items-center">
+          <button
+            class="flex items-center gap-1 px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors"
+            aria-haspopup="true" aria-expanded="false">
+            Dashboard
+            <i data-lucide="chevron-down" class="w-3.5 h-3.5 opacity-50 group-hover:rotate-180 transition-transform duration-300"></i>
+          </button>
+          <div class="absolute top-[80%] start-0 w-48 bg-white dark:bg-gray-900 rounded-xl shadow-2xl border border-gray-100 dark:border-gray-800 py-2 hidden group-hover:block transition-all" role="menu">
+            <a href="../dashboard/index.html" class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800" role="menuitem">User Dashboard</a>
+            <a href="../admin/index.html" class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800" role="menuitem">Admin Dashboard</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Actions -->
+      <div class="flex items-center gap-4 shrink-0 h-full">
+        <!-- Dark Mode Toggle -->
+        <button data-theme-toggle class="p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Toggle dark mode">
+          <i data-lucide="moon" class="w-5 h-5 dark:hidden"></i>
+          <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
+        </button>
+
+        <!-- Client Login -->
+        <a href="../auth/login.html" class="hidden lg:inline-flex items-center gap-2 bg-amber-700 hover:bg-amber-800 text-white text-sm font-bold px-6 py-2.5 rounded-xl transition-all shadow-lg shadow-amber-900/20 active:scale-95">
+          <i data-lucide="user" class="w-4 h-4"></i>
+          Client Login
+        </a>
+
+        <!-- Hamburger (mobile) -->
+        <button id="hamburger-btn" class="lg:hidden p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-drawer" class="fixed inset-0 z-[100] translate-x-full lg:hidden transition-transform duration-300 pointer-events-none" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <div id="drawer-overlay" class="absolute inset-0 bg-black/50 opacity-0 transition-opacity hidden pointer-events-auto" aria-hidden="true"></div>
+    <div class="absolute right-0 top-0 bottom-0 w-80 bg-white dark:bg-gray-900 shadow-2xl pointer-events-auto overflow-hidden flex flex-col">
+      <!-- Drawer Header -->
+      <div class="flex items-center justify-between px-6 py-5 border-b border-gray-100 dark:border-gray-800">
+        <span class="text-xl font-bold text-gray-900 dark:text-white" style="font-family:'Playfair Display',serif;">Framed<span class="text-amber-600">Pro</span></span>
+        <button id="drawer-close-btn" class="p-2 rounded-lg text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Close menu">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Drawer Nav -->
+      <nav class="flex-1 px-4 py-4 overflow-y-auto">
+        <p class="px-4 text-[11px] font-bold tracking-[.2em] text-gray-400 uppercase mb-3">Home</p>
+        <a href="../index.html" class="flex items-center gap-3 px-4 py-3.5 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Home 1</a>
+        <a href="home-2.html" class="flex items-center gap-3 px-4 py-3.5 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Home 2</a>
+        
+        <p class="px-4 text-[11px] font-bold tracking-[.2em] text-gray-400 uppercase mt-6 mb-3">Explore</p>
+        <a href="portfolio.html" class="flex items-center gap-3 px-4 py-3.5 text-sm font-semibold text-amber-700 dark:text-amber-400 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Portfolio</a>
+        <a href="services.html"  class="flex items-center gap-3 px-4 py-3.5 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Services</a>
+        <a href="pricing.html"   class="flex items-center gap-3 px-4 py-3.5 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Pricing</a>
+        <a href="blog.html"      class="flex items-center gap-3 px-4 py-3.5 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Blog</a>
+        <a href="contact.html"   class="flex items-center gap-3 px-4 py-3.5 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Contact</a>
+
+        <p class="px-4 text-[11px] font-bold tracking-[.2em] text-gray-400 uppercase mt-6 mb-3">Dashboards</p>
+        <a href="../dashboard/index.html" class="flex items-center gap-3 px-4 py-3.5 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">User Dashboard</a>
+        <a href="../admin/index.html" class="flex items-center gap-3 px-4 py-3.5 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Admin Dashboard</a>
+      </nav>
+
+      <!-- Drawer Footer -->
+      <div class="px-6 py-6 border-t border-gray-100 dark:border-gray-800">
+        <a href="../auth/login.html" class="flex items-center justify-center w-full bg-amber-700 hover:bg-amber-800 text-white text-sm font-bold px-4 py-4 rounded-xl transition-colors shadow-xl shadow-amber-900/20">
+          <i data-lucide="user" class="w-4 h-4 mr-2"></i>
+          Client Login
+        </a>
+      </div>
+    </div>
+  </div>
+  <main id="main-content">
+
+  <!-- Hero -->
+  <section class="pt-[72px] bg-gray-50 dark:bg-gray-900/50" aria-label="Page header">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+      <p class="text-amber-700 dark:text-amber-400 text-sm font-semibold tracking-widest uppercase mb-3">Our Work</p>
+      <h1 class="font-display text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">Portraits that mean business</h1>
+      <p class="text-lg text-gray-600 dark:text-gray-300 max-w-xl mx-auto">Across industries, across seniority levels — the work is consistently exceptional.</p>
+    </div>
+  </section>
+
+  <!-- Filter Tabs -->
+  <section class="py-6 border-b border-gray-100 dark:border-gray-800 sticky top-[72px] bg-white dark:bg-gray-950 z-30" aria-label="Portfolio filters">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 overflow-x-auto">
+      <div class="flex gap-2 min-w-max" role="tablist" aria-label="Filter by industry" data-tabs>
+        <button data-tab="all" class="tab-active px-4 py-2 rounded-lg text-sm font-semibold whitespace-nowrap transition-all bg-amber-700 text-white" aria-selected="true" role="tab">All Industries</button>
+        <button data-tab="executive" class="px-4 py-2 rounded-lg text-sm font-semibold whitespace-nowrap transition-all text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800" aria-selected="false" role="tab">Executive</button>
+        <button data-tab="legal" class="px-4 py-2 rounded-lg text-sm font-semibold whitespace-nowrap transition-all text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800" aria-selected="false" role="tab">Legal</button>
+        <button data-tab="finance" class="px-4 py-2 rounded-lg text-sm font-semibold whitespace-nowrap transition-all text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800" aria-selected="false" role="tab">Finance</button>
+        <button data-tab="healthcare" class="px-4 py-2 rounded-lg text-sm font-semibold whitespace-nowrap transition-all text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800" aria-selected="false" role="tab">Healthcare</button>
+        <button data-tab="tech" class="px-4 py-2 rounded-lg text-sm font-semibold whitespace-nowrap transition-all text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800" aria-selected="false" role="tab">Technology</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Masonry Grid -->
+  <section class="py-12" aria-label="Portfolio gallery">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4 space-y-4">
+
+        <article class="portfolio-item rounded-xl overflow-hidden break-inside-avoid">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500&q=80" alt="Male executive, dark suit, neutral gray backdrop" class="w-full object-cover" width="500" height="625" loading="eager">
+          <div class="portfolio-overlay rounded-xl" aria-hidden="true">
+            <div></div>
+            <div>
+              <p class="text-white text-sm font-semibold">VP Operations</p>
+              <p class="text-gray-300 text-xs">Nexus Corp</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="portfolio-item rounded-xl overflow-hidden break-inside-avoid">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&q=80" alt="Female legal partner, professional headshot with white background" class="w-full object-cover" width="500" height="720" loading="lazy">
+          <div class="portfolio-overlay rounded-xl" aria-hidden="true">
+            <div></div>
+            <div>
+              <p class="text-white text-sm font-semibold">Senior Partner</p>
+              <p class="text-gray-300 text-xs">Meridian Legal</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="portfolio-item rounded-xl overflow-hidden break-inside-avoid">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=500&q=80" alt="Technology VP, casual professional headshot" class="w-full object-cover" width="500" height="430" loading="lazy">
+          <div class="portfolio-overlay rounded-xl" aria-hidden="true">
+            <div></div>
+            <div>
+              <p class="text-white text-sm font-semibold">VP Engineering</p>
+              <p class="text-gray-300 text-xs">Solstice Tech</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="portfolio-item rounded-xl overflow-hidden break-inside-avoid">
+          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=500&q=80" alt="Finance executive, female director professional portrait" class="w-full object-cover" width="500" height="560" loading="lazy">
+          <div class="portfolio-overlay rounded-xl" aria-hidden="true">
+            <div></div>
+            <div>
+              <p class="text-white text-sm font-semibold">Director, Finance</p>
+              <p class="text-gray-300 text-xs">Altus Capital</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="portfolio-item rounded-xl overflow-hidden break-inside-avoid">
+          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=500&q=80" alt="Healthcare executive professional headshot" class="w-full object-cover" width="500" height="490" loading="lazy">
+          <div class="portfolio-overlay rounded-xl" aria-hidden="true">
+            <div></div>
+            <div>
+              <p class="text-white text-sm font-semibold">Chief Medical Officer</p>
+              <p class="text-gray-300 text-xs">Helix Bio</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="portfolio-item rounded-xl overflow-hidden break-inside-avoid">
+          <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=500&q=80" alt="HR director professional headshot, female executive" class="w-full object-cover" width="500" height="600" loading="lazy">
+          <div class="portfolio-overlay rounded-xl" aria-hidden="true">
+            <div></div>
+            <div>
+              <p class="text-white text-sm font-semibold">HR Director</p>
+              <p class="text-gray-300 text-xs">Vantage Group</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="portfolio-item rounded-xl overflow-hidden break-inside-avoid">
+          <img src="https://images.unsplash.com/photo-1548142813-c348350df52b?w=500&q=80" alt="Consulting associate, professional headshot" class="w-full object-cover" width="500" height="500" loading="lazy">
+          <div class="portfolio-overlay rounded-xl" aria-hidden="true">
+            <div></div>
+            <div>
+              <p class="text-white text-sm font-semibold">Associate</p>
+              <p class="text-gray-300 text-xs">Crestwood Advisors</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="portfolio-item rounded-xl overflow-hidden break-inside-avoid">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&q=80" alt="Professional headshot of senior male executive" class="w-full object-cover" width="500" height="540" loading="lazy">
+          <div class="portfolio-overlay rounded-xl" aria-hidden="true">
+            <div></div>
+            <div>
+              <p class="text-white text-sm font-semibold">Managing Director</p>
+              <p class="text-gray-300 text-xs">Pinnacle HR</p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- View case study CTA -->
+      <div class="text-center mt-16">
+        <p class="text-gray-500 dark:text-gray-400 mb-4 text-sm">See a complete project from start to finish</p>
+        <a href="../pages/portfolio-single.html" class="inline-flex items-center gap-2 border border-amber-700 text-amber-700 dark:text-amber-400 hover:bg-amber-700 hover:text-white font-semibold px-6 py-3 rounded-xl transition-all">View Case Study →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gray-900 dark:bg-gray-950" aria-labelledby="portfolio-cta">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 id="portfolio-cta" class="font-display text-3xl font-bold text-white mb-4">Ready to see your team this polished?</h2>
+      <p class="text-gray-400 mb-8">Request a quote and we'll scope out your team's shoot day.</p>
+      <a href="../pages/contact.html" class="inline-block bg-amber-600 hover:bg-amber-500 text-white font-bold px-7 py-3.5 rounded-xl transition-all">Request a Quote</a>
+    </div>
+  </section>
+
+  </main>
+  <!-- Footer Mount -->
+  <footer class="bg-gray-900 border-t border-white/5 text-gray-400 py-8 lg:py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Main Footer Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-16 pb-8">
+        
+        <!-- Brand Column -->
+        <div class="space-y-5">
+          <a href="../index.html" class="inline-block" aria-label="FramedPro Home">
+            <span class="text-3xl font-bold text-white tracking-tight" style="font-family:'Playfair Display',serif;">
+              Framed<span class="text-amber-500">Pro</span>
+            </span>
+          </a>
+          <p class="text-gray-500 text-sm leading-relaxed pr-4">
+            Premium corporate headshots and executive portraits for innovative teams since 2012. Our mission is built on precision, authority, and exceptional visual identity.
+          </p>
+          <!-- Social Icons -->
+          <div class="flex items-center gap-3">
+            <a href="#" class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 transition-all duration-300" aria-label="Facebook">
+              <i data-lucide="facebook" class="w-4 h-4"></i>
+            </a>
+            <a href="#" class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 transition-all duration-300" aria-label="Instagram">
+              <i data-lucide="instagram" class="w-4 h-4"></i>
+            </a>
+            <a href="#" class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 transition-all duration-300" aria-label="Twitter">
+              <i data-lucide="twitter" class="w-4 h-4"></i>
+            </a>
+            <a href="#" class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 transition-all duration-300" aria-label="LinkedIn">
+              <i data-lucide="linkedin" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="space-y-5 lg:pl-4">
+          <h4 class="text-white text-[10px] font-bold uppercase tracking-[.3em]">Quick Links</h4>
+          <ul class="space-y-3 text-sm font-semibold">
+            <li><a href="../index.html" class="text-gray-500 hover:text-white transition-colors">Home</a></li>
+            <li><a href="about.html" class="text-gray-500 hover:text-white transition-colors">About Us</a></li>
+            <li><a href="portfolio.html" class="text-white transition-colors">Portfolio</a></li>
+            <li><a href="pricing.html" class="text-gray-500 hover:text-white transition-colors">Pricing</a></li>
+            <li><a href="services.html" class="text-gray-500 hover:text-white transition-colors">Services</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Resources -->
+        <div class="space-y-5 lg:pl-4">
+          <h4 class="text-white text-[10px] font-bold uppercase tracking-[.3em]">Resources</h4>
+          <ul class="space-y-3 text-sm font-semibold">
+            <li><a href="blog.html" class="text-gray-500 hover:text-white transition-colors">Insights & Blog</a></li>
+            <li><a href="../auth/login.html" class="text-gray-500 hover:text-white transition-colors">Client Portal</a></li>
+            <li><a href="#" class="text-gray-500 hover:text-white transition-colors">Wardrobe Guide</a></li>
+            <li><a href="contact.html" class="text-amber-500 hover:text-amber-400 transition-colors">Book session</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Newsletter -->
+        <div class="space-y-5">
+          <h4 class="text-white text-[10px] font-bold uppercase tracking-[.3em]">Newsletter</h4>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            Stay updated with our latest photography tips and industry insights.
+          </p>
+          <form action="#" method="POST" class="relative">
+            <div class="flex items-center bg-white/[0.03] border border-white/10 rounded-lg overflow-hidden focus-within:border-amber-600 focus-within:ring-1 focus-within:ring-amber-600/50 transition-all duration-300 h-10">
+              <input 
+                type="email" 
+                placeholder="Email address" 
+                required 
+                class="flex-1 min-w-0 bg-transparent px-4 text-xs text-white focus:outline-none placeholder:text-gray-600"
+              >
+              <button type="submit" class="shrink-0 h-full bg-amber-700 hover:bg-amber-800 text-white font-bold px-6 text-[10px] uppercase tracking-[0.2em] transition-all active:scale-95 whitespace-nowrap">
+                JOIN
+              </button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-6 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6 text-[9px] font-bold tracking-[.4em] text-gray-600 uppercase">
+        <p>© 2025 <span class="text-gray-400">FRAMEDPRO</span>. ALL RIGHTS RESERVED.</p>
+        <div class="flex items-center gap-8">
+          <a href="#" class="hover:text-white transition-colors">PRIVACY POLICY</a>
+          <a href="#" class="hover:text-white transition-colors">TERMS OF SERVICE</a>
+          <a href="#" class="hover:text-white transition-colors">COOKIES</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      }
+    });
+  </script>
+
+  <script>
+    // Tab filter for portfolio (simple show/hide)
+    document.addEventListener('DOMContentLoaded', function() {
+      const tabBtns = document.querySelectorAll('[role="tab"]');
+      tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          tabBtns.forEach(b => {
+            b.classList.remove('bg-amber-700', 'text-white');
+            b.classList.add('text-gray-600', 'dark:text-gray-400');
+            b.setAttribute('aria-selected','false');
+          });
+          btn.classList.add('bg-amber-700', 'text-white');
+          btn.classList.remove('text-gray-600','dark:text-gray-400');
+          btn.setAttribute('aria-selected','true');
+        });
+      });
+    });
+  </script>
+</body>
+</html>
