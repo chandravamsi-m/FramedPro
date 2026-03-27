@@ -17,13 +17,15 @@
 <body class="font-body bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 transition-colors duration-300">
   
   <!-- Navbar -->
-  <nav id="main-navbar" class="navbar-transparent fixed top-0 inset-x-0 z-50 h-20" role="navigation" aria-label="Main navigation">
+  <nav id="main-navbar" class="navbar-transparent fixed top-0 inset-x-0 z-50 h-20" role="navigation"
+    aria-label="Main navigation">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between gap-4">
 
       <!-- Logo -->
       <a href="../index.html" class="flex items-center gap-3 shrink-0" aria-label="FramedPro Home">
         <img src="../assets/images/logo.svg" alt="" class="w-9 h-9 shrink-0">
-        <span class="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900 dark:text-white" style="font-family:'Playfair Display',serif;">
+        <span class="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900 dark:text-white"
+          style="font-family:'Playfair Display',serif;">
           Framed<span class="text-amber-600">Pro</span>
         </span>
       </a>
@@ -33,37 +35,60 @@
 
         <!-- Home Dropdown -->
         <div class="relative group h-full flex items-center">
-          <button
-            id="home-dropdown-btn"
+          <button id="home-dropdown-btn"
             class="flex items-center gap-1 px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors"
             aria-haspopup="true" aria-expanded="false">
-            Home
-            <i data-lucide="chevron-down" class="w-3.5 h-3.5 opacity-50 group-hover:rotate-180 transition-transform duration-300"></i>
+            Home <i data-lucide="chevron-down"
+              class="w-3.5 h-3.5 opacity-50 group-hover:rotate-180 transition-transform duration-300"></i>
           </button>
-          <div class="absolute top-[80%] start-0 w-48 bg-white dark:bg-gray-900 rounded-xl shadow-2xl border border-gray-100 dark:border-gray-800 py-2 hidden group-hover:block transition-all" role="menu">
-            <a href="../index.html" class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800" role="menuitem">Home 1</a>
-            <a href="home-2.html" class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800" role="menuitem">Home 2</a>
+          <div
+            class="absolute top-[80%] start-0 w-48 bg-white dark:bg-gray-900 rounded-xl shadow-2xl border border-gray-100 dark:border-gray-800 py-2 hidden group-hover:block transition-all"
+            role="menu">
+            <a href="../index.html"
+              class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800"
+              role="menuitem">Home 1</a>
+            <a href="home-2.html"
+              class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800"
+              role="menuitem">Home 2</a>
           </div>
         </div>
 
-        <div class="h-full flex items-center"><a href="about.html" class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">About</a></div>
-        <div class="h-full flex items-center"><a href="portfolio.html" class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Portfolio</a></div>
-        <div class="h-full flex items-center"><a href="services.html"  class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Services</a></div>
-        <div class="h-full flex items-center"><a href="pricing.html"   class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Pricing</a></div>
-        <div class="h-full flex items-center"><a href="blog.html"      class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Blog</a></div>
-        <div class="h-full flex items-center"><a href="contact.html"   class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Contact</a></div>
+        <div class="h-full flex items-center"><a href="about.html"
+            class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">About</a>
+        </div>
+        <div class="h-full flex items-center"><a href="portfolio.html"
+            class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Portfolio</a>
+        </div>
+        <div class="h-full flex items-center"><a href="services.html"
+            class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Services</a>
+        </div>
+        <div class="h-full flex items-center"><a href="pricing.html"
+            class="px-4 py-2 text-sm font-semibold text-amber-700 dark:text-amber-400 rounded-lg transition-colors">Pricing</a>
+        </div>
+        <div class="h-full flex items-center"><a href="blog.html"
+            class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Blog</a>
+        </div>
+        <div class="h-full flex items-center"><a href="contact.html"
+            class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Contact</a>
+        </div>
 
         <!-- Dashboard Dropdown -->
         <div class="relative group h-full flex items-center">
           <button
             class="flex items-center gap-1 px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors"
             aria-haspopup="true" aria-expanded="false">
-            Dashboard
-            <i data-lucide="chevron-down" class="w-3.5 h-3.5 opacity-50 group-hover:rotate-180 transition-transform duration-300"></i>
+            Dashboard <i data-lucide="chevron-down"
+              class="w-3.5 h-3.5 opacity-50 group-hover:rotate-180 transition-transform duration-300"></i>
           </button>
-          <div class="absolute top-[80%] start-0 w-48 bg-white dark:bg-gray-900 rounded-xl shadow-2xl border border-gray-100 dark:border-gray-800 py-2 hidden group-hover:block transition-all" role="menu">
-            <a href="../dashboard/index.html" class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800" role="menuitem">User Dashboard</a>
-            <a href="../admin/index.html" class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800" role="menuitem">Admin Dashboard</a>
+          <div
+            class="absolute top-[80%] start-0 w-48 bg-white dark:bg-gray-900 rounded-xl shadow-2xl border border-gray-100 dark:border-gray-800 py-2 hidden group-hover:block transition-all"
+            role="menu">
+            <a href="../dashboard/index.html"
+              class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800"
+              role="menuitem">User Dashboard</a>
+            <a href="../admin/index.html"
+              class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800"
+              role="menuitem">Admin Dashboard</a>
           </div>
         </div>
       </div>
@@ -71,23 +96,30 @@
       <!-- Right Actions -->
       <div class="flex items-center gap-4 shrink-0 h-full">
         <!-- RTL/LTR Toggle (Desktop only) -->
-        <button data-dir-toggle class="hidden lg:flex px-3 py-1.5 border border-gray-200 dark:border-gray-700 rounded-lg text-gray-600 dark:text-gray-300 hover:border-amber-500 transition-all items-center justify-center min-w-[50px]" aria-label="Toggle text direction">
+        <button data-dir-toggle
+          class="hidden lg:flex px-3 py-1.5 border border-gray-200 dark:border-gray-700 rounded-lg text-gray-600 dark:text-gray-300 hover:border-amber-500 transition-all items-center justify-center min-w-[50px]"
+          aria-label="Toggle text direction">
           <span class="dir-toggle-text text-[10px] font-bold uppercase tracking-widest">RTL</span>
         </button>
 
         <!-- Dark Mode Toggle (Desktop only) -->
-        <button data-theme-toggle class="hidden lg:flex p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Toggle dark mode">
+        <button data-theme-toggle
+          class="hidden lg:flex p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+          aria-label="Toggle dark mode">
           <i data-lucide="moon" class="w-5 h-5 dark:hidden"></i>
           <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
         </button>
 
         <!-- Client Login -->
-        <a href="../auth/login.html" class="hidden lg:inline-flex items-center gap-2 bg-amber-700 hover:bg-amber-800 text-white text-sm font-bold px-6 py-2.5 rounded-xl transition-all shadow-lg shadow-amber-900/20 active:scale-95">
+        <a href="../auth/login.html"
+          class="hidden lg:inline-flex items-center gap-2 bg-amber-700 hover:bg-amber-800 text-white text-sm font-bold px-6 py-2.5 rounded-xl transition-all shadow-lg shadow-amber-900/20 active:scale-95">
           Client Login
         </a>
 
         <!-- Hamburger (mobile) -->
-        <button id="hamburger-btn" class="lg:hidden p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer">
+        <button id="hamburger-btn"
+          class="lg:hidden p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+          aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer">
           <i data-lucide="menu" class="w-6 h-6"></i>
         </button>
       </div>
@@ -95,49 +127,72 @@
   </nav>
 
   <!-- Mobile Drawer -->
-  <div id="mobile-drawer" class="fixed inset-0 z-[100] translate-x-full rtl:-translate-x-full lg:hidden transition-all duration-300 pointer-events-none" role="dialog" aria-modal="true" aria-label="Mobile navigation">
-    <div class="absolute right-0 rtl:right-auto rtl:left-0 top-0 bottom-0 w-80 bg-white dark:bg-gray-900 shadow-2xl pointer-events-auto overflow-hidden flex flex-col">
+  <div id="mobile-drawer"
+    class="fixed inset-0 z-[100] translate-x-full rtl:-translate-x-full lg:hidden transition-all duration-300 pointer-events-none"
+    role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <div
+      class="absolute right-0 rtl:right-auto rtl:left-0 top-0 bottom-0 w-80 bg-white dark:bg-gray-900 shadow-2xl pointer-events-auto overflow-hidden flex flex-col">
       <!-- Drawer Header -->
       <div class="flex items-center justify-between px-6 py-5 border-b border-gray-100 dark:border-gray-800">
         <div class="flex items-center gap-3">
-          <span class="text-xl font-bold text-gray-900 dark:text-white" style="font-family:'Playfair Display',serif;">Menu</span>
+          <span class="text-xl font-bold text-gray-900 dark:text-white"
+            style="font-family:'Playfair Display',serif;">Menu</span>
         </div>
-        <button id="drawer-close-btn" class="p-2 rounded-lg text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Close menu">
+        <button id="drawer-close-btn"
+          class="p-2 rounded-lg text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+          aria-label="Close menu">
           <i data-lucide="x" class="w-5 h-5"></i>
         </button>
       </div>
 
       <!-- Drawer Nav -->
       <nav class="flex-1 px-4 py-2 overflow-y-auto">
-        
+
         <!-- Home Dropdown -->
         <div class="mb-1">
-          <button id="mob-home-btn" data-accordion-trigger="mob-home-dropdown" aria-expanded="false" class="flex items-center justify-between w-full px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">
+          <button id="mob-home-btn" data-accordion-trigger="mob-home-dropdown" aria-expanded="false"
+            class="flex items-center justify-between w-full px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">
             <span>Home</span>
             <i data-lucide="chevron-down" class="accordion-icon w-4 h-4 transition-transform duration-300"></i>
           </button>
           <div id="mob-home-dropdown" class="hidden pl-8 pr-4 py-1 space-y-1">
-            <a href="../index.html" class="block py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-amber-700 dark:hover:text-amber-400 transition-colors">Home 1</a>
-            <a href="home-2.html" class="block py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-amber-700 dark:hover:text-amber-400 transition-colors">Home 2</a>
+            <a href="../index.html"
+              class="block py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-amber-700 dark:hover:text-amber-400 transition-colors">Home
+              1</a>
+            <a href="home-2.html"
+              class="block py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-amber-700 dark:hover:text-amber-400 transition-colors">Home
+              2</a>
           </div>
         </div>
 
-        <a href="about.html"     class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">About Us</a>
-        <a href="portfolio.html" class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Portfolio</a>
-        <a href="services.html"  class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Services</a>
-        <a href="pricing.html"   class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Pricing</a>
-        <a href="blog.html"      class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Blog</a>
-        <a href="contact.html"   class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Contact</a>
+        <a href="about.html"
+          class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">About
+          Us</a>
+        <a href="portfolio.html"
+          class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Portfolio</a>
+        <a href="services.html"
+          class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Services</a>
+        <a href="pricing.html"
+          class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-amber-700 dark:text-amber-400 bg-gray-50 dark:bg-gray-800 rounded-xl transition-colors">Pricing</a>
+        <a href="blog.html"
+          class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Blog</a>
+        <a href="contact.html"
+          class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Contact</a>
 
         <!-- Dashboard Dropdown -->
         <div class="mt-1">
-          <button id="mob-dash-btn" data-accordion-trigger="mob-dash-dropdown" aria-expanded="false" class="flex items-center justify-between w-full px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">
+          <button id="mob-dash-btn" data-accordion-trigger="mob-dash-dropdown" aria-expanded="false"
+            class="flex items-center justify-between w-full px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">
             <span>Dashboards</span>
             <i data-lucide="chevron-down" class="accordion-icon w-4 h-4 transition-transform duration-300"></i>
           </button>
           <div id="mob-dash-dropdown" class="hidden pl-8 pr-4 py-1 space-y-1">
-            <a href="../dashboard/index.html" class="block py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-amber-700 dark:hover:text-amber-400 transition-colors">User Dashboard</a>
-            <a href="../admin/index.html" class="block py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-amber-700 dark:hover:text-amber-400 transition-colors">Admin Dashboard</a>
+            <a href="../dashboard/index.html"
+              class="block py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-amber-700 dark:hover:text-amber-400 transition-colors">User
+              Dashboard</a>
+            <a href="../admin/index.html"
+              class="block py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-amber-700 dark:hover:text-amber-400 transition-colors">Admin
+              Dashboard</a>
           </div>
         </div>
 
@@ -147,14 +202,18 @@
         <div class="px-4 space-y-4">
           <div class="flex items-center justify-between">
             <span class="text-xs font-bold uppercase tracking-widest text-gray-400">Appearance</span>
-            <button data-theme-toggle class="p-2 rounded-lg bg-gray-50 dark:bg-gray-800 text-gray-600 dark:text-gray-300 transition-colors" aria-label="Toggle dark mode">
+            <button data-theme-toggle
+              class="p-2 rounded-lg bg-gray-50 dark:bg-gray-800 text-gray-600 dark:text-gray-300 transition-colors"
+              aria-label="Toggle dark mode">
               <i data-lucide="moon" class="w-5 h-5 dark:hidden"></i>
               <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
             </button>
           </div>
           <div class="flex items-center justify-between">
             <span class="text-xs font-bold uppercase tracking-widest text-gray-400">Direction</span>
-            <button data-dir-toggle class="px-3 py-1.5 bg-gray-50 dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-lg text-gray-600 dark:text-gray-300 transition-all flex items-center justify-center min-w-[50px]" aria-label="Toggle text direction">
+            <button data-dir-toggle
+              class="px-3 py-1.5 bg-gray-50 dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-lg text-gray-600 dark:text-gray-300 transition-all flex items-center justify-center min-w-[50px]"
+              aria-label="Toggle text direction">
               <span class="dir-toggle-text text-[10px] font-bold uppercase tracking-widest">RTL</span>
             </button>
           </div>
@@ -163,171 +222,287 @@
 
       <!-- Drawer Footer (CTA) -->
       <div class="px-6 py-6 border-t border-gray-100 dark:border-gray-800">
-        <a href="../auth/login.html" class="flex items-center justify-center w-full bg-amber-700 hover:bg-amber-800 text-white text-sm font-bold px-4 py-4 rounded-xl transition-colors shadow-xl shadow-amber-900/20 active:scale-95">
+        <a href="../auth/login.html"
+          class="flex items-center justify-center w-full bg-amber-700 hover:bg-amber-800 text-white text-sm font-bold px-4 py-4 rounded-xl transition-colors shadow-xl shadow-amber-900/20 active:scale-95">
           Client Login
         </a>
       </div>
     </div>
   </div>
+
   <main id="main-content">
 
-  <!-- Hero -->
-  <section class="pt-[72px] bg-gray-50 dark:bg-gray-900/50" aria-label="Page header">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
-      <p class="text-amber-700 dark:text-amber-400 text-sm font-semibold tracking-widest uppercase mb-3">Pricing</p>
-      <h1 class="font-display text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">No hidden fees. No surprises.</h1>
-      <p class="text-lg text-gray-600 dark:text-gray-300 max-w-xl mx-auto">Clear per-head and day-rate pricing so your finance team can plan ahead.</p>
-    </div>
-  </section>
-
-  <!-- Pricing Cards -->
-  <section class="py-20" aria-labelledby="pricing-main">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 id="pricing-main" class="sr-only">Packages</h2>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-
-        <!-- Individual -->
-        <article class="bg-white dark:bg-gray-800 rounded-2xl p-8 border border-gray-100 dark:border-gray-700 shadow-sm">
-          <h3 class="font-display text-2xl font-bold text-gray-900 dark:text-white mb-1">Individual</h3>
-          <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">Executive studio sessions</p>
-          <div class="mb-6">
-            <span class="text-5xl font-display font-bold text-gray-900 dark:text-white">$350</span>
-            <span class="text-sm text-gray-400">/session</span>
-          </div>
-          <ul class="space-y-3 mb-8 text-sm">
-            <li class="flex items-start gap-3 text-gray-600 dark:text-gray-300"><i data-lucide="check" class="w-4 h-4 text-green-500 shrink-0 mt-0.5"></i> 60-min studio session</li>
-            <li class="flex items-start gap-3 text-gray-600 dark:text-gray-300"><i data-lucide="check" class="w-4 h-4 text-green-500 shrink-0 mt-0.5"></i> Multiple outfit changes</li>
-            <li class="flex items-start gap-3 text-gray-600 dark:text-gray-300"><i data-lucide="check" class="w-4 h-4 text-green-500 shrink-0 mt-0.5"></i> 10 fully retouched images</li>
-            <li class="flex items-start gap-3 text-gray-600 dark:text-gray-300"><i data-lucide="check" class="w-4 h-4 text-green-500 shrink-0 mt-0.5"></i> Web + print + LinkedIn files</li>
-            <li class="flex items-start gap-3 text-gray-600 dark:text-gray-300"><i data-lucide="check" class="w-4 h-4 text-green-500 shrink-0 mt-0.5"></i> 48-hour delivery</li>
-            <li class="flex items-start gap-3 text-gray-600 dark:text-gray-300"><i data-lucide="check" class="w-4 h-4 text-green-500 shrink-0 mt-0.5"></i> Client portal access</li>
-            <li class="flex items-start gap-3 text-gray-400"><span class="shrink-0 mt-0.5">—</span> On-site visits</li>
-            <li class="flex items-start gap-3 text-gray-400"><span class="shrink-0 mt-0.5">—</span> HR dashboard view</li>
-          </ul>
-          <a href="../pages/contact.html" class="block w-full text-center border border-amber-700 text-amber-700 hover:bg-amber-700 hover:text-white font-semibold py-3 rounded-xl transition-all text-sm">Book Session</a>
-        </article>
-
-        <!-- Team (featured) -->
-        <article class="bg-gray-900 rounded-2xl p-8 ring-2 ring-amber-500 shadow-2xl relative overflow-hidden">
-          <div class="absolute top-4 end-4 bg-amber-500 text-gray-900 font-bold text-xs px-2.5 py-1 rounded-full uppercase tracking-wider">Most Popular</div>
-          <h3 class="font-display text-2xl font-bold text-white mb-1">Team</h3>
-          <p class="text-sm text-gray-400 mb-6">Departments of 5–30 people</p>
-          <div class="mb-6">
-            <span class="text-5xl font-display font-bold text-white">$85</span>
-            <span class="text-sm text-gray-400">/person</span>
-            <p class="text-xs text-gray-500 mt-1">Minimum 5 people · $425 minimum</p>
-          </div>
-          <ul class="space-y-3 mb-8 text-sm">
-            <li class="flex items-start gap-3 text-gray-300"><i data-lucide="check" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i> 4–8 min session per person</li>
-            <li class="flex items-start gap-3 text-gray-300"><i data-lucide="check" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i> Studio or on-site</li>
-            <li class="flex items-start gap-3 text-gray-300"><i data-lucide="check" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i> 5 retouched images/person</li>
-            <li class="flex items-start gap-3 text-gray-300"><i data-lucide="check" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i> Consistent lighting throughout</li>
-            <li class="flex items-start gap-3 text-gray-300"><i data-lucide="check" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i> 48-hour gallery delivery</li>
-            <li class="flex items-start gap-3 text-gray-300"><i data-lucide="check" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i> HR dashboard + bulk download</li>
-            <li class="flex items-start gap-3 text-gray-300"><i data-lucide="check" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i> Per-person proofing portal</li>
-            <li class="flex items-start gap-3 text-gray-400"><span class="shrink-0 mt-0.5">—</span> Dedicated account manager</li>
-          </ul>
-          <a href="../pages/contact.html" class="block w-full text-center bg-amber-600 hover:bg-amber-500 text-white font-bold py-3 rounded-xl transition-all text-sm">Get a Quote</a>
-        </article>
-
-        <!-- Enterprise -->
-        <article class="bg-white dark:bg-gray-800 rounded-2xl p-8 border border-gray-100 dark:border-gray-700 shadow-sm">
-          <h3 class="font-display text-2xl font-bold text-gray-900 dark:text-white mb-1">Enterprise</h3>
-          <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">Annual contracts, 50+ people</p>
-          <div class="mb-6">
-            <span class="text-5xl font-display font-bold text-gray-900 dark:text-white">Custom</span>
-            <p class="text-xs text-gray-500 mt-2">Typically $55–75/person at volume</p>
-          </div>
-          <ul class="space-y-3 mb-8 text-sm">
-            <li class="flex items-start gap-3 text-gray-600 dark:text-gray-300"><i data-lucide="check" class="w-4 h-4 text-green-500 shrink-0 mt-0.5"></i> Everything in Team</li>
-            <li class="flex items-start gap-3 text-gray-600 dark:text-gray-300"><i data-lucide="check" class="w-4 h-4 text-green-500 shrink-0 mt-0.5"></i> Dedicated account manager</li>
-            <li class="flex items-start gap-3 text-gray-600 dark:text-gray-300"><i data-lucide="check" class="w-4 h-4 text-green-500 shrink-0 mt-0.5"></i> Priority scheduling</li>
-            <li class="flex items-start gap-3 text-gray-600 dark:text-gray-300"><i data-lucide="check" class="w-4 h-4 text-green-500 shrink-0 mt-0.5"></i> Annual refresh shoots</li>
-            <li class="flex items-start gap-3 text-gray-600 dark:text-gray-300"><i data-lucide="check" class="w-4 h-4 text-green-500 shrink-0 mt-0.5"></i> 10 retouched images per person</li>
-            <li class="flex items-start gap-3 text-gray-600 dark:text-gray-300"><i data-lucide="check" class="w-4 h-4 text-green-500 shrink-0 mt-0.5"></i> Volume discounts</li>
-            <li class="flex items-start gap-3 text-gray-600 dark:text-gray-300"><i data-lucide="check" class="w-4 h-4 text-green-500 shrink-0 mt-0.5"></i> Expedited 24-hr delivery option</li>
-            <li class="flex items-start gap-3 text-gray-600 dark:text-gray-300"><i data-lucide="check" class="w-4 h-4 text-green-500 shrink-0 mt-0.5"></i> Custom licensing</li>
-          </ul>
-          <a href="../pages/contact.html" class="block w-full text-center border border-amber-700 text-amber-700 hover:bg-amber-700 hover:text-white font-semibold py-3 rounded-xl transition-all text-sm">Request Proposal</a>
-        </article>
+  <!-- Refined Hero section -->
+  <section class="pt-32 pb-16 lg:pt-40 lg:pb-20 bg-white dark:bg-gray-950 transition-colors duration-500 overflow-hidden" aria-labelledby="pricing-hero-heading">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <!-- Subtle Decorative Element -->
+      <div class="absolute -top-24 -left-24 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl"></div>
+      
+      <div class="max-w-3xl relative z-10">
+        <span class="text-amber-600 text-[10px] font-bold uppercase tracking-[0.4em] block mb-5">Financial Transparency / Series 04</span>
+        <h1 id="pricing-hero-heading" class="font-display text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white leading-[1.1] tracking-tighter mb-8">
+          The Investment in <br> <span class="italic font-normal serif text-amber-600">Visual Authority.</span>
+        </h1>
+        <p class="text-lg text-gray-500 dark:text-gray-400 font-light max-w-xl leading-relaxed">
+          Clear, structured pricing designed for executive teams and global organizations. 
+          No hidden fees, just precision-engineered portraiture.
+        </p>
       </div>
     </div>
   </section>
 
-  <!-- Add-Ons -->
-  <section class="py-16 bg-gray-50 dark:bg-gray-900/50" aria-labelledby="addons-pricing">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 id="addons-pricing" class="font-display text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">Add-ons</h2>
-      <div class="bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 overflow-hidden">
+  <!-- Refined Pricing Architecture -->
+  <section class="py-16 bg-gray-50 dark:bg-white/[0.02]" aria-labelledby="pricing-architecture-heading">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 id="pricing-architecture-heading" class="sr-only">Our Pricing Architecture</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Individual Package -->
+        <article class="group bg-white dark:bg-gray-950 p-8 rounded-[2.5rem] border border-gray-100 dark:border-white/5 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 flex flex-col">
+          <div class="mb-8">
+            <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-amber-600 block mb-3">Service 01 / Studio</span>
+            <h3 class="font-display text-3xl font-bold text-gray-900 dark:text-white mb-4">The Executive</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 font-light leading-relaxed">Dedicated solo session for leaders requiring precision and versatility.</p>
+          </div>
+          
+          <div class="mb-8 flex items-baseline gap-2">
+            <span class="text-5xl font-display font-bold text-gray-900 dark:text-white">$350</span>
+            <span class="text-xs font-light text-gray-400 uppercase tracking-widest">/ Session</span>
+          </div>
+          
+          <ul class="space-y-4 mb-10 flex-grow">
+            <li class="flex items-center gap-4 text-sm text-gray-600 dark:text-gray-300">
+              <i data-lucide="check" class="w-4 h-4 text-amber-600"></i> 60-Minute Studio Session
+            </li>
+            <li class="flex items-center gap-4 text-sm text-gray-600 dark:text-gray-300">
+              <i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Multiple Outfit Changes
+            </li>
+            <li class="flex items-center gap-4 text-sm text-gray-600 dark:text-gray-300">
+              <i data-lucide="check" class="w-4 h-4 text-amber-600"></i> 10 Master Retouched Files
+            </li>
+            <li class="flex items-center gap-4 text-sm text-gray-600 dark:text-gray-300">
+              <i data-lucide="clock" class="w-4 h-4 text-amber-600"></i> 48-Hour Signature Turn
+            </li>
+          </ul>
+          
+          <a href="contact.html" class="w-full py-4 border border-gray-200 dark:border-white/10 text-gray-900 dark:text-white font-bold text-[10px] uppercase tracking-[0.3em] rounded-xl hover:bg-gray-50 dark:hover:bg-white/5 transition-all text-center">
+            Book Single Session
+          </a>
+        </article>
+
+        <!-- Team Package (Featured) -->
+        <article class="group bg-gray-900 dark:bg-amber-950/20 p-10 rounded-[2.5rem] border-2 border-amber-600 relative overflow-hidden shadow-2xl shadow-amber-900/20 transform md:scale-105 z-10 flex flex-col">
+          <div class="absolute top-0 right-0 bg-amber-600 text-white text-[9px] font-bold px-6 py-2 rounded-bl-2xl uppercase tracking-[0.2em]">Most Requested</div>
+          
+          <div class="mb-8">
+            <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-amber-400 block mb-3">Service 02 / Group</span>
+            <h3 class="font-display text-3xl font-bold text-white mb-4">The Consensus</h3>
+            <p class="text-sm text-gray-400 font-light leading-relaxed">Unified visual identity for growing teams and specialized departments.</p>
+          </div>
+          
+          <div class="mb-8 flex items-baseline gap-2">
+            <span class="text-5xl font-display font-bold text-white">$85</span>
+            <span class="text-xs font-light text-amber-400/50 uppercase tracking-widest">/ Per Head</span>
+          </div>
+          
+          <ul class="space-y-4 mb-10 flex-grow">
+            <li class="flex items-center gap-4 text-sm text-gray-300">
+              <i data-lucide="check-circle" class="w-4 h-4 text-amber-500"></i> Groups of 5–50 Individuals
+            </li>
+            <li class="flex items-center gap-4 text-sm text-gray-300">
+              <i data-lucide="check-circle" class="w-4 h-4 text-amber-500"></i> Mobile Studio (On-Site)
+            </li>
+            <li class="flex items-center gap-4 text-sm text-gray-300">
+              <i data-lucide="check-circle" class="w-4 h-4 text-amber-500"></i> 5 Retouched Files / Person
+            </li>
+            <li class="flex items-center gap-4 text-sm text-gray-300">
+              <i data-lucide="layout" class="w-4 h-4 text-amber-500"></i> HR Portal & Bulk Delivery
+            </li>
+          </ul>
+          
+          <a href="contact.html" class="w-full py-4 bg-amber-700 hover:bg-amber-800 text-white font-bold text-[10px] uppercase tracking-[0.3em] rounded-xl transition-all shadow-xl shadow-amber-900/40 text-center">
+            Request Team Quote
+          </a>
+        </article>
+
+        <!-- Enterprise Package -->
+        <article class="group bg-white dark:bg-gray-950 p-8 rounded-[2.5rem] border border-gray-100 dark:border-white/5 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 flex flex-col">
+          <div class="mb-8">
+            <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-amber-600 block mb-3">Service 03 / Contract</span>
+            <h3 class="font-display text-3xl font-bold text-gray-900 dark:text-white mb-4">The Corporate</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 font-light leading-relaxed">Annual partnerships for global firms with continuous hiring needs.</p>
+          </div>
+          
+          <div class="mb-8 flex items-baseline gap-2">
+            <span class="text-5xl font-display font-bold text-gray-900 dark:text-white">Custom</span>
+            <span class="text-xs font-light text-gray-400 uppercase tracking-widest">/ Project</span>
+          </div>
+          
+          <ul class="space-y-4 mb-10 flex-grow">
+            <li class="flex items-center gap-4 text-sm text-gray-600 dark:text-gray-300">
+              <i data-lucide="award" class="w-4 h-4 text-amber-600"></i> Dedicated Account Directorship
+            </li>
+            <li class="flex items-center gap-4 text-sm text-gray-600 dark:text-gray-300">
+              <i data-lucide="globe" class="w-4 h-4 text-amber-600"></i> Global Visual Directives
+            </li>
+            <li class="flex items-center gap-4 text-sm text-gray-600 dark:text-gray-300">
+              <i data-lucide="zap" class="w-4 h-4 text-amber-600"></i> Priority "Week-Of" Scheduling
+            </li>
+            <li class="flex items-center gap-4 text-sm text-gray-600 dark:text-gray-300">
+              <i data-lucide="shield" class="w-4 h-4 text-amber-600"></i> Custom Licensing & SLAs
+            </li>
+          </ul>
+          
+          <a href="contact.html" class="w-full py-4 border border-gray-200 dark:border-white/10 text-gray-900 dark:text-white font-bold text-[10px] uppercase tracking-[0.3em] rounded-xl hover:bg-gray-50 dark:hover:bg-white/5 transition-all text-center">
+            Inquire for Enterprise
+          </a>
+        </article>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Refined Add-ons Section -->
+  <section class="py-16 bg-white dark:bg-gray-950 transition-colors duration-500" aria-labelledby="addons-pricing">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="mb-8 text-center max-w-2xl mx-auto">
+        <span class="text-amber-600 text-[10px] font-bold uppercase tracking-[0.4em] block mb-2">Service Extras</span>
+        <h2 id="addons-pricing" class="font-display text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white tracking-tight mb-4">
+          Technical <span class="text-amber-600 italic font-normal serif">Add-ons.</span>
+        </h2>
+        <p class="text-base text-gray-500 dark:text-gray-400 font-light leading-relaxed">
+          Enhance your session with executive-level logistics and post-production precision.
+        </p>
+      </div>
+
+      <div class="bg-gray-50 dark:bg-white/[0.02] rounded-[2rem] border border-gray-100 dark:border-white/5 overflow-hidden shadow-sm">
         <table class="w-full text-sm">
-          <thead><tr class="bg-gray-50 dark:bg-gray-900/50 border-b border-gray-100 dark:border-gray-700">
-            <th class="py-3 px-5 text-start text-gray-500 font-semibold text-xs uppercase tracking-wider">Add-On</th>
-            <th class="py-3 px-5 text-end text-gray-500 font-semibold text-xs uppercase tracking-wider">Price</th>
-          </tr></thead>
-          <tbody class="divide-y divide-gray-50 dark:divide-gray-700">
-            <tr><td class="py-3.5 px-5 text-gray-700 dark:text-gray-300">Background removal (per image)</td><td class="py-3.5 px-5 text-end font-semibold text-gray-900 dark:text-white">$5</td></tr>
-            <tr><td class="py-3.5 px-5 text-gray-700 dark:text-gray-300">Additional retouch round</td><td class="py-3.5 px-5 text-end font-semibold text-gray-900 dark:text-white">$25/image</td></tr>
-            <tr><td class="py-3.5 px-5 text-gray-700 dark:text-gray-300">Video headshot (30-sec loop)</td><td class="py-3.5 px-5 text-end font-semibold text-gray-900 dark:text-white">From $150/person</td></tr>
-            <tr><td class="py-3.5 px-5 text-gray-700 dark:text-gray-300">Rush 24-hr delivery (non-Enterprise)</td><td class="py-3.5 px-5 text-end font-semibold text-gray-900 dark:text-white">+$75</td></tr>
-            <tr><td class="py-3.5 px-5 text-gray-700 dark:text-gray-300">On-site travel fee (outside NYC, per mile)</td><td class="py-3.5 px-5 text-end font-semibold text-gray-900 dark:text-white">$1.20/mile</td></tr>
+          <thead>
+            <tr class="border-b border-gray-100 dark:border-white/5">
+              <th class="py-5 px-8 text-start text-gray-400 font-bold text-[9px] uppercase tracking-[0.2em]">Specification</th>
+              <th class="py-5 px-8 text-end text-gray-400 font-bold text-[9px] uppercase tracking-[0.2em]">Investment</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-100 dark:divide-white/5">
+            <tr class="group hover:bg-white dark:hover:bg-white/5 transition-colors">
+              <td class="py-5 px-8 font-medium text-gray-900 dark:text-white">Background Neutralization (Per Image)</td>
+              <td class="py-5 px-8 text-end font-bold text-amber-600 tracking-tight">$5</td>
+            </tr>
+            <tr class="group hover:bg-white dark:hover:bg-white/5 transition-colors">
+              <td class="py-5 px-8 font-medium text-gray-900 dark:text-white">Additional Master Retouching Round</td>
+              <td class="py-5 px-8 text-end font-bold text-amber-600 tracking-tight">$25 / Image</td>
+            </tr>
+            <tr class="group hover:bg-white dark:hover:bg-white/5 transition-colors">
+              <td class="py-5 px-8 font-medium text-gray-900 dark:text-white">Video Portraiture (Executive Loop)</td>
+              <td class="py-5 px-8 text-end font-bold text-amber-600 tracking-tight">From $150 / Person</td>
+            </tr>
+            <tr class="group hover:bg-white dark:hover:bg-white/5 transition-colors">
+              <td class="py-5 px-8 font-medium text-gray-900 dark:text-white">Next-Day Executive Turnaround (Non-Contract)</td>
+              <td class="py-5 px-8 text-end font-bold text-amber-600 tracking-tight">+$75</td>
+            </tr>
+            <tr class="group hover:bg-white dark:hover:bg-white/5 transition-colors">
+              <td class="py-5 px-8 font-medium text-gray-900 dark:text-white">Mobile Studio Logic (Outside Logistics Zone)</td>
+              <td class="py-5 px-8 text-end font-bold text-amber-600 tracking-tight">$1.20 / Mile</td>
+            </tr>
           </tbody>
         </table>
       </div>
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section class="py-16" aria-labelledby="pricing-faq">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 id="pricing-faq" class="font-display text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">Pricing FAQs</h2>
-      <div class="space-y-3">
-        <div class="bg-gray-50 dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 overflow-hidden">
-          <button data-accordion-trigger="pfaq-1" data-accordion-group="pfaq" class="w-full text-start px-5 py-4 flex items-center justify-between gap-4 font-semibold text-gray-900 dark:text-white" aria-expanded="false">
-            Is there a deposit required to book?
-            <i data-lucide="chevron-down" class="accordion-icon w-4 h-4 shrink-0 transition-transform"></i>
+  <!-- Refined FAQ Section -->
+  <section class="py-16 bg-gray-50 dark:bg-white/[0.02] border-t border-gray-100 dark:border-white/5" aria-labelledby="pricing-faq">
+    <div class="max-w-3xl mx-auto px-4">
+      <div class="mb-8 text-center">
+        <span class="text-amber-600 text-[10px] font-bold uppercase tracking-[0.4em] block mb-3">Service Inquiries</span>
+        <h2 id="pricing-faq" class="font-display text-3xl font-bold text-gray-900 dark:text-white tracking-tight">The Logistics <span class="text-amber-600 italic font-normal serif">Exchange.</span></h2>
+      </div>
+
+      <div class="space-y-4">
+        <!-- FAQ 1 -->
+        <div class="bg-white dark:bg-gray-950 rounded-[1.5rem] border border-gray-100 dark:border-white/5 overflow-hidden transition-all duration-300 hover:border-amber-500/30 shadow-sm">
+          <button data-accordion-trigger="pfaq-1" data-accordion-group="pfaq" class="w-full text-start px-6 py-5 flex items-center justify-between gap-4 font-bold text-gray-900 dark:text-white group" aria-expanded="false">
+            <span class="text-sm">Is there a deposit required for booking validation?</span>
+            <div class="w-8 h-8 rounded-full bg-gray-50 dark:bg-white/5 flex items-center justify-center group-hover:bg-amber-600 group-hover:text-white transition-all duration-300">
+              <i data-lucide="chevron-down" class="accordion-icon w-3.5 h-3.5 transition-transform duration-500"></i>
+            </div>
           </button>
-          <div id="pfaq-1" class="accordion-content px-5 text-gray-600 dark:text-gray-300 text-sm">
-            <div class="pb-4">Yes — a 50% deposit is required to secure your booking date. The remaining balance is due 48 hours before the shoot.</div>
+          <div id="pfaq-1" class="accordion-content hidden px-6 text-gray-500 dark:text-gray-400 text-sm font-light leading-relaxed">
+            <div class="pb-6">
+              Yes — a 50% technical deposit is required to secure your professional booking date. The remaining balance is due 48 hours before the production commences.
+            </div>
           </div>
         </div>
-        <div class="bg-gray-50 dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 overflow-hidden">
-          <button data-accordion-trigger="pfaq-2" data-accordion-group="pfaq" class="w-full text-start px-5 py-4 flex items-center justify-between gap-4 font-semibold text-gray-900 dark:text-white" aria-expanded="false">
-            What happens if a team member doesn't show up on shoot day?
-            <i data-lucide="chevron-down" class="accordion-icon w-4 h-4 shrink-0 transition-transform"></i>
+
+        <!-- FAQ 2 -->
+        <div class="bg-white dark:bg-gray-950 rounded-[1.5rem] border border-gray-100 dark:border-white/5 overflow-hidden transition-all duration-300 hover:border-amber-500/30 shadow-sm">
+          <button data-accordion-trigger="pfaq-2" data-accordion-group="pfaq" class="w-full text-start px-6 py-5 flex items-center justify-between gap-4 font-bold text-gray-900 dark:text-white group" aria-expanded="false">
+            <span class="text-sm">Logistics regarding team member rescheduling?</span>
+            <div class="w-8 h-8 rounded-full bg-gray-50 dark:bg-white/5 flex items-center justify-center group-hover:bg-amber-600 group-hover:text-white transition-all duration-300">
+              <i data-lucide="chevron-down" class="accordion-icon w-3.5 h-3.5 transition-transform duration-500"></i>
+            </div>
           </button>
-          <div id="pfaq-2" class="accordion-content px-5 text-gray-600 dark:text-gray-300 text-sm">
-            <div class="pb-4">No-shows are charged at 50% of the per-person rate. We can reschedule individual sessions for missing team members at a later date at a reduced rate.</div>
+          <div id="pfaq-2" class="accordion-content hidden px-6 text-gray-500 dark:text-gray-400 text-sm font-light leading-relaxed">
+            <div class="pb-6">
+              No-shows are charged at 50% of the per-person rate. We provide a secondary "catch-up" session for missing members at a reduced logistics rate to ensure team-wide visual consistency.
+            </div>
           </div>
         </div>
-        <div class="bg-gray-50 dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 overflow-hidden">
-          <button data-accordion-trigger="pfaq-3" data-accordion-group="pfaq" class="w-full text-start px-5 py-4 flex items-center justify-between gap-4 font-semibold text-gray-900 dark:text-white" aria-expanded="false">
-            Are prints included?
-            <i data-lucide="chevron-down" class="accordion-icon w-4 h-4 shrink-0 transition-transform"></i>
+
+        <!-- FAQ 3 -->
+        <div class="bg-white dark:bg-gray-950 rounded-[1.5rem] border border-gray-100 dark:border-white/5 overflow-hidden transition-all duration-300 hover:border-amber-500/30 shadow-sm">
+          <button data-accordion-trigger="pfaq-3" data-accordion-group="pfaq" class="w-full text-start px-6 py-5 flex items-center justify-between gap-4 font-bold text-gray-900 dark:text-white group" aria-expanded="false">
+            <span class="text-sm">Digital delivery vs. physical print logic?</span>
+            <div class="w-8 h-8 rounded-full bg-gray-50 dark:bg-white/5 flex items-center justify-center group-hover:bg-amber-600 group-hover:text-white transition-all duration-300">
+              <i data-lucide="chevron-down" class="accordion-icon w-3.5 h-3.5 transition-transform duration-500"></i>
+            </div>
           </button>
-          <div id="pfaq-3" class="accordion-content px-5 text-gray-600 dark:text-gray-300 text-sm">
-            <div class="pb-4">Digital files are included in all packages. Physical prints are available separately through the reorder system in the client portal, starting at $8 for a 4×6.</div>
+          <div id="pfaq-3" class="accordion-content hidden px-6 text-gray-500 dark:text-gray-400 text-sm font-light leading-relaxed">
+            <div class="pb-6">
+              Every package includes high-resolution digital master files. Professional archival prints are available as technical add-ons through our reorder system within the Client Portal.
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="py-16 bg-gray-900 dark:bg-gray-950" aria-labelledby="pricing-cta">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 id="pricing-cta" class="font-display text-3xl font-bold text-white mb-4">Ready to get a quote?</h2>
-      <p class="text-gray-400 mb-8">Tell us about your team and we'll scope everything out with no obligation.</p>
-      <a href="../pages/contact.html" class="inline-block bg-amber-600 hover:bg-amber-500 text-white font-bold px-8 py-4 rounded-xl transition-all">Request a Quote</a>
+  <!-- Signature CTA Block -->
+  <section class="py-16 bg-white dark:bg-gray-950 transition-colors duration-500 relative overflow-hidden">
+    <!-- Subtle Gradient Polish -->
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(180,83,9,0.05),transparent)]"></div>
+    
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <div class="inline-block w-12 h-[1px] bg-amber-600/30 mb-8"></div>
+      
+      <h2 class="font-display text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6 leading-[1.1] tracking-tighter">
+        Ready to define your <br> <span class="italic font-normal serif text-amber-600 underline decoration-amber-600/20 underline-offset-8">Visual Value?</span>
+      </h2>
+      
+      <p class="text-base text-gray-500 dark:text-gray-400 font-light mb-10 max-w-xl mx-auto leading-relaxed">
+        Let's scope your project and create portraiture that represents your professional authority with absolute precision.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+        <a href="contact.html" class="w-full sm:w-auto px-10 py-4 bg-amber-700 hover:bg-amber-800 text-white font-bold text-[10px] uppercase tracking-[0.3em] rounded-xl transition-all shadow-xl shadow-amber-900/20 active:scale-95 text-center">
+          Request a Quote
+        </a>
+        <a href="portfolio.html" class="w-full sm:w-auto px-10 py-4 border border-gray-200 dark:border-white/10 text-gray-900 dark:text-white font-bold text-[10px] uppercase tracking-[0.3em] rounded-xl hover:bg-gray-50 dark:hover:bg-white/5 transition-all text-center">
+          View Archive
+        </a>
+      </div>
     </div>
   </section>
 
   </main>
   <!-- Footer Section -->
-  <footer class="bg-gray-900 border-t border-white/5 text-gray-400 py-3 sm:py-5 lg:py-8">
+  <footer class="bg-gray-950 border-t border-white/5 text-gray-400 py-3 sm:py-5 lg:py-8">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
+
       <!-- Main Footer Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-y-8 lg:gap-x-12">
-        
+
         <!-- Brand Column -->
         <div class="lg:col-span-4 space-y-6">
           <a href="../index.html" class="flex items-center gap-3 shrink-0 mb-6" aria-label="FramedPro Home">
@@ -337,70 +512,80 @@
             </span>
           </a>
           <p class="text-gray-500 text-sm leading-relaxed max-w-sm">
-            Premium corporate headshots and executive portraits for innovative teams since 2012. Our mission is built on precision, authority, and exceptional visual identity.
+            Premium corporate headshots and executive portraits for innovative teams since 2012. Our mission is built on
+            precision, authority, and exceptional visual identity.
           </p>
           <!-- Social Icons -->
           <div class="flex items-center gap-4 pt-2">
-            <a href="#" class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 hover:bg-amber-500/5 transition-all duration-300" aria-label="Facebook">
+            <a href="#"
+              class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 hover:bg-amber-500/5 transition-all duration-300"
+              aria-label="Facebook">
               <i data-lucide="facebook" class="w-5 h-5"></i>
             </a>
-            <a href="#" class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 hover:bg-amber-500/5 transition-all duration-300" aria-label="Instagram">
+            <a href="#"
+              class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 hover:bg-amber-500/5 transition-all duration-300"
+              aria-label="Instagram">
               <i data-lucide="instagram" class="w-5 h-5"></i>
             </a>
-            <a href="#" class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 hover:bg-amber-500/5 transition-all duration-300" aria-label="Twitter">
+            <a href="#"
+              class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 hover:bg-amber-500/5 transition-all duration-300"
+              aria-label="Twitter">
               <i data-lucide="twitter" class="w-5 h-5"></i>
             </a>
-            <a href="#" class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 hover:bg-amber-500/5 transition-all duration-300" aria-label="LinkedIn">
+            <a href="#"
+              class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 hover:bg-amber-500/5 transition-all duration-300"
+              aria-label="LinkedIn">
               <i data-lucide="linkedin" class="w-5 h-5"></i>
             </a>
           </div>
         </div>
- 
+
         <div class="lg:col-span-2 space-y-6">
           <h4 class="text-white text-xs font-bold uppercase tracking-[.2em]">Quick Links</h4>
           <ul class="space-y-4 text-sm font-medium">
             <li><a href="../index.html" class="text-gray-500 hover:text-white transition-colors">Home</a></li>
             <li><a href="about.html" class="text-gray-500 hover:text-white transition-colors">About Us</a></li>
-            <li><a href="portfolio.html" class="text-gray-500 hover:text-white transition-colors">Portfolio</a></li>
+            <li><a href="portfolio.html" class="text-gray-500 hover:text-white transition-colors">Portfolio</a>
+            </li>
           </ul>
         </div>
- 
+
         <!-- Column 3: Resources -->
         <div class="lg:col-span-2 space-y-6">
           <h4 class="text-white text-xs font-bold uppercase tracking-[.2em]">Resources</h4>
           <ul class="space-y-4 text-sm font-medium">
             <li><a href="services.html" class="text-gray-500 hover:text-white transition-colors">Services</a></li>
             <li><a href="pricing.html" class="text-gray-500 hover:text-white transition-colors">Pricing</a></li>
-            <li><a href="blog.html" class="text-gray-500 hover:text-white transition-colors">Insights & Blog</a></li>
-            <li><a href="contact.html" class="text-gray-500 hover:text-white transition-colors">Book session</a></li>
+            <li><a href="blog.html" class="text-gray-500 hover:text-white transition-colors">Insights & Blog</a>
+            </li>
+            <li><a href="contact.html" class="text-gray-500 hover:text-white transition-colors">Book session</a>
+            </li>
           </ul>
         </div>
- 
+
         <!-- Column 4: Newsletter -->
         <div class="lg:col-span-4 space-y-6">
           <h4 class="text-white text-xs font-bold uppercase tracking-[.2em]">Newsletter</h4>
           <p class="text-gray-500 text-sm leading-relaxed max-w-sm">
             Stay updated with our latest photography tips and industry insights.
           </p>
-          <form action="#" method="POST" class="relative group">
-            <div class="flex items-stretch bg-white/[0.03] border border-white/10 rounded-xl overflow-hidden focus-within:border-amber-600/50 focus-within:bg-white/[0.05] transition-all duration-300">
-              <input 
-                type="email" 
-                placeholder="Email address" 
-                required 
-                class="flex-1 min-w-0 bg-transparent px-5 py-3 text-sm text-white focus:outline-none placeholder:text-gray-600"
-              >
-              <button type="submit" class="bg-amber-700 hover:bg-amber-600 text-white font-bold px-8 text-[10px] uppercase tracking-[0.2em] transition-all">
+          <form action="#" method="POST" class="max-w-sm relative group">
+            <div class="relative flex items-center">
+              <input type="email" placeholder="Email address" required
+                class="w-full bg-white/[0.03] border border-white/10 rounded-full py-3.5 pl-6 pr-28 text-sm text-white focus:outline-none focus:ring-1 focus:ring-amber-600/50 focus:border-amber-600/50 focus:bg-white/[0.05] transition-all duration-300 placeholder:text-gray-600">
+              <button type="submit"
+                class="absolute right-1.5 top-1.5 bottom-1.5 px-6 rounded-full bg-amber-700 hover:bg-amber-600 text-white text-[10px] font-bold uppercase tracking-[0.2em] transition-all">
                 JOIN
               </button>
             </div>
           </form>
         </div>
- 
+
       </div>
- 
+
       <!-- Bottom Bar -->
-      <div class="mt-6 pt-6 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6 text-[10px] font-bold tracking-[.2em] text-gray-600 uppercase">
+      <div
+        class="mt-6 pt-6 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6 text-[10px] font-bold tracking-[.2em] text-gray-600 uppercase">
         <p>© 2025 <span class="text-gray-400">FRAMEDPRO</span>. ALL RIGHTS RESERVED.</p>
         <div class="flex items-center gap-8">
           <a href="#" class="hover:text-white transition-colors">PRIVACY POLICY</a>
@@ -408,7 +593,7 @@
           <a href="#" class="hover:text-white transition-colors">COOKIES</a>
         </div>
       </div>
- 
+
     </div>
   </footer>
 
