@@ -18,13 +18,16 @@
 <body class="font-body bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 transition-colors duration-300">
   
   <!-- Navbar -->
-  <nav id="main-navbar" class="navbar-transparent fixed top-0 inset-x-0 z-50 h-20" role="navigation" aria-label="Main navigation">
+  <!-- Navbar Mount -->
+  <nav id="main-navbar" class="navbar-transparent fixed top-0 inset-x-0 z-50 h-20" role="navigation"
+    aria-label="Main navigation">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between gap-4">
 
       <!-- Logo -->
       <a href="../index.html" class="flex items-center gap-3 shrink-0" aria-label="FramedPro Home">
         <img src="../assets/images/logo.svg" alt="" class="w-9 h-9 shrink-0">
-        <span class="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900 dark:text-white" style="font-family:'Playfair Display',serif;">
+        <span class="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900 dark:text-white"
+          style="font-family:'Playfair Display',serif;">
           Framed<span class="text-amber-600">Pro</span>
         </span>
       </a>
@@ -34,25 +37,43 @@
 
         <!-- Home Dropdown -->
         <div class="relative group h-full flex items-center">
-          <button
-            id="home-dropdown-btn"
+          <button id="home-dropdown-btn"
             class="flex items-center gap-1 px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors"
             aria-haspopup="true" aria-expanded="false">
             Home
-            <i data-lucide="chevron-down" class="w-3.5 h-3.5 opacity-50 group-hover:rotate-180 transition-transform duration-300"></i>
+            <i data-lucide="chevron-down"
+              class="w-3.5 h-3.5 opacity-50 group-hover:rotate-180 transition-transform duration-300"></i>
           </button>
-          <div class="absolute top-[80%] start-0 w-48 bg-white dark:bg-gray-900 rounded-xl shadow-2xl border border-gray-100 dark:border-gray-800 py-2 hidden group-hover:block transition-all" role="menu">
-            <a href="../index.html" class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800" role="menuitem">Home 1</a>
-            <a href="home-2.html" class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800" role="menuitem">Home 2</a>
+          <div
+            class="absolute top-[80%] start-0 w-48 bg-white dark:bg-gray-900 rounded-xl shadow-2xl border border-gray-100 dark:border-gray-800 py-2 hidden group-hover:block transition-all"
+            role="menu">
+            <a href="../index.html"
+              class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800"
+              role="menuitem">Home 1</a>
+            <a href="home-2.html"
+              class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800"
+              role="menuitem">Home 2</a>
           </div>
         </div>
 
-        <div class="h-full flex items-center"><a href="about.html" class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">About</a></div>
-        <div class="h-full flex items-center"><a href="portfolio.html" class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Portfolio</a></div>
-        <div class="h-full flex items-center"><a href="services.html"  class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Services</a></div>
-        <div class="h-full flex items-center"><a href="pricing.html"   class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Pricing</a></div>
-        <div class="h-full flex items-center"><a href="blog.html"      class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Blog</a></div>
-        <div class="h-full flex items-center"><a href="contact.html"   class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Contact</a></div>
+        <div class="h-full flex items-center"><a href="about.html"
+            class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">About</a>
+        </div>
+        <div class="h-full flex items-center"><a href="portfolio.html"
+            class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Portfolio</a>
+        </div>
+        <div class="h-full flex items-center"><a href="services.html"
+            class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Services</a>
+        </div>
+        <div class="h-full flex items-center"><a href="pricing.html"
+            class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Pricing</a>
+        </div>
+        <div class="h-full flex items-center"><a href="blog.html"
+            class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Blog</a>
+        </div>
+        <div class="h-full flex items-center"><a href="contact.html"
+            class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Contact</a>
+        </div>
 
         <!-- Dashboard Dropdown -->
         <div class="relative group h-full flex items-center">
@@ -60,11 +81,18 @@
             class="flex items-center gap-1 px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors"
             aria-haspopup="true" aria-expanded="false">
             Dashboard
-            <i data-lucide="chevron-down" class="w-3.5 h-3.5 opacity-50 group-hover:rotate-180 transition-transform duration-300"></i>
+            <i data-lucide="chevron-down"
+              class="w-3.5 h-3.5 opacity-50 group-hover:rotate-180 transition-transform duration-300"></i>
           </button>
-          <div class="absolute top-[80%] start-0 w-48 bg-white dark:bg-gray-900 rounded-xl shadow-2xl border border-gray-100 dark:border-gray-800 py-2 hidden group-hover:block transition-all" role="menu">
-            <a href="../dashboard/index.html" class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800" role="menuitem">User Dashboard</a>
-            <a href="../admin/index.html" class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800" role="menuitem">Admin Dashboard</a>
+          <div
+            class="absolute top-[80%] start-0 w-48 bg-white dark:bg-gray-900 rounded-xl shadow-2xl border border-gray-100 dark:border-gray-800 py-2 hidden group-hover:block transition-all"
+            role="menu">
+            <a href="../dashboard/index.html"
+              class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800"
+              role="menuitem">User Dashboard</a>
+            <a href="../admin/index.html"
+              class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800"
+              role="menuitem">Admin Dashboard</a>
           </div>
         </div>
       </div>
@@ -72,23 +100,30 @@
       <!-- Right Actions -->
       <div class="flex items-center gap-4 shrink-0 h-full">
         <!-- RTL/LTR Toggle (Desktop only) -->
-        <button data-dir-toggle class="hidden lg:flex px-3 py-1.5 border border-gray-200 dark:border-gray-700 rounded-lg text-gray-600 dark:text-gray-300 hover:border-amber-500 transition-all items-center justify-center min-w-[50px]" aria-label="Toggle text direction">
+        <button data-dir-toggle
+          class="hidden lg:flex px-3 py-1.5 border border-gray-200 dark:border-gray-700 rounded-lg text-gray-600 dark:text-gray-300 hover:border-amber-500 transition-all items-center justify-center min-w-[50px]"
+          aria-label="Toggle text direction">
           <span class="dir-toggle-text text-[10px] font-bold uppercase tracking-widest">RTL</span>
         </button>
 
         <!-- Dark Mode Toggle (Desktop only) -->
-        <button data-theme-toggle class="hidden lg:flex p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Toggle dark mode">
+        <button data-theme-toggle
+          class="hidden lg:flex p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+          aria-label="Toggle dark mode">
           <i data-lucide="moon" class="w-5 h-5 dark:hidden"></i>
           <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
         </button>
 
         <!-- Client Login -->
-        <a href="../auth/login.html" class="hidden lg:inline-flex items-center gap-2 bg-amber-700 hover:bg-amber-800 text-white text-sm font-bold px-6 py-2.5 rounded-xl transition-all shadow-lg shadow-amber-900/20 active:scale-95">
+        <a href="../auth/login.html"
+          class="hidden lg:inline-flex items-center gap-2 bg-amber-700 hover:bg-amber-800 text-white text-sm font-bold px-6 py-2.5 rounded-xl transition-all shadow-lg shadow-amber-900/20 active:scale-95">
           Client Login
         </a>
 
         <!-- Hamburger (mobile) -->
-        <button id="hamburger-btn" class="lg:hidden p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer">
+        <button id="hamburger-btn"
+          class="lg:hidden p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+          aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer">
           <i data-lucide="menu" class="w-6 h-6"></i>
         </button>
       </div>
@@ -96,49 +131,72 @@
   </nav>
 
   <!-- Mobile Drawer -->
-  <div id="mobile-drawer" class="fixed inset-0 z-[100] translate-x-full rtl:-translate-x-full lg:hidden transition-all duration-300 pointer-events-none" role="dialog" aria-modal="true" aria-label="Mobile navigation">
-    <div class="absolute right-0 rtl:right-auto rtl:left-0 top-0 bottom-0 w-80 bg-white dark:bg-gray-900 shadow-2xl pointer-events-auto overflow-hidden flex flex-col">
+  <div id="mobile-drawer"
+    class="fixed inset-0 z-[100] translate-x-full rtl:-translate-x-full lg:hidden transition-all duration-300 pointer-events-none"
+    role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <div
+      class="absolute right-0 rtl:right-auto rtl:left-0 top-0 bottom-0 w-80 bg-white dark:bg-gray-900 shadow-2xl pointer-events-auto overflow-hidden flex flex-col">
       <!-- Drawer Header -->
       <div class="flex items-center justify-between px-6 py-5 border-b border-gray-100 dark:border-gray-800">
         <div class="flex items-center gap-3">
-          <span class="text-xl font-bold text-gray-900 dark:text-white" style="font-family:'Playfair Display',serif;">Menu</span>
+          <span class="text-xl font-bold text-gray-900 dark:text-white"
+            style="font-family:'Playfair Display',serif;">Menu</span>
         </div>
-        <button id="drawer-close-btn" class="p-2 rounded-lg text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Close menu">
+        <button id="drawer-close-btn"
+          class="p-2 rounded-lg text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+          aria-label="Close menu">
           <i data-lucide="x" class="w-5 h-5"></i>
         </button>
       </div>
 
       <!-- Drawer Nav -->
       <nav class="flex-1 px-4 py-2 overflow-y-auto">
-        
+
         <!-- Home Dropdown -->
         <div class="mb-1">
-          <button id="mob-home-btn" data-accordion-trigger="mob-home-dropdown" aria-expanded="false" class="flex items-center justify-between w-full px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">
+          <button id="mob-home-btn" data-accordion-trigger="mob-home-dropdown" aria-expanded="false"
+            class="flex items-center justify-between w-full px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">
             <span>Home</span>
             <i data-lucide="chevron-down" class="accordion-icon w-4 h-4 transition-transform duration-300"></i>
           </button>
           <div id="mob-home-dropdown" class="hidden pl-8 pr-4 py-1 space-y-1">
-            <a href="../index.html" class="block py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-amber-700 dark:hover:text-amber-400 transition-colors">Home 1</a>
-            <a href="home-2.html" class="block py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-amber-700 dark:hover:text-amber-400 transition-colors">Home 2</a>
+            <a href="../index.html"
+              class="block py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-amber-700 dark:hover:text-amber-400 transition-colors">Home
+              1</a>
+            <a href="home-2.html"
+              class="block py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-amber-700 dark:hover:text-amber-400 transition-colors">Home
+              2</a>
           </div>
         </div>
 
-        <a href="about.html"     class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">About Us</a>
-        <a href="portfolio.html" class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Portfolio</a>
-        <a href="services.html"  class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Services</a>
-        <a href="pricing.html"   class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Pricing</a>
-        <a href="blog.html"      class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Blog</a>
-        <a href="contact.html"   class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Contact</a>
+        <a href="about.html"
+          class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">About
+          Us</a>
+        <a href="portfolio.html"
+          class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Portfolio</a>
+        <a href="services.html"
+          class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Services</a>
+        <a href="pricing.html"
+          class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Pricing</a>
+        <a href="blog.html"
+          class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Blog</a>
+        <a href="contact.html"
+          class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Contact</a>
 
         <!-- Dashboard Dropdown -->
         <div class="mt-1">
-          <button id="mob-dash-btn" data-accordion-trigger="mob-dash-dropdown" aria-expanded="false" class="flex items-center justify-between w-full px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">
+          <button id="mob-dash-btn" data-accordion-trigger="mob-dash-dropdown" aria-expanded="false"
+            class="flex items-center justify-between w-full px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">
             <span>Dashboards</span>
             <i data-lucide="chevron-down" class="accordion-icon w-4 h-4 transition-transform duration-300"></i>
           </button>
           <div id="mob-dash-dropdown" class="hidden pl-8 pr-4 py-1 space-y-1">
-            <a href="../dashboard/index.html" class="block py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-amber-700 dark:hover:text-amber-400 transition-colors">User Dashboard</a>
-            <a href="../admin/index.html" class="block py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-amber-700 dark:hover:text-amber-400 transition-colors">Admin Dashboard</a>
+            <a href="../dashboard/index.html"
+              class="block py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-amber-700 dark:hover:text-amber-400 transition-colors">User
+              Dashboard</a>
+            <a href="../admin/index.html"
+              class="block py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-amber-700 dark:hover:text-amber-400 transition-colors">Admin
+              Dashboard</a>
           </div>
         </div>
 
@@ -148,14 +206,18 @@
         <div class="px-4 space-y-4">
           <div class="flex items-center justify-between">
             <span class="text-xs font-bold uppercase tracking-widest text-gray-400">Appearance</span>
-            <button data-theme-toggle class="p-2 rounded-lg bg-gray-50 dark:bg-gray-800 text-gray-600 dark:text-gray-300 transition-colors" aria-label="Toggle dark mode">
+            <button data-theme-toggle
+              class="p-2 rounded-lg bg-gray-50 dark:bg-gray-800 text-gray-600 dark:text-gray-300 transition-colors"
+              aria-label="Toggle dark mode">
               <i data-lucide="moon" class="w-5 h-5 dark:hidden"></i>
               <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
             </button>
           </div>
           <div class="flex items-center justify-between">
             <span class="text-xs font-bold uppercase tracking-widest text-gray-400">Direction</span>
-            <button data-dir-toggle class="px-3 py-1.5 bg-gray-50 dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-lg text-gray-600 dark:text-gray-300 transition-all flex items-center justify-center min-w-[50px]" aria-label="Toggle text direction">
+            <button data-dir-toggle
+              class="px-3 py-1.5 bg-gray-50 dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-lg text-gray-600 dark:text-gray-300 transition-all flex items-center justify-center min-w-[50px]"
+              aria-label="Toggle text direction">
               <span class="dir-toggle-text text-[10px] font-bold uppercase tracking-widest">RTL</span>
             </button>
           </div>
@@ -164,7 +226,8 @@
 
       <!-- Drawer Footer (CTA) -->
       <div class="px-6 py-6 border-t border-gray-100 dark:border-gray-800">
-        <a href="../auth/login.html" class="flex items-center justify-center w-full bg-amber-700 hover:bg-amber-800 text-white text-sm font-bold px-4 py-4 rounded-xl transition-colors shadow-xl shadow-amber-900/20 active:scale-95">
+        <a href="../auth/login.html"
+          class="flex items-center justify-center w-full bg-amber-700 hover:bg-amber-800 text-white text-sm font-bold px-4 py-4 rounded-xl transition-colors shadow-xl shadow-amber-900/20 active:scale-95">
           Client Login
         </a>
       </div>
@@ -174,46 +237,63 @@
   <main id="main-content">
 
   <!-- Page Hero -->
-  <section class="pt-[72px] bg-gray-50 dark:bg-gray-900/50" aria-label="Page header">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
-      <p class="text-amber-700 dark:text-amber-400 text-sm font-semibold tracking-widest uppercase mb-3">About</p>
-      <h1 class="font-display text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">The story behind the lens</h1>
-      <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">Building a business where corporate photography means something more than just a decent headshot.</p>
+  <section class="relative pt-32 pb-20 bg-gray-50 dark:bg-gray-950 overflow-hidden transition-colors duration-300" aria-label="Page header">
+    <!-- Background Accents -->
+    <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-amber-500/[0.03] dark:from-amber-500/5 to-transparent"></div>
+    <div class="absolute -top-24 -left-24 w-96 h-96 bg-amber-500/[0.05] dark:bg-amber-500/10 rounded-full blur-[120px]"></div>
+    
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left">
+      <div class="max-w-3xl">
+        <p class="text-amber-600 dark:text-amber-500 text-xs font-bold tracking-[0.4em] uppercase mb-6">Established 2012</p>
+        <h1 class="font-display text-5xl sm:text-7xl font-bold text-gray-900 dark:text-white mb-8 leading-[1.1]">
+          The Story Behind <br>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-400 dark:from-amber-200 dark:to-amber-500">The Visual Authority.</span>
+        </h1>
+        <p class="text-xl text-gray-600 dark:text-gray-400 max-w-2xl leading-relaxed">
+          Building a business where corporate photography transcends the generic, delivering precision and power to innovative teams.
+        </p>
+      </div>
     </div>
   </section>
 
   <!-- Photographer Bio -->
-  <section class="py-20 lg:py-28" aria-labelledby="bio-heading">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-2 gap-16 items-center">
-        <div class="relative">
-          <div class="rounded-2xl overflow-hidden shadow-2xl aspect-[4/5] max-w-md mx-auto lg:mx-0">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=700&q=80" alt="Marcus Reid, portrait photographer, standing in his downtown studio" class="w-full h-full object-cover" width="700" height="875" loading="eager">
+  <section class="py-16 bg-white dark:bg-gray-950" aria-labelledby="bio-heading">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid lg:grid-cols-12 gap-16 items-center">
+        <!-- Image Column -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/5] group bg-gray-950/5">
+            <img src="../assets/images/about/marcus-reid.jpg" alt="Marcus Reid, Principal Photographer" class="w-full h-full object-cover transition-all duration-700 scale-105 group-hover:scale-100" width="700" height="875" loading="eager">
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-950/40 dark:from-gray-950/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           </div>
-          <div class="absolute -bottom-6 -end-6 bg-amber-700 text-white rounded-xl px-5 py-4 shadow-xl">
-            <p class="text-3xl font-display font-bold">400+</p>
-            <p class="text-xs font-medium opacity-80 mt-0.5">Corporate clients served</p>
+          <!-- Experience Badge -->
+          <div class="absolute -bottom-8 -right-8 bg-amber-700 text-white rounded-2xl p-6 shadow-2xl border border-white/10 backdrop-blur-sm">
+            <div class="text-4xl font-display font-bold">12+</div>
+            <div class="text-[10px] font-bold uppercase tracking-[0.2em] opacity-80 mt-1">Years of Precision</div>
           </div>
         </div>
-        <div>
-          <h2 id="bio-heading" class="font-display text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-6">Hi, I'm Marcus Reid.</h2>
-          <div class="space-y-4 text-gray-600 dark:text-gray-300 leading-relaxed">
-            <p>I started FramedPro out of a frustration shared by every HR manager I'd ever spoken to: corporate headshot days are completely unnecessarily chaotic. Scheduling nightmares, files delivered weeks late, no clear way to review or download images.</p>
-            <p>So I built a process that actually works. Streamlined shoot days, 48-hour gallery delivery, and a client portal that HR teams can hand off to their whole department without a training manual.</p>
-            <p>Over the past 12 years, I've photographed partners at law firms, executives at hedge funds, doctors at hospital groups, and entire engineering departments at software companies. The work varies; the standard doesn't.</p>
+        <!-- Content Column -->
+        <div class="lg:col-span-7">
+          <div class="inline-block px-3 py-1 rounded-full bg-amber-50 dark:bg-amber-900/20 text-amber-700 dark:text-amber-400 text-[10px] font-bold uppercase tracking-widest mb-6">The Founder</div>
+          <h2 id="bio-heading" class="font-display text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-8">Hi, I'm Marcus Reid.</h2>
+          <div class="space-y-6 text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
+            <p>I founded FramedPro to solve a fundamental problem: corporate photography was stuck in 1995. HR managers were battling archaic scheduling, slow delivery, and unpredictable quality.</p>
+            <p>I spent a decade refining a **workflow-first** approach. Today, we don't just provide headshots; we provide a high-velocity visual engine that helps companies like yours project absolute authority in 48 hours or less.</p>
+            <p>From partners at top-tier law firms to engineering leads at Silicon Valley startups, I've had the privilege of capturing over 8,000 professionals. The scale has changed, but the obsession with the perfect frame remains the same.</p>
           </div>
-          <div class="mt-8 grid grid-cols-3 gap-4">
-            <div class="text-center bg-gray-50 dark:bg-gray-800 rounded-xl p-4">
-              <p class="text-2xl font-display font-bold text-amber-700">12+</p>
-              <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Years experience</p>
+          <!-- Stats Grid -->
+          <div class="mt-12 grid grid-cols-3 gap-6">
+            <div class="bg-gray-50 dark:bg-white/[0.03] border border-gray-100 dark:border-white/5 rounded-2xl p-6 transition-all hover:border-amber-500/30">
+              <p class="text-3xl font-display font-bold text-amber-600">400+</p>
+              <p class="text-[10px] font-bold uppercase tracking-wider text-gray-500 dark:text-gray-500 mt-2">Enterprise Clients</p>
             </div>
-            <div class="text-center bg-gray-50 dark:bg-gray-800 rounded-xl p-4">
-              <p class="text-2xl font-display font-bold text-amber-700">8k+</p>
-              <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Professionals photographed</p>
+            <div class="bg-gray-50 dark:bg-white/[0.03] border border-gray-100 dark:border-white/5 rounded-2xl p-6 transition-all hover:border-amber-500/30">
+              <p class="text-3xl font-display font-bold text-amber-600">8k+</p>
+              <p class="text-[10px] font-bold uppercase tracking-wider text-gray-500 dark:text-gray-500 mt-2">Portraits Shot</p>
             </div>
-            <div class="text-center bg-gray-50 dark:bg-gray-800 rounded-xl p-4">
-              <p class="text-2xl font-display font-bold text-amber-700">48h</p>
-              <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Guaranteed delivery</p>
+            <div class="bg-gray-50 dark:bg-white/[0.03] border border-gray-100 dark:border-white/5 rounded-2xl p-6 transition-all hover:border-amber-500/30">
+              <p class="text-3xl font-display font-bold text-amber-600">48h</p>
+              <p class="text-[10px] font-bold uppercase tracking-wider text-gray-500 dark:text-gray-500 mt-2">Delivery Speed</p>
             </div>
           </div>
         </div>
@@ -222,79 +302,114 @@
   </section>
 
   <!-- Philosophy -->
-  <section class="py-20 bg-gray-50 dark:bg-gray-900/50" aria-labelledby="philosophy-heading">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl mx-auto text-center mb-12">
-        <h2 id="philosophy-heading" class="font-display text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-5">Studio philosophy</h2>
-        <p class="text-gray-600 dark:text-gray-300 leading-relaxed">Three principles that guide every shoot, every delivery, every client interaction.</p>
+  <section class="py-16 bg-gray-50 dark:bg-gray-900/40" aria-labelledby="philosophy-heading">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="max-w-3xl mx-auto text-center mb-8">
+        <h2 id="philosophy-heading" class="font-display text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6">Studio Philosophy</h2>
+        <p class="text-gray-500 dark:text-gray-400 text-lg leading-relaxed">The immutable principles that drive our precision and your team's visual authority.</p>
       </div>
-      <div class="grid sm:grid-cols-3 gap-6">
-        <div class="bg-white dark:bg-gray-800 rounded-2xl p-8">
-          <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-amber-50 dark:bg-amber-900/20 text-amber-700 dark:text-amber-400 mb-6" aria-hidden="true">
-            <i data-lucide="clock" class="w-6 h-6"></i>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="group bg-white dark:bg-gray-900/50 rounded-3xl p-10 border border-gray-100 dark:border-white/5 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
+          <div class="w-14 h-14 flex items-center justify-center rounded-2xl bg-amber-50 dark:bg-amber-500/10 text-amber-700 dark:text-amber-400 mb-8 group-hover:bg-amber-700 group-hover:text-white transition-colors duration-500">
+            <i data-lucide="clock" class="w-7 h-7"></i>
           </div>
-          <h3 class="font-display text-xl font-bold mb-3 text-gray-900 dark:text-white">Speed is a feature</h3>
-          <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">Turnaround time is part of the product. A headshot that arrives in 48 hours is more valuable than a technically perfect one that arrives in two weeks.</p>
+          <h3 class="font-display text-2xl font-bold mb-4 text-gray-900 dark:text-white">Velocity is Vital</h3>
+          <p class="text-gray-500 dark:text-gray-400 leading-relaxed">A headshot that arrives in 48 hours is a tool. One that arrives in two weeks is a liability. We optimize for high-speed precision.</p>
         </div>
-        <div class="bg-white dark:bg-gray-800 rounded-2xl p-8">
-          <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-amber-50 dark:bg-amber-900/20 text-amber-700 dark:text-amber-400 mb-6" aria-hidden="true">
-            <i data-lucide="target" class="w-6 h-6"></i>
+        <!-- Card 2 -->
+        <div class="group bg-white dark:bg-gray-900/50 rounded-3xl p-10 border border-gray-100 dark:border-white/5 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
+          <div class="w-14 h-14 flex items-center justify-center rounded-2xl bg-amber-50 dark:bg-amber-500/10 text-amber-700 dark:text-amber-400 mb-8 group-hover:bg-amber-700 group-hover:text-white transition-colors duration-500">
+            <i data-lucide="target" class="w-7 h-7"></i>
           </div>
-          <h3 class="font-display text-xl font-bold mb-3 text-gray-900 dark:text-white">Precision over volume</h3>
-          <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">We take on a limited number of clients per month. This means consistent quality, consistent availability, and a team that actually knows your account.</p>
+          <h3 class="font-display text-2xl font-bold mb-4 text-gray-900 dark:text-white">Elite Scarcity</h3>
+          <p class="text-gray-500 dark:text-gray-400 leading-relaxed">We maintain a strictly limited client roster. This ensures that when you're on the calendar, you have our absolute, undivided attention.</p>
         </div>
-        <div class="bg-white dark:bg-gray-800 rounded-2xl p-8">
-          <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-amber-50 dark:bg-amber-900/20 text-amber-700 dark:text-amber-400 mb-6" aria-hidden="true">
-            <i data-lucide="users" class="w-6 h-6"></i>
+        <!-- Card 3 -->
+        <div class="group bg-white dark:bg-gray-900/50 rounded-3xl p-10 border border-gray-100 dark:border-white/5 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
+          <div class="w-14 h-14 flex items-center justify-center rounded-2xl bg-amber-50 dark:bg-amber-500/10 text-amber-700 dark:text-amber-400 mb-8 group-hover:bg-amber-700 group-hover:text-white transition-colors duration-500">
+            <i data-lucide="briefcase" class="w-7 h-7"></i>
           </div>
-          <h3 class="font-display text-xl font-bold mb-3 text-gray-900 dark:text-white">HR-first workflow</h3>
-          <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">The portal, the scheduling, the file formats — everything is designed around how HR teams actually work, not around how photographers prefer to deliver.</p>
+          <h3 class="font-display text-2xl font-bold mb-4 text-gray-900 dark:text-white">HR-Centric Logic</h3>
+          <p class="text-gray-500 dark:text-gray-400 leading-relaxed">Our entire platform is built around how enterprise teams operate—frictionless, automated, and impeccably organized.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Equipment -->
-  <section class="py-20 lg:py-28" aria-labelledby="equipment-heading">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 id="equipment-heading" class="font-display text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-8">The kit</h2>
-      <div class="grid sm:grid-cols-2 gap-4">
-        <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-5 flex items-center gap-4">
-          <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-amber-50 dark:bg-amber-900/20 text-amber-700 dark:text-amber-400 shrink-0">
-            <i data-lucide="camera" class="w-5 h-5"></i>
-          </div>
-          <div><p class="font-semibold text-gray-900 dark:text-white">Sony A7 IV Full Frame</p><p class="text-xs text-gray-500">Primary camera body</p></div>
+  <section class="py-16 bg-white dark:bg-gray-950" aria-labelledby="equipment-heading">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex flex-col md:flex-row items-end justify-between mb-8 gap-6">
+        <div class="max-w-2xl">
+          <h2 id="equipment-heading" class="font-display text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6">The Elite Kit</h2>
+          <p class="text-gray-500 dark:text-gray-400 text-lg">We use industry-leading optics and lighting to ensure every frame meets enterprise standards for clarity and color reproduction.</p>
         </div>
-        <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-5 flex items-center gap-4">
-          <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-amber-50 dark:bg-amber-900/20 text-amber-700 dark:text-amber-400 shrink-0">
-            <i data-lucide="telescope" class="w-5 h-5"></i>
-          </div>
-          <div><p class="font-semibold text-gray-900 dark:text-white">85mm f/1.4 G Master</p><p class="text-xs text-gray-500">Portrait prime lens</p></div>
+        <div class="hidden md:block">
+          <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-gray-400">Inventory 2025</span>
         </div>
-        <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-5 flex items-center gap-4">
-          <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-amber-50 dark:bg-amber-900/20 text-amber-700 dark:text-amber-400 shrink-0">
-            <i data-lucide="lightbulb" class="w-5 h-5"></i>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <!-- Item 1 -->
+        <div class="bg-gray-50 dark:bg-white/[0.02] border border-gray-100 dark:border-white/5 rounded-2xl p-8 group transition-all hover:bg-white dark:hover:bg-white/[0.04]">
+          <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-white dark:bg-gray-900 text-amber-600 mb-6 shadow-sm group-hover:scale-110 transition-transform">
+            <i data-lucide="camera" class="w-6 h-6"></i>
           </div>
-          <div><p class="font-semibold text-gray-900 dark:text-white">Profoto B10X Duo Kit</p><p class="text-xs text-gray-500">Studio + on-site lighting</p></div>
+          <h4 class="font-bold text-gray-900 dark:text-white mb-1">Mirrorless Core</h4>
+          <p class="text-xs text-gray-500 uppercase tracking-widest font-semibold">Sony A7 IV Systems</p>
         </div>
-        <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-5 flex items-center gap-4">
-          <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-amber-50 dark:bg-amber-900/20 text-amber-700 dark:text-amber-400 shrink-0">
-            <i data-lucide="monitor" class="w-5 h-5"></i>
+        <!-- Item 2 -->
+        <div class="bg-gray-50 dark:bg-white/[0.02] border border-gray-100 dark:border-white/5 rounded-2xl p-8 group transition-all hover:bg-white dark:hover:bg-white/[0.04]">
+          <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-white dark:bg-gray-900 text-amber-600 mb-6 shadow-sm group-hover:scale-110 transition-transform">
+            <i data-lucide="aperture" class="w-6 h-6"></i>
           </div>
-          <div><p class="font-semibold text-gray-900 dark:text-white">Capture One 23</p><p class="text-xs text-gray-500">Editing & color grading</p></div>
+          <h4 class="font-bold text-gray-900 dark:text-white mb-1">G Master Optics</h4>
+          <p class="text-xs text-gray-500 uppercase tracking-widest font-semibold">85mm & 50mm f/1.2</p>
+        </div>
+        <!-- Item 3 -->
+        <div class="bg-gray-50 dark:bg-white/[0.02] border border-gray-100 dark:border-white/5 rounded-2xl p-8 group transition-all hover:bg-white dark:hover:bg-white/[0.04]">
+          <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-white dark:bg-gray-900 text-amber-600 mb-6 shadow-sm group-hover:scale-110 transition-transform">
+            <i data-lucide="lightbulb" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-bold text-gray-900 dark:text-white mb-1">Profoto B10X</h4>
+          <p class="text-xs text-gray-500 uppercase tracking-widest font-semibold">Studio Grade Lighting</p>
+        </div>
+        <!-- Item 4 -->
+        <div class="bg-gray-50 dark:bg-white/[0.02] border border-gray-100 dark:border-white/5 rounded-2xl p-8 group transition-all hover:bg-white dark:hover:bg-white/[0.04]">
+          <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-white dark:bg-gray-900 text-amber-600 mb-6 shadow-sm group-hover:scale-110 transition-transform">
+            <i data-lucide="layers" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-bold text-gray-900 dark:text-white mb-1">Capture One</h4>
+          <p class="text-xs text-gray-500 uppercase tracking-widest font-semibold">Color Grading Elite</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="py-16 bg-gray-900 dark:bg-gray-950" aria-labelledby="about-cta">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 id="about-cta" class="font-display text-3xl font-bold text-white mb-4">Ready to work together?</h2>
-      <p class="text-gray-400 mb-8">Let's build a headshot workflow your team actually enjoys.</p>
-      <div class="flex flex-wrap gap-4 justify-center">
-        <a href="../pages/contact.html" class="bg-amber-600 hover:bg-amber-500 text-white font-semibold px-6 py-3 rounded-xl transition-all">Request a Quote</a>
-        <a href="../pages/portfolio.html" class="border border-gray-600 text-gray-300 hover:border-amber-400 hover:text-amber-400 font-semibold px-6 py-3 rounded-xl transition-all">View Portfolio</a>
+  <!-- Final CTA -->
+  <section class="py-16 bg-white dark:bg-gray-900" aria-labelledby="cta-heading-about">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="relative bg-gray-900 dark:bg-black/20 rounded-[2.5rem] overflow-hidden p-12 text-center border border-gray-100 dark:border-white/5 shadow-2xl">
+        <!-- Background subtle glow effects -->
+        <div class="absolute -top-24 -right-24 w-80 h-80 bg-amber-500/10 rounded-full blur-[80px]"></div>
+        <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-amber-700/5 rounded-full blur-[80px]"></div>
+        
+        <div class="relative z-10 max-w-2xl mx-auto">
+          <p class="text-amber-500 text-xs font-bold tracking-[0.4em] uppercase mb-6">Ready to work together?</p>
+          <h2 id="cta-heading-about" class="font-display text-4xl sm:text-5xl font-bold text-white mb-8 leading-tight">
+            Build Your Team's <br>
+            <span class="text-amber-200">Visual Legacy.</span>
+          </h2>
+          <p class="text-gray-400 mb-10 text-lg leading-relaxed">Let's craft a headshot workflow thatHR teams love and executives trust. elite quality, guaranteed.</p>
+          <div class="flex flex-wrap items-center justify-center gap-5">
+            <a href="contact.html" class="inline-flex items-center gap-2 bg-amber-700 hover:bg-amber-800 text-white font-bold px-8 py-4 rounded-xl transition-all duration-300 shadow-xl shadow-amber-900/40 active:scale-95 text-sm uppercase tracking-wider">
+              Request a Quote <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+            <a href="portfolio.html" class="inline-flex items-center gap-2 text-white/70 hover:text-white border-b border-white/20 hover:border-white font-bold px-2 py-2 transition-all duration-300 text-xs uppercase tracking-widest ml-2">
+              Explore Our Work
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -303,10 +418,10 @@
   <!-- Footer Section -->
   <footer class="bg-gray-900 border-t border-white/5 text-gray-400 py-3 sm:py-5 lg:py-8">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
+
       <!-- Main Footer Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-y-8 lg:gap-x-12">
-        
+
         <!-- Brand Column -->
         <div class="lg:col-span-4 space-y-6">
           <a href="../index.html" class="flex items-center gap-3 shrink-0 mb-6" aria-label="FramedPro Home">
@@ -316,70 +431,80 @@
             </span>
           </a>
           <p class="text-gray-500 text-sm leading-relaxed max-w-sm">
-            Premium corporate headshots and executive portraits for innovative teams since 2012. Our mission is built on precision, authority, and exceptional visual identity.
+            Premium corporate headshots and executive portraits for innovative teams since 2012. Our mission is built on
+            precision, authority, and exceptional visual identity.
           </p>
           <!-- Social Icons -->
           <div class="flex items-center gap-4 pt-2">
-            <a href="#" class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 hover:bg-amber-500/5 transition-all duration-300" aria-label="Facebook">
+            <a href="#"
+              class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 hover:bg-amber-500/5 transition-all duration-300"
+              aria-label="Facebook">
               <i data-lucide="facebook" class="w-5 h-5"></i>
             </a>
-            <a href="#" class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 hover:bg-amber-500/5 transition-all duration-300" aria-label="Instagram">
+            <a href="#"
+              class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 hover:bg-amber-500/5 transition-all duration-300"
+              aria-label="Instagram">
               <i data-lucide="instagram" class="w-5 h-5"></i>
             </a>
-            <a href="#" class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 hover:bg-amber-500/5 transition-all duration-300" aria-label="Twitter">
+            <a href="#"
+              class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 hover:bg-amber-500/5 transition-all duration-300"
+              aria-label="Twitter">
               <i data-lucide="twitter" class="w-5 h-5"></i>
             </a>
-            <a href="#" class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 hover:bg-amber-500/5 transition-all duration-300" aria-label="LinkedIn">
+            <a href="#"
+              class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 hover:bg-amber-500/5 transition-all duration-300"
+              aria-label="LinkedIn">
               <i data-lucide="linkedin" class="w-5 h-5"></i>
             </a>
           </div>
         </div>
- 
+
         <div class="lg:col-span-2 space-y-6">
           <h4 class="text-white text-xs font-bold uppercase tracking-[.2em]">Quick Links</h4>
           <ul class="space-y-4 text-sm font-medium">
             <li><a href="../index.html" class="text-gray-500 hover:text-white transition-colors">Home</a></li>
             <li><a href="about.html" class="text-gray-500 hover:text-white transition-colors">About Us</a></li>
-            <li><a href="portfolio.html" class="text-gray-500 hover:text-white transition-colors">Portfolio</a></li>
+            <li><a href="portfolio.html" class="text-gray-500 hover:text-white transition-colors">Portfolio</a>
+            </li>
           </ul>
         </div>
- 
+
         <!-- Column 3: Resources -->
         <div class="lg:col-span-2 space-y-6">
           <h4 class="text-white text-xs font-bold uppercase tracking-[.2em]">Resources</h4>
           <ul class="space-y-4 text-sm font-medium">
             <li><a href="services.html" class="text-gray-500 hover:text-white transition-colors">Services</a></li>
             <li><a href="pricing.html" class="text-gray-500 hover:text-white transition-colors">Pricing</a></li>
-            <li><a href="blog.html" class="text-gray-500 hover:text-white transition-colors">Insights & Blog</a></li>
-            <li><a href="contact.html" class="text-gray-500 hover:text-white transition-colors">Book session</a></li>
+            <li><a href="blog.html" class="text-gray-500 hover:text-white transition-colors">Insights & Blog</a>
+            </li>
+            <li><a href="contact.html" class="text-gray-500 hover:text-white transition-colors">Book session</a>
+            </li>
           </ul>
         </div>
- 
+
         <!-- Column 4: Newsletter -->
         <div class="lg:col-span-4 space-y-6">
           <h4 class="text-white text-xs font-bold uppercase tracking-[.2em]">Newsletter</h4>
           <p class="text-gray-500 text-sm leading-relaxed max-w-sm">
             Stay updated with our latest photography tips and industry insights.
           </p>
-          <form action="#" method="POST" class="relative group">
-            <div class="flex items-stretch bg-white/[0.03] border border-white/10 rounded-xl overflow-hidden focus-within:border-amber-600/50 focus-within:bg-white/[0.05] transition-all duration-300">
-              <input 
-                type="email" 
-                placeholder="Email address" 
-                required 
-                class="flex-1 min-w-0 bg-transparent px-5 py-3 text-sm text-white focus:outline-none placeholder:text-gray-600"
-              >
-              <button type="submit" class="bg-amber-700 hover:bg-amber-600 text-white font-bold px-8 text-[10px] uppercase tracking-[0.2em] transition-all">
+          <form action="#" method="POST" class="max-w-sm relative group">
+            <div class="relative flex items-center">
+              <input type="email" placeholder="Email address" required
+                class="w-full bg-white/[0.03] border border-white/10 rounded-full py-3.5 pl-6 pr-28 text-sm text-white focus:outline-none focus:ring-1 focus:ring-amber-600/50 focus:border-amber-600/50 focus:bg-white/[0.05] transition-all duration-300 placeholder:text-gray-600">
+              <button type="submit"
+                class="absolute right-1.5 top-1.5 bottom-1.5 px-6 rounded-full bg-amber-700 hover:bg-amber-600 text-white text-[10px] font-bold uppercase tracking-[0.2em] transition-all">
                 JOIN
               </button>
             </div>
           </form>
         </div>
- 
+
       </div>
- 
+
       <!-- Bottom Bar -->
-      <div class="mt-6 pt-6 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6 text-[10px] font-bold tracking-[.2em] text-gray-600 uppercase">
+      <div
+        class="mt-6 pt-6 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6 text-[10px] font-bold tracking-[.2em] text-gray-600 uppercase">
         <p>© 2025 <span class="text-gray-400">FRAMEDPRO</span>. ALL RIGHTS RESERVED.</p>
         <div class="flex items-center gap-8">
           <a href="#" class="hover:text-white transition-colors">PRIVACY POLICY</a>
@@ -387,7 +512,7 @@
           <a href="#" class="hover:text-white transition-colors">COOKIES</a>
         </div>
       </div>
- 
+
     </div>
   </footer>
 
