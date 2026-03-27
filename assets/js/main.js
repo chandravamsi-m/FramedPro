@@ -49,13 +49,20 @@
   function initNavbar() {
     const navbar = document.getElementById('main-navbar');
     if (!navbar) return;
+    const isDarkInitial = navbar.hasAttribute('data-navbar-dark');
+    
     const onScroll = () => {
       const isScrolled = window.scrollY > 50;
       navbar.classList.toggle('backdrop-blur-md', isScrolled);
+      navbar.classList.toggle('shadow-lg', isScrolled);
       navbar.classList.toggle('bg-white/80', isScrolled);
       navbar.classList.toggle('dark:bg-gray-950/80', isScrolled);
       navbar.classList.toggle('py-3', isScrolled);
       navbar.classList.toggle('py-5', !isScrolled);
+      
+      if (isDarkInitial) {
+        navbar.classList.toggle('is-transparent-dark', !isScrolled);
+      }
     };
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
@@ -180,13 +187,28 @@
     const slides = container.querySelectorAll('.testimonial-slide');
     const dots = container.querySelectorAll('[data-dot]');
     let current = 0;
+
     const show = (i) => {
       current = (i + slides.length) % slides.length;
       if (track) track.style.transform = `translateX(-${current * 100}%)`;
-      dots.forEach((d, idx) => d.classList.toggle('bg-amber-700', idx === current));
+      dots.forEach((d, idx) => {
+        const isCurrent = idx === current;
+        d.classList.toggle('bg-amber-700', isCurrent);
+        d.classList.toggle('w-6', isCurrent);
+        d.classList.toggle('bg-gray-200', !isCurrent);
+        d.classList.toggle('dark:bg-gray-700', !isCurrent);
+        d.classList.toggle('w-2.5', !isCurrent);
+        d.setAttribute('aria-selected', isCurrent);
+      });
     };
+
     container.querySelector('[data-carousel-prev]')?.addEventListener('click', () => show(current - 1));
     container.querySelector('[data-carousel-next]')?.addEventListener('click', () => show(current + 1));
+
+    dots.forEach((dot, idx) => {
+      dot.addEventListener('click', () => show(idx));
+    });
+
     show(0);
   };
 

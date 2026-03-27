@@ -1,33 +1,29 @@
 <!DOCTYPE html>
 <html lang="en" class="">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services & Packages | FramedPro Corporate Photography</title>
-  <meta name="description"
-    content="Corporate headshot services: individual studio sessions, team shoots, and on-site corporate days. Transparent pricing, 48-hour delivery.">
+  <meta name="description" content="Corporate headshot services: individual studio sessions, team shoots, and on-site corporate days. Transparent pricing, 48-hour delivery.">
   <link rel="canonical" href="https://framedpro.com/pages/services.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>tailwind.config = { darkMode: 'class', theme: { extend: { colors: { brand: { 50: '#f9f8f6', 500: '#c9a96e', 900: '#1a1a1a' } }, fontFamily: { display: ['"Playfair Display"', 'serif'], body: ['"Inter"', 'sans-serif'] } } } }</script>
+  <script>tailwind.config={darkMode:'class',theme:{extend:{colors:{brand:{50:'#f9f8f6',500:'#c9a96e',900:'#1a1a1a'}},fontFamily:{display:['"Playfair Display"','serif'],body:['"Inter"','sans-serif']}}}}</script>
   <!-- Icon Libraries -->
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.410.0/dist/umd/lucide.min.js"></script>
 
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-
 <body class="font-body bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 transition-colors duration-300">
-
-  <!-- Navbar Mount -->
-  <nav id="main-navbar" class="navbar-transparent fixed top-0 inset-x-0 z-50 h-20" role="navigation"
-    aria-label="Main navigation">
+  
+  <!-- Navbar -->
+  <nav id="main-navbar" class="navbar-transparent fixed top-0 inset-x-0 z-50 h-20" role="navigation" aria-label="Main navigation">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between gap-4">
 
       <!-- Logo -->
-      <a href="../index.html" class="flex items-center gap-2 shrink-0" aria-label="FramedPro Home">
-        <span class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white"
-          style="font-family:'Playfair Display',serif;">
+      <a href="../index.html" class="flex items-center gap-3 shrink-0" aria-label="FramedPro Home">
+        <img src="../assets/images/logo.svg" alt="" class="w-9 h-9 shrink-0">
+        <span class="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900 dark:text-white" style="font-family:'Playfair Display',serif;">
           Framed<span class="text-amber-600">Pro</span>
         </span>
       </a>
@@ -37,40 +33,25 @@
 
         <!-- Home Dropdown -->
         <div class="relative group h-full flex items-center">
-          <button id="home-dropdown-btn"
+          <button
+            id="home-dropdown-btn"
             class="flex items-center gap-1 px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors"
             aria-haspopup="true" aria-expanded="false">
             Home
-            <i data-lucide="chevron-down"
-              class="w-3.5 h-3.5 opacity-50 group-hover:rotate-180 transition-transform duration-300"></i>
+            <i data-lucide="chevron-down" class="w-3.5 h-3.5 opacity-50 group-hover:rotate-180 transition-transform duration-300"></i>
           </button>
-          <div
-            class="absolute top-[80%] start-0 w-48 bg-white dark:bg-gray-900 rounded-xl shadow-2xl border border-gray-100 dark:border-gray-800 py-2 hidden group-hover:block transition-all"
-            role="menu">
-            <a href="../index.html"
-              class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800"
-              role="menuitem">Home 1</a>
-            <a href="home-2.html"
-              class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800"
-              role="menuitem">Home 2</a>
+          <div class="absolute top-[80%] start-0 w-48 bg-white dark:bg-gray-900 rounded-xl shadow-2xl border border-gray-100 dark:border-gray-800 py-2 hidden group-hover:block transition-all" role="menu">
+            <a href="../index.html" class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800" role="menuitem">Home 1</a>
+            <a href="home-2.html" class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800" role="menuitem">Home 2</a>
           </div>
         </div>
 
-        <div class="h-full flex items-center"><a href="portfolio.html"
-            class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Portfolio</a>
-        </div>
-        <div class="h-full flex items-center"><a href="services.html"
-            class="px-4 py-2 text-sm font-semibold text-amber-700 dark:text-amber-400 rounded-lg transition-colors">Services</a>
-        </div>
-        <div class="h-full flex items-center"><a href="pricing.html"
-            class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Pricing</a>
-        </div>
-        <div class="h-full flex items-center"><a href="blog.html"
-            class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Blog</a>
-        </div>
-        <div class="h-full flex items-center"><a href="contact.html"
-            class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Contact</a>
-        </div>
+        <div class="h-full flex items-center"><a href="about.html" class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">About</a></div>
+        <div class="h-full flex items-center"><a href="portfolio.html" class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Portfolio</a></div>
+        <div class="h-full flex items-center"><a href="services.html"  class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Services</a></div>
+        <div class="h-full flex items-center"><a href="pricing.html"   class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Pricing</a></div>
+        <div class="h-full flex items-center"><a href="blog.html"      class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Blog</a></div>
+        <div class="h-full flex items-center"><a href="contact.html"   class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Contact</a></div>
 
         <!-- Dashboard Dropdown -->
         <div class="relative group h-full flex items-center">
@@ -78,43 +59,35 @@
             class="flex items-center gap-1 px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors"
             aria-haspopup="true" aria-expanded="false">
             Dashboard
-            <i data-lucide="chevron-down"
-              class="w-3.5 h-3.5 opacity-50 group-hover:rotate-180 transition-transform duration-300"></i>
+            <i data-lucide="chevron-down" class="w-3.5 h-3.5 opacity-50 group-hover:rotate-180 transition-transform duration-300"></i>
           </button>
-          <div
-            class="absolute top-[80%] start-0 w-48 bg-white dark:bg-gray-900 rounded-xl shadow-2xl border border-gray-100 dark:border-gray-800 py-2 hidden group-hover:block transition-all"
-            role="menu">
-            <a href="../dashboard/index.html"
-              class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800"
-              role="menuitem">User Dashboard</a>
-            <a href="../admin/index.html"
-              class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800"
-              role="menuitem">Admin Dashboard</a>
+          <div class="absolute top-[80%] start-0 w-48 bg-white dark:bg-gray-900 rounded-xl shadow-2xl border border-gray-100 dark:border-gray-800 py-2 hidden group-hover:block transition-all" role="menu">
+            <a href="../dashboard/index.html" class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800" role="menuitem">User Dashboard</a>
+            <a href="../admin/index.html" class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800" role="menuitem">Admin Dashboard</a>
           </div>
         </div>
       </div>
 
       <!-- Right Actions -->
       <div class="flex items-center gap-4 shrink-0 h-full">
-        <!-- Dark Mode Toggle -->
-        <button data-theme-toggle
-          class="p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-          aria-label="Toggle dark mode">
+        <!-- RTL/LTR Toggle (Desktop only) -->
+        <button data-dir-toggle class="hidden lg:flex px-3 py-1.5 border border-gray-200 dark:border-gray-700 rounded-lg text-gray-600 dark:text-gray-300 hover:border-amber-500 transition-all items-center justify-center min-w-[50px]" aria-label="Toggle text direction">
+          <span class="dir-toggle-text text-[10px] font-bold uppercase tracking-widest">RTL</span>
+        </button>
+
+        <!-- Dark Mode Toggle (Desktop only) -->
+        <button data-theme-toggle class="hidden lg:flex p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Toggle dark mode">
           <i data-lucide="moon" class="w-5 h-5 dark:hidden"></i>
           <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
         </button>
 
         <!-- Client Login -->
-        <a href="../auth/login.html"
-          class="hidden lg:inline-flex items-center gap-2 bg-amber-700 hover:bg-amber-800 text-white text-sm font-bold px-6 py-2.5 rounded-xl transition-all shadow-lg shadow-amber-900/20 active:scale-95">
-          <i data-lucide="user" class="w-4 h-4"></i>
+        <a href="../auth/login.html" class="hidden lg:inline-flex items-center gap-2 bg-amber-700 hover:bg-amber-800 text-white text-sm font-bold px-6 py-2.5 rounded-xl transition-all shadow-lg shadow-amber-900/20 active:scale-95">
           Client Login
         </a>
 
         <!-- Hamburger (mobile) -->
-        <button id="hamburger-btn"
-          class="lg:hidden p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-          aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer">
+        <button id="hamburger-btn" class="lg:hidden p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer">
           <i data-lucide="menu" class="w-6 h-6"></i>
         </button>
       </div>
@@ -122,61 +95,75 @@
   </nav>
 
   <!-- Mobile Drawer -->
-  <div id="mobile-drawer"
-    class="fixed inset-0 z-[100] translate-x-full lg:hidden transition-transform duration-300 pointer-events-none"
-    role="dialog" aria-modal="true" aria-label="Mobile navigation">
-    <div id="drawer-overlay"
-      class="absolute inset-0 bg-black/50 opacity-0 transition-opacity hidden pointer-events-auto" aria-hidden="true">
-    </div>
-    <div
-      class="absolute right-0 top-0 bottom-0 w-80 bg-white dark:bg-gray-900 shadow-2xl pointer-events-auto overflow-hidden flex flex-col">
+  <div id="mobile-drawer" class="fixed inset-0 z-[100] translate-x-full rtl:-translate-x-full lg:hidden transition-all duration-300 pointer-events-none" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <div class="absolute right-0 rtl:right-auto rtl:left-0 top-0 bottom-0 w-80 bg-white dark:bg-gray-900 shadow-2xl pointer-events-auto overflow-hidden flex flex-col">
       <!-- Drawer Header -->
       <div class="flex items-center justify-between px-6 py-5 border-b border-gray-100 dark:border-gray-800">
-        <span class="text-xl font-bold text-gray-900 dark:text-white"
-          style="font-family:'Playfair Display',serif;">Framed<span class="text-amber-600">Pro</span></span>
-        <button id="drawer-close-btn"
-          class="p-2 rounded-lg text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-          aria-label="Close menu">
+        <div class="flex items-center gap-3">
+          <span class="text-xl font-bold text-gray-900 dark:text-white" style="font-family:'Playfair Display',serif;">Menu</span>
+        </div>
+        <button id="drawer-close-btn" class="p-2 rounded-lg text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Close menu">
           <i data-lucide="x" class="w-5 h-5"></i>
         </button>
       </div>
 
       <!-- Drawer Nav -->
-      <nav class="flex-1 px-4 py-4 overflow-y-auto">
-        <p class="px-4 text-[11px] font-bold tracking-[.2em] text-gray-400 uppercase mb-3">Home</p>
-        <a href="../index.html"
-          class="flex items-center gap-3 px-4 py-3.5 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Home
-          1</a>
-        <a href="home-2.html"
-          class="flex items-center gap-3 px-4 py-3.5 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Home
-          2</a>
+      <nav class="flex-1 px-4 py-2 overflow-y-auto">
+        
+        <!-- Home Dropdown -->
+        <div class="mb-1">
+          <button id="mob-home-btn" data-accordion-trigger="mob-home-dropdown" aria-expanded="false" class="flex items-center justify-between w-full px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">
+            <span>Home</span>
+            <i data-lucide="chevron-down" class="accordion-icon w-4 h-4 transition-transform duration-300"></i>
+          </button>
+          <div id="mob-home-dropdown" class="hidden pl-8 pr-4 py-1 space-y-1">
+            <a href="../index.html" class="block py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-amber-700 dark:hover:text-amber-400 transition-colors">Home 1</a>
+            <a href="home-2.html" class="block py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-amber-700 dark:hover:text-amber-400 transition-colors">Home 2</a>
+          </div>
+        </div>
 
-        <p class="px-4 text-[11px] font-bold tracking-[.2em] text-gray-400 uppercase mt-6 mb-3">Explore</p>
-        <a href="portfolio.html"
-          class="flex items-center gap-3 px-4 py-3.5 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Portfolio</a>
-        <a href="services.html"
-          class="flex items-center gap-3 px-4 py-3.5 text-sm font-semibold text-amber-700 dark:text-amber-400 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Services</a>
-        <a href="pricing.html"
-          class="flex items-center gap-3 px-4 py-3.5 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Pricing</a>
-        <a href="blog.html"
-          class="flex items-center gap-3 px-4 py-3.5 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Blog</a>
-        <a href="contact.html"
-          class="flex items-center gap-3 px-4 py-3.5 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Contact</a>
+        <a href="about.html"     class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">About Us</a>
+        <a href="portfolio.html" class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Portfolio</a>
+        <a href="services.html"  class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Services</a>
+        <a href="pricing.html"   class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Pricing</a>
+        <a href="blog.html"      class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Blog</a>
+        <a href="contact.html"   class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Contact</a>
 
-        <p class="px-4 text-[11px] font-bold tracking-[.2em] text-gray-400 uppercase mt-6 mb-3">Dashboards</p>
-        <a href="../dashboard/index.html"
-          class="flex items-center gap-3 px-4 py-3.5 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">User
-          Dashboard</a>
-        <a href="../admin/index.html"
-          class="flex items-center gap-3 px-4 py-3.5 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Admin
-          Dashboard</a>
+        <!-- Dashboard Dropdown -->
+        <div class="mt-1">
+          <button id="mob-dash-btn" data-accordion-trigger="mob-dash-dropdown" aria-expanded="false" class="flex items-center justify-between w-full px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">
+            <span>Dashboards</span>
+            <i data-lucide="chevron-down" class="accordion-icon w-4 h-4 transition-transform duration-300"></i>
+          </button>
+          <div id="mob-dash-dropdown" class="hidden pl-8 pr-4 py-1 space-y-1">
+            <a href="../dashboard/index.html" class="block py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-amber-700 dark:hover:text-amber-400 transition-colors">User Dashboard</a>
+            <a href="../admin/index.html" class="block py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-amber-700 dark:hover:text-amber-400 transition-colors">Admin Dashboard</a>
+          </div>
+        </div>
+
+        <hr class="my-6 border-gray-100 dark:border-gray-800 mx-4">
+
+        <!-- Mobile Toggles -->
+        <div class="px-4 space-y-4">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase tracking-widest text-gray-400">Appearance</span>
+            <button data-theme-toggle class="p-2 rounded-lg bg-gray-50 dark:bg-gray-800 text-gray-600 dark:text-gray-300 transition-colors" aria-label="Toggle dark mode">
+              <i data-lucide="moon" class="w-5 h-5 dark:hidden"></i>
+              <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
+            </button>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase tracking-widest text-gray-400">Direction</span>
+            <button data-dir-toggle class="px-3 py-1.5 bg-gray-50 dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-lg text-gray-600 dark:text-gray-300 transition-all flex items-center justify-center min-w-[50px]" aria-label="Toggle text direction">
+              <span class="dir-toggle-text text-[10px] font-bold uppercase tracking-widest">RTL</span>
+            </button>
+          </div>
+        </div>
       </nav>
 
-      <!-- Drawer Footer -->
+      <!-- Drawer Footer (CTA) -->
       <div class="px-6 py-6 border-t border-gray-100 dark:border-gray-800">
-        <a href="../auth/login.html"
-          class="flex items-center justify-center w-full bg-amber-700 hover:bg-amber-800 text-white text-sm font-bold px-4 py-4 rounded-xl transition-colors shadow-xl shadow-amber-900/20">
-          <i data-lucide="user" class="w-4 h-4 mr-2"></i>
+        <a href="../auth/login.html" class="flex items-center justify-center w-full bg-amber-700 hover:bg-amber-800 text-white text-sm font-bold px-4 py-4 rounded-xl transition-colors shadow-xl shadow-amber-900/20 active:scale-95">
           Client Login
         </a>
       </div>
@@ -184,287 +171,218 @@
   </div>
   <main id="main-content">
 
-    <!-- Hero -->
-    <section class="pt-[72px] bg-gray-50 dark:bg-gray-900/50" aria-label="Page header">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
-        <p class="text-amber-700 dark:text-amber-400 text-sm font-semibold tracking-widest uppercase mb-3">What We Offer
-        </p>
-        <h1 class="font-display text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">Services designed for
-          corporate teams</h1>
-        <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">Three service models — pick what fits your
-          team size, timeline, and budget.</p>
-      </div>
-    </section>
+  <!-- Hero -->
+  <section class="pt-[72px] bg-gray-50 dark:bg-gray-900/50" aria-label="Page header">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+      <p class="text-amber-700 dark:text-amber-400 text-sm font-semibold tracking-widest uppercase mb-3">What We Offer</p>
+      <h1 class="font-display text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">Services designed for corporate teams</h1>
+      <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">Three service models — pick what fits your team size, timeline, and budget.</p>
+    </div>
+  </section>
 
-    <!-- Service 1: Individual -->
-    <section class="py-20 lg:py-28" aria-labelledby="service-individual">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid lg:grid-cols-2 gap-16 items-center">
-          <div>
-            <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=700&q=80"
-              alt="Studio photography setup with professional lighting for individual executive session"
-              class="rounded-2xl shadow-xl w-full aspect-[4/3] object-cover" width="700" height="525" loading="eager">
-          </div>
-          <div>
-            <span
-              class="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-amber-50 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300 border border-amber-100 dark:border-amber-800 mb-4">Individual
-              Sessions</span>
-            <h2 id="service-individual"
-              class="font-display text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-5">Studio Individual
-              Session</h2>
-            <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">Controlled studio lighting, your choice of
-              backdrop (white, gray, or charcoal), and a relaxed 60-minute session designed to bring out your authentic
-              professional presence.</p>
-            <ul class="space-y-3 mb-8">
-              <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300"><i data-lucide="check"
-                  class="w-4 h-4 text-amber-600 shrink-0"></i> 60-minute studio session</li>
-              <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300"><i data-lucide="check"
-                  class="w-4 h-4 text-amber-600 shrink-0"></i> Multiple outfit changes welcome</li>
-              <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300"><i data-lucide="check"
-                  class="w-4 h-4 text-amber-600 shrink-0"></i> 10 fully retouched images</li>
-              <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300"><i data-lucide="check"
-                  class="w-4 h-4 text-amber-600 shrink-0"></i> Web + print + LinkedIn formats</li>
-              <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300"><i data-lucide="check"
-                  class="w-4 h-4 text-amber-600 shrink-0"></i> 48-hour gallery delivery</li>
-              <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300"><i data-lucide="check"
-                  class="w-4 h-4 text-amber-600 shrink-0"></i> Client portal access for proofing + download</li>
-            </ul>
-            <div class="flex items-center gap-4">
-              <div><span class="text-3xl font-display font-bold text-gray-900 dark:text-white">$350</span><span
-                  class="text-sm text-gray-400">/session</span></div>
-              <a href="../pages/contact.html"
-                class="bg-amber-700 hover:bg-amber-800 text-white font-semibold px-5 py-2.5 rounded-xl transition-all text-sm">Book
-                Now</a>
-            </div>
+  <!-- Service 1: Individual -->
+  <section class="py-20 lg:py-28" aria-labelledby="service-individual">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=700&q=80" alt="Studio photography setup with professional lighting for individual executive session" class="rounded-2xl shadow-xl w-full aspect-[4/3] object-cover" width="700" height="525" loading="eager">
+        </div>
+        <div>
+          <span class="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-amber-50 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300 border border-amber-100 dark:border-amber-800 mb-4">Individual Sessions</span>
+          <h2 id="service-individual" class="font-display text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-5">Studio Individual Session</h2>
+          <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">Controlled studio lighting, your choice of backdrop (white, gray, or charcoal), and a relaxed 60-minute session designed to bring out your authentic professional presence.</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300"><i data-lucide="check" class="w-4 h-4 text-amber-600 shrink-0"></i> 60-minute studio session</li>
+            <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300"><i data-lucide="check" class="w-4 h-4 text-amber-600 shrink-0"></i> Multiple outfit changes welcome</li>
+            <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300"><i data-lucide="check" class="w-4 h-4 text-amber-600 shrink-0"></i> 10 fully retouched images</li>
+            <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300"><i data-lucide="check" class="w-4 h-4 text-amber-600 shrink-0"></i> Web + print + LinkedIn formats</li>
+            <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300"><i data-lucide="check" class="w-4 h-4 text-amber-600 shrink-0"></i> 48-hour gallery delivery</li>
+            <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300"><i data-lucide="check" class="w-4 h-4 text-amber-600 shrink-0"></i> Client portal access for proofing + download</li>
+          </ul>
+          <div class="flex items-center gap-4">
+            <div><span class="text-3xl font-display font-bold text-gray-900 dark:text-white">$350</span><span class="text-sm text-gray-400">/session</span></div>
+            <a href="../pages/contact.html" class="bg-amber-700 hover:bg-amber-800 text-white font-semibold px-5 py-2.5 rounded-xl transition-all text-sm">Book Now</a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Service 2: Team -->
-    <section class="py-20 lg:py-28 bg-gray-50 dark:bg-gray-900/50" aria-labelledby="service-team">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid lg:grid-cols-2 gap-16 items-center">
-          <div class="order-2 lg:order-1">
-            <span
-              class="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-blue-50 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300 border border-blue-100 dark:border-blue-800 mb-4">Team
-              Shoots</span>
-            <h2 id="service-team"
-              class="font-display text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-5">Team Shoot Package
-            </h2>
-            <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">For departments of 5–30 people. Efficient
-              session management, consistent lighting setup for visual cohesion across your entire team's photos.</p>
-            <ul class="space-y-3 mb-8">
-              <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300"><i data-lucide="check"
-                  class="w-4 h-4 text-amber-600 shrink-0"></i> 4–8 minutes per person</li>
-              <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300"><i data-lucide="check"
-                  class="w-4 h-4 text-amber-600 shrink-0"></i> On-site or studio options</li>
-              <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300"><i data-lucide="check"
-                  class="w-4 h-4 text-amber-600 shrink-0"></i> 5 retouched images per person</li>
-              <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300"><i data-lucide="check"
-                  class="w-4 h-4 text-amber-600 shrink-0"></i> Consistent lighting style across the team</li>
-              <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300"><i data-lucide="check"
-                  class="w-4 h-4 text-amber-600 shrink-0"></i> 48-hour team gallery delivery</li>
-              <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300"><i data-lucide="check"
-                  class="w-4 h-4 text-amber-600 shrink-0"></i> HR bulk download controls</li>
-            </ul>
-            <div class="flex items-center gap-4">
-              <div><span class="text-3xl font-display font-bold text-gray-900 dark:text-white">$85</span><span
-                  class="text-sm text-gray-400">/person (min. 5 people)</span></div>
-              <a href="../pages/contact.html"
-                class="bg-amber-700 hover:bg-amber-800 text-white font-semibold px-5 py-2.5 rounded-xl transition-all text-sm">Get
-                a Quote</a>
-            </div>
-          </div>
-          <div class="order-1 lg:order-2">
-            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=700&q=80"
-              alt="Professional team photography session in corporate office with multiple employees queuing"
-              class="rounded-2xl shadow-xl w-full aspect-[4/3] object-cover" width="700" height="525" loading="lazy">
+  <!-- Service 2: Team -->
+  <section class="py-20 lg:py-28 bg-gray-50 dark:bg-gray-900/50" aria-labelledby="service-team">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="order-2 lg:order-1">
+          <span class="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-blue-50 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300 border border-blue-100 dark:border-blue-800 mb-4">Team Shoots</span>
+          <h2 id="service-team" class="font-display text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-5">Team Shoot Package</h2>
+          <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">For departments of 5–30 people. Efficient session management, consistent lighting setup for visual cohesion across your entire team's photos.</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300"><i data-lucide="check" class="w-4 h-4 text-amber-600 shrink-0"></i> 4–8 minutes per person</li>
+            <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300"><i data-lucide="check" class="w-4 h-4 text-amber-600 shrink-0"></i> On-site or studio options</li>
+            <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300"><i data-lucide="check" class="w-4 h-4 text-amber-600 shrink-0"></i> 5 retouched images per person</li>
+            <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300"><i data-lucide="check" class="w-4 h-4 text-amber-600 shrink-0"></i> Consistent lighting style across the team</li>
+            <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300"><i data-lucide="check" class="w-4 h-4 text-amber-600 shrink-0"></i> 48-hour team gallery delivery</li>
+            <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300"><i data-lucide="check" class="w-4 h-4 text-amber-600 shrink-0"></i> HR bulk download controls</li>
+          </ul>
+          <div class="flex items-center gap-4">
+            <div><span class="text-3xl font-display font-bold text-gray-900 dark:text-white">$85</span><span class="text-sm text-gray-400">/person (min. 5 people)</span></div>
+            <a href="../pages/contact.html" class="bg-amber-700 hover:bg-amber-800 text-white font-semibold px-5 py-2.5 rounded-xl transition-all text-sm">Get a Quote</a>
           </div>
         </div>
+        <div class="order-1 lg:order-2">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=700&q=80" alt="Professional team photography session in corporate office with multiple employees queuing" class="rounded-2xl shadow-xl w-full aspect-[4/3] object-cover" width="700" height="525" loading="lazy">
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Service 3: Enterprise -->
-    <section class="py-20 lg:py-28" aria-labelledby="service-enterprise">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid lg:grid-cols-2 gap-16 items-center">
+  <!-- Service 3: Enterprise -->
+  <section class="py-20 lg:py-28" aria-labelledby="service-enterprise">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=700&q=80" alt="Large corporate office floor with employees working" class="rounded-2xl shadow-xl w-full aspect-[4/3] object-cover" width="700" height="525" loading="lazy">
+        </div>
+        <div>
+          <span class="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-green-50 text-green-700 dark:bg-green-900/40 dark:text-green-300 border border-green-100 dark:border-green-800 mb-4">Enterprise</span>
+          <h2 id="service-enterprise" class="font-display text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-5">Enterprise Annual Contract</h2>
+          <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">For organizations with ongoing photography needs. Dedicated account management, priority scheduling, and a single annual contract covering all departments and offices.</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300"><i data-lucide="check" class="w-4 h-4 text-amber-600 shrink-0"></i> Everything in Team package</li>
+            <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300"><i data-lucide="check" class="w-4 h-4 text-amber-600 shrink-0"></i> Dedicated account manager</li>
+            <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300"><i data-lucide="check" class="w-4 h-4 text-amber-600 shrink-0"></i> Priority scheduling — same week availability</li>
+            <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300"><i data-lucide="check" class="w-4 h-4 text-amber-600 shrink-0"></i> Annual refresh shoots included</li>
+            <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300"><i data-lucide="check" class="w-4 h-4 text-amber-600 shrink-0"></i> Volume discounts at 50+ people</li>
+            <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300"><i data-lucide="check" class="w-4 h-4 text-amber-600 shrink-0"></i> 10 per person retouched images</li>
+          </ul>
           <div>
-            <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=700&q=80"
-              alt="Large corporate office floor with employees working"
-              class="rounded-2xl shadow-xl w-full aspect-[4/3] object-cover" width="700" height="525" loading="lazy">
-          </div>
-          <div>
-            <span
-              class="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-green-50 text-green-700 dark:bg-green-900/40 dark:text-green-300 border border-green-100 dark:border-green-800 mb-4">Enterprise</span>
-            <h2 id="service-enterprise"
-              class="font-display text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-5">Enterprise Annual
-              Contract</h2>
-            <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">For organizations with ongoing photography
-              needs. Dedicated account management, priority scheduling, and a single annual contract covering all
-              departments and offices.</p>
-            <ul class="space-y-3 mb-8">
-              <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300"><i data-lucide="check"
-                  class="w-4 h-4 text-amber-600 shrink-0"></i> Everything in Team package</li>
-              <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300"><i data-lucide="check"
-                  class="w-4 h-4 text-amber-600 shrink-0"></i> Dedicated account manager</li>
-              <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300"><i data-lucide="check"
-                  class="w-4 h-4 text-amber-600 shrink-0"></i> Priority scheduling — same week availability</li>
-              <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300"><i data-lucide="check"
-                  class="w-4 h-4 text-amber-600 shrink-0"></i> Annual refresh shoots included</li>
-              <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300"><i data-lucide="check"
-                  class="w-4 h-4 text-amber-600 shrink-0"></i> Volume discounts at 50+ people</li>
-              <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300"><i data-lucide="check"
-                  class="w-4 h-4 text-amber-600 shrink-0"></i> 10 per person retouched images</li>
-            </ul>
-            <div>
-              <p class="text-sm text-gray-500 mb-3">Pricing on application — typically <strong
-                  class="text-gray-900 dark:text-white">$55–75/person</strong> for 50+ volume</p>
-              <a href="../pages/contact.html"
-                class="inline-block bg-amber-700 hover:bg-amber-800 text-white font-semibold px-5 py-2.5 rounded-xl transition-all text-sm">Request
-                Enterprise Proposal</a>
-            </div>
+            <p class="text-sm text-gray-500 mb-3">Pricing on application — typically <strong class="text-gray-900 dark:text-white">$55–75/person</strong> for 50+ volume</p>
+            <a href="../pages/contact.html" class="inline-block bg-amber-700 hover:bg-amber-800 text-white font-semibold px-5 py-2.5 rounded-xl transition-all text-sm">Request Enterprise Proposal</a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Add-ons -->
-    <section class="py-16 bg-gray-50 dark:bg-gray-900/50" aria-labelledby="addons-heading">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 id="addons-heading" class="font-display text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
-          Available add-ons</h2>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          <div class="bg-white dark:bg-gray-800 rounded-xl p-5 text-center border border-gray-100 dark:border-gray-700">
-            <p class="text-2xl mb-2" aria-hidden="true">🎨</p>
-            <p class="font-semibold text-gray-900 dark:text-white text-sm">Background Removal</p>
-            <p class="text-xs text-gray-500 mt-1">$5/image</p>
-          </div>
-          <div class="bg-white dark:bg-gray-800 rounded-xl p-5 text-center border border-gray-100 dark:border-gray-700">
-            <p class="text-2xl mb-2" aria-hidden="true">📺</p>
-            <p class="font-semibold text-gray-900 dark:text-white text-sm">Video Headshot</p>
-            <p class="text-xs text-gray-500 mt-1">From $150/person</p>
-          </div>
-          <div class="bg-white dark:bg-gray-800 rounded-xl p-5 text-center border border-gray-100 dark:border-gray-700">
-            <p class="text-2xl mb-2" aria-hidden="true">🖨</p>
-            <p class="font-semibold text-gray-900 dark:text-white text-sm">Print Order Rush</p>
-            <p class="text-xs text-gray-500 mt-1">2-day print delivery</p>
-          </div>
-          <div class="bg-white dark:bg-gray-800 rounded-xl p-5 text-center border border-gray-100 dark:border-gray-700">
-            <p class="text-2xl mb-2" aria-hidden="true">📐</p>
-            <p class="font-semibold text-gray-900 dark:text-white text-sm">Extra Retouch Round</p>
-            <p class="text-xs text-gray-500 mt-1">$25/image</p>
-          </div>
+  <!-- Add-ons -->
+  <section class="py-16 bg-gray-50 dark:bg-gray-900/50" aria-labelledby="addons-heading">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 id="addons-heading" class="font-display text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">Available add-ons</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="bg-white dark:bg-gray-800 rounded-xl p-5 text-center border border-gray-100 dark:border-gray-700">
+          <p class="text-2xl mb-2" aria-hidden="true">🎨</p>
+          <p class="font-semibold text-gray-900 dark:text-white text-sm">Background Removal</p>
+          <p class="text-xs text-gray-500 mt-1">$5/image</p>
+        </div>
+        <div class="bg-white dark:bg-gray-800 rounded-xl p-5 text-center border border-gray-100 dark:border-gray-700">
+          <p class="text-2xl mb-2" aria-hidden="true">📺</p>
+          <p class="font-semibold text-gray-900 dark:text-white text-sm">Video Headshot</p>
+          <p class="text-xs text-gray-500 mt-1">From $150/person</p>
+        </div>
+        <div class="bg-white dark:bg-gray-800 rounded-xl p-5 text-center border border-gray-100 dark:border-gray-700">
+          <p class="text-2xl mb-2" aria-hidden="true">🖨</p>
+          <p class="font-semibold text-gray-900 dark:text-white text-sm">Print Order Rush</p>
+          <p class="text-xs text-gray-500 mt-1">2-day print delivery</p>
+        </div>
+        <div class="bg-white dark:bg-gray-800 rounded-xl p-5 text-center border border-gray-100 dark:border-gray-700">
+          <p class="text-2xl mb-2" aria-hidden="true">📐</p>
+          <p class="font-semibold text-gray-900 dark:text-white text-sm">Extra Retouch Round</p>
+          <p class="text-xs text-gray-500 mt-1">$25/image</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- CTA -->
-    <section class="py-16 bg-gray-900 dark:bg-gray-950" aria-labelledby="services-cta">
-      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 id="services-cta" class="font-display text-3xl font-bold text-white mb-4">Not sure which package is right?
-        </h2>
-        <p class="text-gray-400 mb-8">Tell us about your team and we'll recommend the right option. No obligation to
-          book.</p>
-        <a href="../pages/contact.html"
-          class="inline-block bg-amber-600 hover:bg-amber-500 text-white font-bold px-7 py-3.5 rounded-xl transition-all">Get
-          in Touch</a>
-      </div>
-    </section>
+  <!-- CTA -->
+  <section class="py-16 bg-gray-900 dark:bg-gray-950" aria-labelledby="services-cta">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 id="services-cta" class="font-display text-3xl font-bold text-white mb-4">Not sure which package is right?</h2>
+      <p class="text-gray-400 mb-8">Tell us about your team and we'll recommend the right option. No obligation to book.</p>
+      <a href="../pages/contact.html" class="inline-block bg-amber-600 hover:bg-amber-500 text-white font-bold px-7 py-3.5 rounded-xl transition-all">Get in Touch</a>
+    </div>
+  </section>
 
   </main>
-  <!-- Footer Mount -->
-  <footer class="bg-gray-900 border-t border-white/5 text-gray-400 py-8 lg:py-12">
+  <!-- Footer Section -->
+  <footer class="bg-gray-900 border-t border-white/5 text-gray-400 py-3 sm:py-5 lg:py-8">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
+      
       <!-- Main Footer Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-16 pb-8">
-
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-y-8 lg:gap-x-12">
+        
         <!-- Brand Column -->
-        <div class="space-y-5">
-          <a href="../index.html" class="inline-block" aria-label="FramedPro Home">
-            <span class="text-3xl font-bold text-white tracking-tight" style="font-family:'Playfair Display',serif;">
+        <div class="lg:col-span-4 space-y-6">
+          <a href="../index.html" class="flex items-center gap-3 shrink-0 mb-6" aria-label="FramedPro Home">
+            <img src="../assets/images/logo.svg" alt="" class="w-10 h-10 shrink-0">
+            <span class="text-3xl font-display font-bold text-white tracking-tight">
               Framed<span class="text-amber-500">Pro</span>
             </span>
           </a>
-          <p class="text-gray-500 text-sm leading-relaxed pr-4">
-            Premium corporate headshots and executive portraits for innovative teams since 2012. Our mission is built on
-            precision, authority, and exceptional visual identity.
+          <p class="text-gray-500 text-sm leading-relaxed max-w-sm">
+            Premium corporate headshots and executive portraits for innovative teams since 2012. Our mission is built on precision, authority, and exceptional visual identity.
           </p>
           <!-- Social Icons -->
-          <div class="flex items-center gap-3">
-            <a href="#"
-              class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 transition-all duration-300"
-              aria-label="Facebook">
-              <i data-lucide="facebook" class="w-4 h-4"></i>
+          <div class="flex items-center gap-4 pt-2">
+            <a href="#" class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 hover:bg-amber-500/5 transition-all duration-300" aria-label="Facebook">
+              <i data-lucide="facebook" class="w-5 h-5"></i>
             </a>
-            <a href="#"
-              class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 transition-all duration-300"
-              aria-label="Instagram">
-              <i data-lucide="instagram" class="w-4 h-4"></i>
+            <a href="#" class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 hover:bg-amber-500/5 transition-all duration-300" aria-label="Instagram">
+              <i data-lucide="instagram" class="w-5 h-5"></i>
             </a>
-            <a href="#"
-              class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 transition-all duration-300"
-              aria-label="Twitter">
-              <i data-lucide="twitter" class="w-4 h-4"></i>
+            <a href="#" class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 hover:bg-amber-500/5 transition-all duration-300" aria-label="Twitter">
+              <i data-lucide="twitter" class="w-5 h-5"></i>
             </a>
-            <a href="#"
-              class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 transition-all duration-300"
-              aria-label="LinkedIn">
-              <i data-lucide="linkedin" class="w-4 h-4"></i>
+            <a href="#" class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 hover:bg-amber-500/5 transition-all duration-300" aria-label="LinkedIn">
+              <i data-lucide="linkedin" class="w-5 h-5"></i>
             </a>
           </div>
         </div>
-
-        <!-- Column 2: Quick Links -->
-        <div class="space-y-5 lg:pl-4">
-          <h4 class="text-white text-[10px] font-bold uppercase tracking-[.3em]">Quick Links</h4>
-          <ul class="space-y-3 text-sm font-semibold">
+ 
+        <div class="lg:col-span-2 space-y-6">
+          <h4 class="text-white text-xs font-bold uppercase tracking-[.2em]">Quick Links</h4>
+          <ul class="space-y-4 text-sm font-medium">
             <li><a href="../index.html" class="text-gray-500 hover:text-white transition-colors">Home</a></li>
             <li><a href="about.html" class="text-gray-500 hover:text-white transition-colors">About Us</a></li>
             <li><a href="portfolio.html" class="text-gray-500 hover:text-white transition-colors">Portfolio</a></li>
-            <li><a href="pricing.html" class="text-gray-500 hover:text-white transition-colors">Pricing</a></li>
-            <li><a href="services.html" class="text-white transition-colors">Services</a></li>
           </ul>
         </div>
-
+ 
         <!-- Column 3: Resources -->
-        <div class="space-y-5 lg:pl-4">
-          <h4 class="text-white text-[10px] font-bold uppercase tracking-[.3em]">Resources</h4>
-          <ul class="space-y-3 text-sm font-semibold">
+        <div class="lg:col-span-2 space-y-6">
+          <h4 class="text-white text-xs font-bold uppercase tracking-[.2em]">Resources</h4>
+          <ul class="space-y-4 text-sm font-medium">
+            <li><a href="services.html" class="text-gray-500 hover:text-white transition-colors">Services</a></li>
+            <li><a href="pricing.html" class="text-gray-500 hover:text-white transition-colors">Pricing</a></li>
             <li><a href="blog.html" class="text-gray-500 hover:text-white transition-colors">Insights & Blog</a></li>
-            <li><a href="../auth/login.html" class="text-gray-500 hover:text-white transition-colors">Client Portal</a>
-            </li>
-            <li><a href="#" class="text-gray-500 hover:text-white transition-colors">Wardrobe Guide</a></li>
-            <li><a href="contact.html" class="text-amber-500 hover:text-amber-400 transition-colors">Book session</a>
-            </li>
+            <li><a href="contact.html" class="text-gray-500 hover:text-white transition-colors">Book session</a></li>
           </ul>
         </div>
-
+ 
         <!-- Column 4: Newsletter -->
-        <div class="space-y-5">
-          <h4 class="text-white text-[10px] font-bold uppercase tracking-[.3em]">Newsletter</h4>
-          <p class="text-gray-500 text-sm leading-relaxed">
+        <div class="lg:col-span-4 space-y-6">
+          <h4 class="text-white text-xs font-bold uppercase tracking-[.2em]">Newsletter</h4>
+          <p class="text-gray-500 text-sm leading-relaxed max-w-sm">
             Stay updated with our latest photography tips and industry insights.
           </p>
-          <form action="#" method="POST" class="relative">
-            <div
-              class="flex items-center bg-white/[0.03] border border-white/10 rounded-lg overflow-hidden focus-within:border-amber-600 focus-within:ring-1 focus-within:ring-amber-600/50 transition-all duration-300 h-10">
-              <input type="email" placeholder="Email address" required
-                class="flex-1 min-w-0 bg-transparent px-4 text-xs text-white focus:outline-none placeholder:text-gray-600">
-              <button type="submit"
-                class="shrink-0 h-full bg-amber-700 hover:bg-amber-800 text-white font-bold px-6 text-[10px] uppercase tracking-[0.2em] transition-all active:scale-95 whitespace-nowrap">
+          <form action="#" method="POST" class="relative group">
+            <div class="flex items-stretch bg-white/[0.03] border border-white/10 rounded-xl overflow-hidden focus-within:border-amber-600/50 focus-within:bg-white/[0.05] transition-all duration-300">
+              <input 
+                type="email" 
+                placeholder="Email address" 
+                required 
+                class="flex-1 min-w-0 bg-transparent px-5 py-3 text-sm text-white focus:outline-none placeholder:text-gray-600"
+              >
+              <button type="submit" class="bg-amber-700 hover:bg-amber-600 text-white font-bold px-8 text-[10px] uppercase tracking-[0.2em] transition-all">
                 JOIN
               </button>
             </div>
           </form>
         </div>
-
+ 
       </div>
-
+ 
       <!-- Bottom Bar -->
-      <div
-        class="pt-6 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6 text-[9px] font-bold tracking-[.4em] text-gray-600 uppercase">
+      <div class="mt-6 pt-6 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6 text-[10px] font-bold tracking-[.2em] text-gray-600 uppercase">
         <p>© 2025 <span class="text-gray-400">FRAMEDPRO</span>. ALL RIGHTS RESERVED.</p>
         <div class="flex items-center gap-8">
           <a href="#" class="hover:text-white transition-colors">PRIVACY POLICY</a>
@@ -472,13 +390,14 @@
           <a href="#" class="hover:text-white transition-colors">COOKIES</a>
         </div>
       </div>
-
+ 
     </div>
   </footer>
 
   <script src="../assets/js/main.js" defer></script>
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize Lucide Icons
       if (typeof lucide !== 'undefined') {
         lucide.createIcons();
       }
@@ -486,5 +405,4 @@
   </script>
 
 </body>
-
 </html>
