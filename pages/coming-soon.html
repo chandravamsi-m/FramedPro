@@ -14,104 +14,51 @@
 
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-<body class="font-body bg-gray-950 text-white min-h-screen flex flex-col items-center justify-center px-4 text-center">
+<body class="font-body bg-gray-950 text-white min-h-screen flex flex-col items-center justify-center px-4 overflow-hidden py-10">
 
-  <!-- Background -->
-  <div class="fixed inset-0 overflow-hidden" aria-hidden="true">
-    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=1600&q=60" alt="" class="w-full h-full object-cover opacity-10" width="1600" height="1067">
-    <div class="absolute inset-0 bg-gradient-to-b from-gray-950/80 to-gray-950"></div>
+  <!-- Premium Backdrop -->
+  <div class="fixed inset-0 z-0 overflow-hidden" aria-hidden="true">
+    <img src="../assets/images/hero/home-2-hero.png" alt="" class="w-full h-full object-cover opacity-20 scale-105 transition-transform duration-1000">
+    <div class="absolute inset-0 bg-gradient-to-b from-gray-950/40 via-gray-950/80 to-gray-950"></div>
+    <div class="absolute inset-0 bg-gradient-to-tr from-amber-600/5 to-transparent"></div>
   </div>
 
-  <main class="relative z-10 max-w-2xl mx-auto" id="main-content">
-    <!-- Logo -->
+  <main class="relative z-10 max-w-3xl mx-auto text-center" id="main-content">
+    <!-- Branding Block -->
     <div class="mb-8 flex justify-center items-center gap-3">
-      <img src="../assets/images/logo.svg" alt="" class="w-10 h-10">
-      <span class="text-3xl font-bold" style="font-family:'Playfair Display',serif;">Framed<span class="text-amber-500">Pro</span></span>
+      <img src="../assets/images/logo.svg" alt="" class="w-9 h-9">
+      <span class="text-2xl font-display font-bold tracking-tight">
+        Framed<span class="text-amber-500">Pro</span>
+      </span>
     </div>
 
-    <h1 class="font-display text-4xl sm:text-6xl font-bold mb-4 leading-tight">Something exceptional<br class="hidden sm:block"> is coming.</h1>
-    <p class="text-gray-400 text-lg mb-10 max-w-lg mx-auto">Corporate headshot photography with a client portal that your HR team will actually love. Launching soon.</p>
-
-    <!-- Countdown -->
-    <div class="flex items-center justify-center gap-4 sm:gap-8 mb-12" aria-label="Countdown timer" id="countdown">
-      <div class="text-center">
-        <p class="text-4xl sm:text-5xl font-display font-bold text-white" id="cd-days">--</p>
-        <p class="text-xs tracking-widest uppercase text-gray-500 mt-1">Days</p>
-      </div>
-      <div class="text-amber-700 text-3xl font-bold" aria-hidden="true">:</div>
-      <div class="text-center">
-        <p class="text-4xl sm:text-5xl font-display font-bold text-white" id="cd-hours">--</p>
-        <p class="text-xs tracking-widest uppercase text-gray-500 mt-1">Hours</p>
-      </div>
-      <div class="text-amber-700 text-3xl font-bold" aria-hidden="true">:</div>
-      <div class="text-center">
-        <p class="text-4xl sm:text-5xl font-display font-bold text-white" id="cd-mins">--</p>
-        <p class="text-xs tracking-widest uppercase text-gray-500 mt-1">Minutes</p>
-      </div>
-      <div class="text-amber-700 text-3xl font-bold" aria-hidden="true">:</div>
-      <div class="text-center">
-        <p class="text-4xl sm:text-5xl font-display font-bold text-white" id="cd-secs">--</p>
-        <p class="text-xs tracking-widest uppercase text-gray-500 mt-1">Seconds</p>
-      </div>
+    <!-- Main Message -->
+    <div class="mb-10">
+      <span class="text-amber-600 text-[9px] font-bold uppercase tracking-[0.4em] block mb-4">Launching Summer 2025</span>
+      <h1 class="font-display text-4xl sm:text-6xl lg:text-7xl font-bold mb-4 leading-[1.05] tracking-tighter">
+        Something <br> <span class="italic font-normal serif text-amber-600">Exceptional</span> <br> is coming.
+      </h1>
+      <p class="text-gray-400 text-base sm:text-lg font-light max-w-xl mx-auto leading-relaxed">
+        Premium corporate headshots with a high-authority client portal designed for global HR teams. Precision, speed, and absolute visual identity.
+      </p>
     </div>
 
-    <!-- Email Capture -->
-    <form action="#" method="POST" class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" aria-label="Email signup">
-      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
-      <label for="cs-email" class="sr-only">Email address</label>
-      <input type="email" id="cs-email" name="email" required placeholder="your@email.com"
-        class="flex-1 bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500" style="font-size:16px;">
-      <button type="submit" class="bg-amber-600 hover:bg-amber-500 text-white font-bold px-5 py-3 rounded-xl transition-all whitespace-nowrap">Notify Me</button>
-    </form>
-    <p class="text-xs text-gray-600 mt-3">No spam. One email when we launch.</p>
-
-    <!-- Social -->
-    <div class="flex items-center justify-center gap-4 mt-10">
-      <a href="#" class="text-gray-600 hover:text-amber-400 transition-colors" aria-label="LinkedIn">
-        <i data-lucide="linkedin" class="w-5 h-5"></i>
-      </a>
-      <a href="#" class="text-gray-600 hover:text-amber-400 transition-colors" aria-label="Instagram">
-        <i data-lucide="instagram" class="w-5 h-5"></i>
-      </a>
+    <!-- Professional Email Capture -->
+    <div class="max-w-md mx-auto">
+      <form action="#" method="POST" class="relative group mb-3">
+        <div class="relative flex items-center">
+          <input type="email" placeholder="Enter your email for early access" required
+            class="w-full bg-white/[0.05] border border-white/10 rounded-full py-3.5 pl-7 pr-32 text-sm text-white focus:outline-none focus:ring-1 focus:ring-amber-600/50 focus:border-amber-600/50 focus:bg-white/[0.08] transition-all duration-300 placeholder:text-gray-600">
+          <button type="submit"
+            class="absolute right-1.5 top-1.5 bottom-1.5 px-6 rounded-full bg-amber-700 hover:bg-amber-600 text-white text-[10px] font-bold uppercase tracking-[0.2em] transition-all">
+            NOTIFY ME
+          </button>
+        </div>
+      </form>
+      <p class="text-[10px] text-gray-600 font-bold uppercase tracking-widest">Zero spam. Secure early access.</p>
     </div>
   </main>
 
   <script src="../assets/js/main.js" defer></script>
-  <script>
-    // Countdown to launch date
-    const LAUNCH = new Date('2025-06-01T09:00:00');
-    function tick() {
-      const now = new Date();
-      const diff = LAUNCH - now;
-      if (diff <= 0) { 
-        document.getElementById('countdown').innerHTML = '<p class="text-xl text-amber-400 font-semibold flex items-center justify-center gap-2"><i data-lucide="party-popper" class="w-6 h-6"></i> We\'re Live!</p>'; 
-        if (typeof lucide !== 'undefined') lucide.createIcons();
-        return; 
-      }
-      const d = Math.floor(diff / 86400000);
-      const h = Math.floor((diff % 86400000) / 3600000);
-      const m = Math.floor((diff % 3600000) / 60000);
-      const s = Math.floor((diff % 60000) / 1000);
-      document.getElementById('cd-days').textContent  = String(d).padStart(2,'0');
-      document.getElementById('cd-hours').textContent = String(h).padStart(2,'0');
-      document.getElementById('cd-mins').textContent  = String(m).padStart(2,'0');
-      document.getElementById('cd-secs').textContent  = String(s).padStart(2,'0');
-    }
-    tick();
-    setInterval(tick, 1000);
-
-    // Dark mode init
-    const stored = localStorage.getItem('fp-theme');
-    if (stored === 'dark' || (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add('dark');
-    }
-
-    // Lucide init
-    document.addEventListener('DOMContentLoaded', function() {
-      if (typeof lucide !== 'undefined') {
-        lucide.createIcons();
-      }
-    });
-  </script>
 </body>
 </html>
