@@ -78,7 +78,7 @@
         <!-- Home Dropdown -->
         <div class="relative group h-full flex items-center">
           <button id="home-dropdown-btn"
-            class="flex items-center gap-1 px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors"
+            class="flex items-center gap-1 px-3 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors"
             aria-haspopup="true" aria-expanded="false">
             Home
             <i data-lucide="chevron-down"
@@ -97,28 +97,28 @@
         </div>
 
         <div class="h-full flex items-center"><a href="pages/about.html"
-            class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">About</a>
+            class="px-3 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">About</a>
         </div>
         <div class="h-full flex items-center"><a href="pages/portfolio.html"
-            class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Portfolio</a>
+            class="px-3 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Portfolio</a>
         </div>
         <div class="h-full flex items-center"><a href="pages/services.html"
-            class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Services</a>
+            class="px-3 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Services</a>
         </div>
         <div class="h-full flex items-center"><a href="pages/pricing.html"
-            class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Pricing</a>
+            class="px-3 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Pricing</a>
         </div>
         <div class="h-full flex items-center"><a href="pages/blog.html"
-            class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Blog</a>
+            class="px-3 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Blog</a>
         </div>
         <div class="h-full flex items-center"><a href="pages/contact.html"
-            class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Contact</a>
+            class="px-3 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Contact</a>
         </div>
 
         <!-- Dashboard Dropdown -->
         <div class="relative group h-full flex items-center">
           <button
-            class="flex items-center gap-1 px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors"
+            class="flex items-center gap-1 px-3 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors"
             aria-haspopup="true" aria-expanded="false">
             Dashboard
             <i data-lucide="chevron-down"
@@ -138,7 +138,7 @@
       </div>
 
       <!-- Right Actions -->
-      <div class="flex items-center gap-4 shrink-0 h-full">
+      <div class="flex items-center gap-3 shrink-0 h-full">
         <!-- RTL/LTR Toggle (Desktop only) -->
         <button data-dir-toggle
           class="hidden lg:flex px-3 py-1.5 border border-gray-200 dark:border-gray-700 rounded-lg text-gray-600 dark:text-gray-300 hover:border-amber-500 transition-all items-center justify-center min-w-[50px]"
@@ -154,7 +154,13 @@
           <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
         </button>
 
-        <!-- Client Login -->
+        <!-- Book Now (Secondary Style with Border) -->
+        <a href="pages/booking.html"
+          class="hidden lg:inline-flex items-center gap-2 border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 hover:border-amber-600/50 text-sm font-bold px-4 py-2.5 rounded-xl transition-all">
+          Book Now
+        </a>
+
+        <!-- Client Login (Primary CTA Style) -->
         <a href="auth/login.html"
           class="hidden lg:inline-flex items-center gap-2 bg-amber-700 hover:bg-amber-800 text-white text-sm font-bold px-6 py-2.5 rounded-xl transition-all shadow-lg shadow-amber-900/20 active:scale-95">
           Client Login
@@ -208,7 +214,6 @@
               2</a>
           </div>
         </div>
-
         <a href="pages/about.html"
           class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">About
           Us</a>
@@ -264,11 +269,15 @@
         </div>
       </nav>
 
-      <!-- Drawer Footer (CTA) -->
-      <div class="px-6 py-6 border-t border-gray-100 dark:border-gray-800">
+      <!-- Drawer Footer (CTA Group) -->
+      <div class="px-6 py-4 border-t border-gray-100 dark:border-gray-800 flex gap-3">
+        <a href="pages/booking.html"
+          class="flex-1 flex items-center justify-center gap-2 border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 hover:border-amber-600/50 text-xs font-bold px-4 py-4 rounded-xl transition-all">
+          Book
+        </a>
         <a href="auth/login.html"
-          class="flex items-center justify-center w-full bg-amber-700 hover:bg-amber-800 text-white text-sm font-bold px-4 py-4 rounded-xl transition-colors shadow-xl shadow-amber-900/20 active:scale-95">
-          Client Login
+          class="flex-1 flex items-center justify-center bg-amber-700 hover:bg-amber-800 text-white text-xs font-bold px-4 py-4 rounded-xl transition-colors shadow-xl shadow-amber-900/20 active:scale-95 leading-none">
+          Login
         </a>
       </div>
     </div>
@@ -843,7 +852,7 @@
     <!-- ========================================
        SECTION: Blog Preview
        ======================================== -->
-    <section class="py-20 lg:py-28 bg-white dark:bg-gray-950" aria-labelledby="blog-heading">
+    <section class="py-16 bg-white dark:bg-gray-950" aria-labelledby="blog-heading">
       <div class="max-w-7xl mx-auto px-4">
         <div class="flex flex-wrap items-end justify-between gap-4 mb-8">
           <div>
@@ -949,9 +958,9 @@
         </h2>
         <p class="text-gray-500 dark:text-gray-400 mb-8 text-lg">We take on a limited number of corporate clients each month to guarantee
           quality and turnaround times.</p>
-        <a href="pages/contact.html"
+        <a href="pages/booking.html"
           class="inline-flex items-center gap-3 bg-amber-700 hover:bg-amber-800 text-white font-bold px-8 py-4 rounded-xl transition-all shadow-xl shadow-amber-900/20 group">
-          Request a Quote Today
+          Book Your Session Now
           <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
         </a>
       </div>
@@ -1020,7 +1029,7 @@
             <li><a href="pages/pricing.html" class="text-gray-500 hover:text-white transition-colors">Pricing</a></li>
             <li><a href="pages/blog.html" class="text-gray-500 hover:text-white transition-colors">Insights & Blog</a>
             </li>
-            <li><a href="pages/contact.html" class="text-gray-500 hover:text-white transition-colors">Book session</a>
+            <li><a href="pages/booking.html" class="text-gray-500 hover:text-white transition-colors">Book session</a>
             </li>
           </ul>
         </div>

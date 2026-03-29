@@ -37,7 +37,7 @@
         <!-- Home Dropdown -->
         <div class="relative group h-full flex items-center">
           <button id="home-dropdown-btn"
-            class="flex items-center gap-1 px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors"
+            class="flex items-center gap-1 px-3 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors"
             aria-haspopup="true" aria-expanded="false">
             Home <i data-lucide="chevron-down"
               class="w-3.5 h-3.5 opacity-50 group-hover:rotate-180 transition-transform duration-300"></i>
@@ -55,28 +55,28 @@
         </div>
 
         <div class="h-full flex items-center"><a href="about.html"
-            class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">About</a>
+            class="px-3 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">About</a>
         </div>
         <div class="h-full flex items-center"><a href="portfolio.html"
-            class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Portfolio</a>
+            class="px-3 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Portfolio</a>
         </div>
         <div class="h-full flex items-center"><a href="services.html"
-            class="px-4 py-2 text-sm font-semibold text-amber-700 dark:text-amber-400 rounded-lg transition-colors">Services</a>
+            class="px-3 py-2 text-sm font-semibold text-amber-700 dark:text-amber-400 rounded-lg transition-colors">Services</a>
         </div>
         <div class="h-full flex items-center"><a href="pricing.html"
-            class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Pricing</a>
+            class="px-3 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Pricing</a>
         </div>
         <div class="h-full flex items-center"><a href="blog.html"
-            class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Blog</a>
+            class="px-3 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Blog</a>
         </div>
         <div class="h-full flex items-center"><a href="contact.html"
-            class="px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Contact</a>
+            class="px-3 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Contact</a>
         </div>
 
         <!-- Dashboard Dropdown -->
         <div class="relative group h-full flex items-center">
           <button
-            class="flex items-center gap-1 px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors"
+            class="flex items-center gap-1 px-3 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors"
             aria-haspopup="true" aria-expanded="false">
             Dashboard <i data-lucide="chevron-down"
               class="w-3.5 h-3.5 opacity-50 group-hover:rotate-180 transition-transform duration-300"></i>
@@ -95,7 +95,7 @@
       </div>
 
       <!-- Right Actions -->
-      <div class="flex items-center gap-4 shrink-0 h-full">
+      <div class="flex items-center gap-3 shrink-0 h-full">
         <!-- RTL/LTR Toggle (Desktop only) -->
         <button data-dir-toggle
           class="hidden lg:flex px-3 py-1.5 border border-gray-200 dark:border-gray-700 rounded-lg text-gray-600 dark:text-gray-300 hover:border-amber-500 transition-all items-center justify-center min-w-[50px]"
@@ -111,7 +111,13 @@
           <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
         </button>
 
-        <!-- Client Login -->
+        <!-- Book Now (Secondary Style with Border) -->
+        <a href="booking.html"
+          class="hidden lg:inline-flex items-center gap-2 border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 hover:border-amber-600/50 text-sm font-bold px-4 py-2.5 rounded-xl transition-all">
+          Book Now
+        </a>
+
+        <!-- Client Login (Primary CTA Style) -->
         <a href="../auth/login.html"
           class="hidden lg:inline-flex items-center gap-2 bg-amber-700 hover:bg-amber-800 text-white text-sm font-bold px-6 py-2.5 rounded-xl transition-all shadow-lg shadow-amber-900/20 active:scale-95">
           Client Login
@@ -221,11 +227,15 @@
         </div>
       </nav>
 
-      <!-- Drawer Footer (CTA) -->
-      <div class="px-6 py-6 border-t border-gray-100 dark:border-gray-800">
+      <!-- Drawer Footer (CTA Group) -->
+      <div class="px-6 py-4 border-t border-gray-100 dark:border-gray-800 flex gap-3">
+        <a href="booking.html"
+          class="flex-1 flex items-center justify-center gap-2 border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 hover:border-amber-600/50 text-xs font-bold px-4 py-4 rounded-xl transition-all">
+          Book
+        </a>
         <a href="../auth/login.html"
-          class="flex items-center justify-center w-full bg-amber-700 hover:bg-amber-800 text-white text-sm font-bold px-4 py-4 rounded-xl transition-colors shadow-xl shadow-amber-900/20 active:scale-95">
-          Client Login
+          class="flex-1 flex items-center justify-center bg-amber-700 hover:bg-amber-800 text-white text-xs font-bold px-4 py-4 rounded-xl transition-colors shadow-xl shadow-amber-900/20 active:scale-95 leading-none">
+          Login
         </a>
       </div>
     </div>
@@ -565,7 +575,7 @@
             <li><a href="pricing.html" class="text-gray-500 hover:text-white transition-colors">Pricing</a></li>
             <li><a href="blog.html" class="text-gray-500 hover:text-white transition-colors">Insights & Blog</a>
             </li>
-            <li><a href="contact.html" class="text-gray-500 hover:text-white transition-colors">Book session</a>
+            <li><a href="booking.html" class="text-gray-500 hover:text-white transition-colors">Book session</a>
             </li>
           </ul>
         </div>

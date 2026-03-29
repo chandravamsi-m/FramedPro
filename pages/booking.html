@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserve Your Session | FramedPro</title>
+  <meta name="description"
+    content="Schedule your professional corporate headshot session. Select your package, choose a date, and confirm your booking with FramedPro.">
+  
+  <!-- Preconnect for fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Icon Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.410.0/dist/umd/lucide.min.js"></script>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: { 50: '#f9f8f6', 100: '#f0ede8', 500: '#c9a96e', 900: '#1a1a1a', 950: '#0a0a0a' }
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'serif'],
+            body: ['"Inter"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="font-body bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+  
+  <!-- Navbar -->
+  <nav id="main-navbar" class="navbar-transparent fixed top-0 inset-x-0 z-50 h-20" role="navigation"
+    aria-label="Main navigation">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between gap-4">
+
+      <!-- Logo -->
+      <a href="../index.html" class="flex items-center gap-3 shrink-0" aria-label="FramedPro Home">
+        <img src="../assets/images/logo.svg" alt="" class="w-9 h-9 shrink-0">
+        <span class="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900 dark:text-white"
+          style="font-family:'Playfair Display',serif;">
+          Framed<span class="text-amber-600">Pro</span>
+        </span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <div class="hidden lg:flex items-center gap-1 h-full" role="menubar">
+
+        <!-- Home Dropdown -->
+        <div class="relative group h-full flex items-center">
+          <button id="home-dropdown-btn"
+            class="flex items-center gap-1 px-3 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors"
+            aria-haspopup="true" aria-expanded="false">
+            Home
+            <i data-lucide="chevron-down"
+              class="w-3.5 h-3.5 opacity-50 group-hover:rotate-180 transition-transform duration-300"></i>
+          </button>
+          <div
+            class="absolute top-[80%] start-0 w-48 bg-white dark:bg-gray-900 rounded-xl shadow-2xl border border-gray-100 dark:border-gray-800 py-2 hidden group-hover:block transition-all"
+            role="menu">
+            <a href="../index.html"
+              class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800"
+              role="menuitem">Home 1</a>
+            <a href="home-2.html"
+              class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800"
+              role="menuitem">Home 2</a>
+          </div>
+        </div>
+
+        <div class="h-full flex items-center"><a href="about.html"
+            class="px-3 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">About</a>
+        </div>
+        <div class="h-full flex items-center"><a href="portfolio.html"
+            class="px-3 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Portfolio</a>
+        </div>
+        <div class="h-full flex items-center"><a href="services.html"
+            class="px-3 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Services</a>
+        </div>
+        <div class="h-full flex items-center"><a href="pricing.html"
+            class="px-3 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Pricing</a>
+        </div>
+        <div class="h-full flex items-center"><a href="blog.html"
+            class="px-3 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Blog</a>
+        </div>
+        <div class="h-full flex items-center"><a href="contact.html"
+            class="px-3 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors">Contact</a>
+        </div>
+
+        <!-- Dashboard Dropdown -->
+        <div class="relative group h-full flex items-center">
+          <button
+            class="flex items-center gap-1 px-3 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 rounded-lg transition-colors"
+            aria-haspopup="true" aria-expanded="false">
+            Dashboard
+            <i data-lucide="chevron-down"
+              class="w-3.5 h-3.5 opacity-50 group-hover:rotate-180 transition-transform duration-300"></i>
+          </button>
+          <div
+            class="absolute top-[80%] start-0 w-48 bg-white dark:bg-gray-900 rounded-xl shadow-2xl border border-gray-100 dark:border-gray-800 py-2 hidden group-hover:block transition-all"
+            role="menu">
+            <a href="../dashboard/index.html"
+              class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800"
+              role="menuitem">User Dashboard</a>
+            <a href="../admin/index.html"
+              class="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800"
+              role="menuitem">Admin Dashboard</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Actions -->
+      <div class="flex items-center gap-3 shrink-0 h-full">
+        <!-- RTL/LTR Toggle (Desktop only) -->
+        <button data-dir-toggle
+          class="hidden lg:flex px-3 py-1.5 border border-gray-200 dark:border-gray-700 rounded-lg text-gray-600 dark:text-gray-300 hover:border-amber-500 transition-all items-center justify-center min-w-[50px]"
+          aria-label="Toggle text direction">
+          <span class="dir-toggle-text text-[10px] font-bold uppercase tracking-widest">RTL</span>
+        </button>
+
+        <!-- Dark Mode Toggle (Desktop only) -->
+        <button data-theme-toggle
+          class="hidden lg:flex p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+          aria-label="Toggle dark mode">
+          <i data-lucide="moon" class="w-5 h-5 dark:hidden"></i>
+          <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
+        </button>
+
+        <!-- Book Now (Secondary Style with Border) -->
+        <a href="booking.html"
+          class="hidden lg:inline-flex items-center gap-2 border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 hover:border-amber-600/50 text-sm font-bold px-4 py-2.5 rounded-xl transition-all">
+          Book Now
+        </a>
+
+        <!-- Client Login (Primary CTA Style) -->
+        <a href="../auth/login.html"
+          class="hidden lg:inline-flex items-center gap-2 bg-amber-700 hover:bg-amber-800 text-white text-sm font-bold px-6 py-2.5 rounded-xl transition-all shadow-lg shadow-amber-900/20 active:scale-95">
+          Client Login
+        </a>
+
+        <!-- Hamburger (mobile) -->
+        <button id="hamburger-btn"
+          class="lg:hidden p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+          aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-drawer"
+    class="fixed inset-0 z-[100] translate-x-full rtl:-translate-x-full lg:hidden transition-all duration-300 pointer-events-none"
+    role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <div
+      class="absolute right-0 rtl:right-auto rtl:left-0 top-0 bottom-0 w-80 bg-white dark:bg-gray-900 shadow-2xl pointer-events-auto overflow-hidden flex flex-col">
+      <!-- Drawer Header -->
+      <div class="flex items-center justify-between px-6 py-5 border-b border-gray-100 dark:border-gray-800">
+        <div class="flex items-center gap-3">
+          <span class="text-xl font-bold text-gray-900 dark:text-white"
+            style="font-family:'Playfair Display',serif;">Menu</span>
+        </div>
+        <button id="drawer-close-btn"
+          class="p-2 rounded-lg text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+          aria-label="Close menu">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Drawer Nav -->
+      <nav class="flex-1 px-4 py-2 overflow-y-auto">
+
+        <!-- Home Dropdown -->
+        <div class="mb-1">
+          <button id="mob-home-btn" data-accordion-trigger="mob-home-dropdown" aria-expanded="false"
+            class="flex items-center justify-between w-full px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">
+            <span>Home</span>
+            <i data-lucide="chevron-down" class="accordion-icon w-4 h-4 transition-transform duration-300"></i>
+          </button>
+          <div id="mob-home-dropdown" class="hidden pl-8 pr-4 py-1 space-y-1">
+            <a href="../index.html"
+              class="block py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-amber-700 dark:hover:text-amber-400 transition-colors">Home
+              1</a>
+            <a href="home-2.html"
+              class="block py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-amber-700 dark:hover:text-amber-400 transition-colors">Home
+              2</a>
+          </div>
+        </div>
+        <a href="about.html"
+          class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">About
+          Us</a>
+        <a href="portfolio.html"
+          class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Portfolio</a>
+        <a href="services.html"
+          class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Services</a>
+        <a href="pricing.html"
+          class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Pricing</a>
+        <a href="blog.html"
+          class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Blog</a>
+        <a href="contact.html"
+          class="flex items-center gap-3 px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">Contact</a>
+
+        <!-- Dashboard Dropdown -->
+        <div class="mt-1">
+          <button id="mob-dash-btn" data-accordion-trigger="mob-dash-dropdown" aria-expanded="false"
+            class="flex items-center justify-between w-full px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors">
+            <span>Dashboards</span>
+            <i data-lucide="chevron-down" class="accordion-icon w-4 h-4 transition-transform duration-300"></i>
+          </button>
+          <div id="mob-dash-dropdown" class="hidden pl-8 pr-4 py-1 space-y-1">
+            <a href="../dashboard/index.html"
+              class="block py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-amber-700 dark:hover:text-amber-400 transition-colors">User
+              Dashboard</a>
+            <a href="../admin/index.html"
+              class="block py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-amber-700 dark:hover:text-amber-400 transition-colors">Admin
+              Dashboard</a>
+          </div>
+        </div>
+
+        <hr class="my-6 border-gray-100 dark:border-gray-800 mx-4">
+
+        <!-- Mobile Toggles -->
+        <div class="px-4 space-y-4">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase tracking-widest text-gray-400">Appearance</span>
+            <button data-theme-toggle
+              class="p-2 rounded-lg bg-gray-50 dark:bg-gray-800 text-gray-600 dark:text-gray-300 transition-colors"
+              aria-label="Toggle dark mode">
+              <i data-lucide="moon" class="w-5 h-5 dark:hidden"></i>
+              <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
+            </button>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase tracking-widest text-gray-400">Direction</span>
+            <button data-dir-toggle
+              class="px-3 py-1.5 bg-gray-50 dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-lg text-gray-600 dark:text-gray-300 transition-all flex items-center justify-center min-w-[50px]"
+              aria-label="Toggle text direction">
+              <span class="dir-toggle-text text-[10px] font-bold uppercase tracking-widest">RTL</span>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Drawer Footer (CTA Group) -->
+      <div class="px-6 py-4 border-t border-gray-100 dark:border-gray-800 flex gap-3">
+        <a href="booking.html"
+          class="flex-1 flex items-center justify-center gap-2 border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-200 hover:text-amber-700 dark:hover:text-amber-400 hover:border-amber-600/50 text-xs font-bold px-4 py-4 rounded-xl transition-all">
+          Book
+        </a>
+        <a href="../auth/login.html"
+          class="flex-1 flex items-center justify-center bg-amber-700 hover:bg-amber-800 text-white text-xs font-bold px-4 py-4 rounded-xl transition-colors shadow-xl shadow-amber-900/20 active:scale-95 leading-none">
+          Login
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 lg:pt-40 lg:pb-24 bg-white dark:bg-gray-950 transition-colors duration-500 overflow-hidden" aria-labelledby="booking-hero-heading">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl"></div>
+        <div class="max-w-3xl relative z-10 text-center mx-auto">
+          <span class="text-amber-600 text-[10px] font-bold uppercase tracking-[0.4em] block mb-5">Schedule / Precision Booking</span>
+          <h1 id="booking-hero-heading" class="font-display text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white leading-[1.1] tracking-tighter mb-8">
+            Reserve Your <br> <span class="italic font-normal serif text-amber-600">Session.</span>
+          </h1>
+          <p class="text-lg text-gray-500 dark:text-gray-400 font-light max-w-xl leading-relaxed mx-auto">
+            Secure your production date through our structured booking gateway. 
+            Select your package, choose a time slot, and confirm.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Wizard Section -->
+    <section class="py-16 bg-gray-50 dark:bg-white/[0.02]" aria-label="Booking steps">
+      <div class="max-w-7xl mx-auto px-4">
+        
+        <!-- Wizard Progress Bar -->
+        <div class="max-w-3xl mx-auto mb-8">
+          <div class="relative flex items-center justify-between px-2">
+            <!-- Line container (to ensure it starts/ends at indicator centers) -->
+            <div class="absolute left-8 right-8 top-5 h-[1px] bg-gray-200 dark:bg-white/5 z-0">
+              <div id="step-progress-line" class="h-full bg-amber-600 shadow-[0_0_10px_rgba(217,119,6,0.5)] transition-all duration-700 ease-in-out" style="width: 0%;"></div>
+            </div>
+            
+            <!-- Step Indicators -->
+            <div class="relative z-10 flex flex-col items-center gap-4 group cursor-pointer" onclick="goToStep(1)">
+              <div id="step-indicator-1" class="w-10 h-10 rounded-full bg-amber-600 text-white flex items-center justify-center font-bold text-sm shadow-[0_0_20px_rgba(217,119,6,0.3)] transition-all duration-500 border-4 border-white dark:border-gray-950">1</div>
+              <div class="flex flex-col items-center">
+                <span id="step-label-1" class="text-[9px] font-bold uppercase tracking-[0.3em] text-amber-600 transition-colors duration-300">Phase 01</span>
+                <span class="text-[11px] font-display font-medium text-gray-900 dark:text-white mt-1">Package</span>
+              </div>
+            </div>
+            
+            <div class="relative z-10 flex flex-col items-center gap-4 group cursor-pointer" onclick="goToStep(2)">
+              <div id="step-indicator-2" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 text-gray-400 flex items-center justify-center font-bold text-sm transition-all duration-500 border-4 border-white dark:border-gray-950">2</div>
+              <div class="flex flex-col items-center">
+                <span id="step-label-2" class="text-[9px] font-bold uppercase tracking-[0.3em] text-gray-400 transition-colors duration-300">Phase 02</span>
+                <span class="text-[11px] font-display font-medium text-gray-500 dark:text-gray-400 mt-1">Schedule</span>
+              </div>
+            </div>
+            
+            <div class="relative z-10 flex flex-col items-center gap-4 group cursor-pointer" onclick="goToStep(3)">
+              <div id="step-indicator-3" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 text-gray-400 flex items-center justify-center font-bold text-sm transition-all duration-500 border-4 border-white dark:border-gray-950">3</div>
+              <div class="flex flex-col items-center">
+                <span id="step-label-3" class="text-[9px] font-bold uppercase tracking-[0.3em] text-gray-400 transition-colors duration-300">Phase 03</span>
+                <span class="text-[11px] font-display font-medium text-gray-500 dark:text-gray-400 mt-1">Confirm</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid lg:grid-cols-5 gap-12">
+          
+          <!-- Wizard Form Area (3/5) -->
+          <div class="lg:col-span-3">
+            <form id="booking-wizard-form" class="bg-white dark:bg-white/[0.02] rounded-[2.5rem] p-8 sm:p-12 border border-gray-100 dark:border-white/5 shadow-sm min-h-[500px] flex flex-col">
+              
+              <!-- STEP 1: SELECT PACKAGE -->
+              <div id="booking-step-1" class="wizard-step flex-grow animate-in fade-in slide-in-from-right-4 duration-500">
+                <h3 class="font-display text-2xl font-bold text-gray-900 dark:text-white mb-8 tracking-tight">Select Production Tier</h3>
+                
+                <div class="space-y-4">
+                  <!-- Executive Tier -->
+                  <label class="block relative cursor-pointer group">
+                    <input type="radio" name="booking-package" value="executive" class="peer sr-only" checked>
+                    <div class="p-6 rounded-2xl border-2 border-gray-100 dark:border-white/5 bg-gray-50/50 dark:bg-gray-950/20 peer-checked:border-amber-600 peer-checked:bg-white dark:peer-checked:bg-amber-950/20 transition-all shadow-sm peer-checked:shadow-xl peer-checked:shadow-amber-900/10">
+                      <div class="flex items-center justify-between mb-4">
+                        <span class="text-[9px] font-bold uppercase tracking-[0.3em] text-amber-700 dark:text-amber-500">Tier 01 / Studio</span>
+                        <div class="w-6 h-6 rounded-full border-2 border-gray-200 dark:border-gray-800 flex items-center justify-center peer-checked:border-amber-600">
+                          <div class="w-3 h-3 rounded-full bg-amber-600 opacity-0 peer-checked:opacity-100 transition-opacity"></div>
+                        </div>
+                      </div>
+                      <h4 class="text-xl font-display font-bold text-gray-900 dark:text-white mb-2">The Executive Session</h4>
+                      <p class="text-xs text-gray-500 dark:text-gray-400 font-light leading-relaxed">Individual solo production. 60 min session, 10 retouched files.</p>
+                      <div class="mt-5 flex items-baseline gap-1">
+                        <span class="text-2xl font-display font-bold text-gray-900 dark:text-white">$350</span>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-gray-400">USD</span>
+                      </div>
+                    </div>
+                  </label>
+
+                  <!-- Team Tier -->
+                  <label class="block relative cursor-pointer group">
+                    <input type="radio" name="booking-package" value="team" class="peer sr-only">
+                    <div class="p-6 rounded-2xl border-2 border-gray-100 dark:border-white/5 bg-gray-50/50 dark:bg-gray-950/20 peer-checked:border-amber-600 peer-checked:bg-white dark:peer-checked:bg-amber-950/20 transition-all shadow-sm peer-checked:shadow-xl peer-checked:shadow-amber-900/10">
+                      <div class="flex items-center justify-between mb-4">
+                        <span class="text-[9px] font-bold uppercase tracking-[0.3em] text-amber-700 dark:text-amber-500">Tier 02 / Group</span>
+                        <div class="w-6 h-6 rounded-full border-2 border-gray-200 dark:border-gray-800 flex items-center justify-center peer-checked:border-amber-600">
+                          <div class="w-3 h-3 rounded-full bg-amber-600 opacity-0 peer-checked:opacity-100 transition-opacity"></div>
+                        </div>
+                      </div>
+                      <h4 class="text-xl font-display font-bold text-gray-900 dark:text-white mb-2">The Consensus Protocol</h4>
+                      <p class="text-xs text-gray-500 dark:text-gray-400 font-light leading-relaxed">Unified team visuals for 5–50 individuals. On-site deployment.</p>
+                      <div class="mt-5 flex items-baseline gap-1">
+                        <span class="text-2xl font-display font-bold text-gray-900 dark:text-white">$85</span>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-gray-400">Per Head</span>
+                      </div>
+                    </div>
+                  </label>
+
+                  <!-- Enterprise Tier -->
+                  <label class="block relative cursor-pointer group">
+                    <input type="radio" name="booking-package" value="enterprise" class="peer sr-only">
+                    <div class="p-6 rounded-2xl border-2 border-gray-100 dark:border-white/5 bg-gray-50/50 dark:bg-gray-950/20 peer-checked:border-amber-600 peer-checked:bg-white dark:peer-checked:bg-amber-950/20 transition-all shadow-sm peer-checked:shadow-xl peer-checked:shadow-amber-900/10">
+                      <div class="flex items-center justify-between mb-4">
+                        <span class="text-[9px] font-bold uppercase tracking-[0.3em] text-amber-700 dark:text-amber-500">Tier 03 / Contract</span>
+                        <div class="w-6 h-6 rounded-full border-2 border-gray-200 dark:border-gray-800 flex items-center justify-center peer-checked:border-amber-600">
+                          <div class="w-3 h-3 rounded-full bg-amber-600 opacity-0 peer-checked:opacity-100 transition-opacity"></div>
+                        </div>
+                      </div>
+                      <h4 class="text-xl font-display font-bold text-gray-900 dark:text-white mb-2">The Corporate Index</h4>
+                      <p class="text-xs text-gray-500 dark:text-gray-400 font-light leading-relaxed">Annual partnerships for global firms. Multi-city enterprise support.</p>
+                      <div class="mt-5 flex items-baseline gap-1">
+                        <span class="text-2xl font-display font-bold text-gray-900 dark:text-white">Custom</span>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-gray-400">Quote Req.</span>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <!-- STEP 2: SCHEDULE -->
+              <div id="booking-step-2" class="wizard-step flex-grow hidden animate-in fade-in slide-in-from-right-4 duration-500">
+                <h3 class="font-display text-2xl font-bold text-gray-900 dark:text-white mb-8 tracking-tight">Scheduling Parameters</h3>
+                
+                <div class="grid sm:grid-cols-2 gap-8 mb-10">
+                  <div class="space-y-2">
+                    <label for="booking-date" class="text-[10px] font-bold uppercase tracking-[0.2em] text-amber-700/60 dark:text-amber-400/40">Production Date</label>
+                    <input type="date" id="booking-date" required class="w-full bg-gray-50 dark:bg-gray-900/50 border border-gray-100 dark:border-gray-800 focus:border-amber-500 rounded-xl px-5 py-4 text-sm text-gray-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-amber-500/20 transition-all appearance-none">
+                  </div>
+                  <div class="space-y-2">
+                    <label for="booking-time" class="text-[10px] font-bold uppercase tracking-[0.2em] text-amber-700/60 dark:text-amber-400/40">Preferred Slot</label>
+                    <div class="relative">
+                      <select id="booking-time" class="w-full bg-gray-50 dark:bg-gray-900/50 border border-gray-100 dark:border-gray-800 focus:border-amber-500 rounded-xl px-5 py-4 text-sm text-gray-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-amber-500/20 transition-all appearance-none cursor-pointer">
+                        <option value="9:00 AM">09:00 AM — 10:30 AM</option>
+                        <option value="11:00 AM">11:00 AM — 12:30 PM</option>
+                        <option value="2:00 PM">02:00 PM — 03:30 PM</option>
+                        <option value="4:00 PM" selected>04:00 PM — 05:30 PM</option>
+                      </select>
+                      <i data-lucide="chevron-down" class="absolute right-5 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400 pointer-events-none"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="space-y-8">
+                  <div class="space-y-4">
+                    <label class="text-[10px] font-bold uppercase tracking-[0.2em] text-amber-700/60 dark:text-amber-400/40 block">Session Environment</label>
+                    <div class="grid sm:grid-cols-2 gap-4">
+                      <label class="block relative cursor-pointer group">
+                        <input type="radio" name="booking-location" value="studio" class="peer sr-only" checked>
+                        <div class="p-5 rounded-2xl border border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-900/50 peer-checked:border-amber-600 peer-checked:bg-white dark:peer-checked:bg-amber-950/20 transition-all text-center group-hover:bg-white dark:group-hover:bg-gray-900">
+                          <span class="text-sm font-bold text-gray-900 dark:text-white">Studio Session</span>
+                        </div>
+                      </label>
+                      <label class="block relative cursor-pointer group">
+                        <input type="radio" name="booking-location" value="onsite" class="peer sr-only">
+                        <div class="p-5 rounded-2xl border border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-900/50 peer-checked:border-amber-600 peer-checked:bg-white dark:peer-checked:bg-amber-950/20 transition-all text-center group-hover:bg-white dark:group-hover:bg-gray-900">
+                          <span class="text-sm font-bold text-gray-900 dark:text-white">On-Site Deployment</span>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="space-y-2">
+                    <label for="booking-headcount" class="text-[10px] font-bold uppercase tracking-[0.2em] text-amber-700/60 dark:text-amber-400/40">Approximate Headcount (optional)</label>
+                    <input type="number" id="booking-headcount" placeholder="Expected number of individuals..." class="w-full bg-gray-50 dark:bg-gray-900/50 border border-gray-100 dark:border-gray-800 focus:border-amber-500 rounded-xl px-5 py-4 text-sm text-gray-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-amber-500/20 transition-all">
+                  </div>
+                </div>
+              </div>
+
+              <!-- STEP 3: CONFIRM -->
+              <div id="booking-step-3" class="wizard-step flex-grow hidden animate-in fade-in slide-in-from-right-4 duration-500">
+                <h3 class="font-display text-2xl font-bold text-gray-900 dark:text-white mb-8 tracking-tight">Technical Confirmation</h3>
+                
+                <!-- Selection Summary Card -->
+                <div class="bg-amber-50/50 dark:bg-amber-950/10 rounded-3xl p-8 mb-10 border border-amber-100 dark:border-amber-900/20 relative overflow-hidden group">
+                  <div class="absolute top-0 right-0 w-32 h-32 bg-amber-500/5 rounded-full blur-3xl -mr-16 -mt-16"></div>
+                  <div class="relative z-10 grid grid-cols-2 gap-y-8 gap-x-12">
+                    <div>
+                      <span class="text-[9px] font-bold uppercase tracking-[0.3em] text-amber-800/60 dark:text-amber-400/40 block mb-2">Selected Package</span>
+                      <p id="summary-package" class="text-lg font-display font-bold text-gray-900 dark:text-white">The Executive Session</p>
+                    </div>
+                    <div>
+                      <span class="text-[9px] font-bold uppercase tracking-[0.3em] text-amber-800/60 dark:text-amber-400/40 block mb-2">Total Investment</span>
+                      <p id="summary-price" class="text-lg font-display font-bold text-amber-700 dark:text-amber-400">$350 USD</p>
+                    </div>
+                    <div>
+                      <span class="text-[9px] font-bold uppercase tracking-[0.3em] text-amber-800/60 dark:text-amber-400/40 block mb-2">Production Date</span>
+                      <p id="summary-date" class="text-sm font-bold text-gray-900 dark:text-white px-3 py-1 bg-white dark:bg-gray-800 rounded-lg inline-block border border-gray-100 dark:border-gray-700">TBD</p>
+                    </div>
+                    <div>
+                      <span class="text-[9px] font-bold uppercase tracking-[0.3em] text-amber-800/60 dark:text-amber-400/40 block mb-2">Time Slot</span>
+                      <p id="summary-time" class="text-sm font-bold text-gray-900 dark:text-white px-3 py-1 bg-white dark:bg-gray-800 rounded-lg inline-block border border-gray-100 dark:border-gray-700">4:00 PM — 5:30 PM</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="space-y-6">
+                  <div class="grid sm:grid-cols-2 gap-6">
+                    <div class="space-y-1.5">
+                      <label for="booker-name" class="text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400">Booking Officer</label>
+                      <input type="text" id="booker-name" required placeholder="Full Name" class="w-full bg-gray-50 dark:bg-gray-900/50 border border-gray-100 dark:border-gray-800 focus:border-amber-500 rounded-xl px-5 py-4 text-sm text-gray-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-amber-500/20 transition-all">
+                    </div>
+                    <div class="space-y-1.5">
+                      <label for="booker-company" class="text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400">Organization</label>
+                      <input type="text" id="booker-company" required placeholder="Company Name" class="w-full bg-gray-50 dark:bg-gray-900/50 border border-gray-100 dark:border-gray-800 focus:border-amber-500 rounded-xl px-5 py-4 text-sm text-gray-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-amber-500/20 transition-all">
+                    </div>
+                  </div>
+                  <div class="space-y-1.5">
+                    <label for="booker-email" class="text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400">Official Email</label>
+                    <input type="email" id="booker-email" required placeholder="corporate@email.com" class="w-full bg-gray-50 dark:bg-gray-900/50 border border-gray-100 dark:border-gray-800 focus:border-amber-500 rounded-xl px-5 py-4 text-sm text-gray-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-amber-500/20 transition-all">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Wizard Controls -->
+              <div class="pt-12 mt-auto border-t border-gray-100 dark:border-white/5 flex items-center justify-between">
+                <button type="button" id="wizard-prev" onclick="moveStep(-1)" class="px-8 py-4 border border-gray-200 dark:border-white/10 text-gray-500 dark:text-gray-400 font-bold text-[10px] uppercase tracking-[0.2em] rounded-xl hover:bg-gray-50 dark:hover:bg-white/5 transition-all opacity-0 pointer-events-none">
+                  Back
+                </button>
+                <button type="button" id="wizard-next" onclick="moveStep(1)" class="bg-amber-700 hover:bg-amber-800 text-white font-bold px-10 py-4 rounded-xl transition-all shadow-xl shadow-amber-900/20 active:scale-95 text-[10px] uppercase tracking-[0.2em] flex items-center gap-2">
+                  <span>Continue</span>
+                  <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </button>
+              </div>
+
+              <!-- Success State -->
+              <div id="booking-success" class="hidden absolute inset-0 z-50 bg-white dark:bg-gray-950 rounded-[2.5rem] p-8 sm:p-12 flex flex-col items-center justify-center text-center animate-in zoom-in-95 duration-500">
+                <div class="w-20 h-20 bg-amber-100 dark:bg-amber-800/50 rounded-full flex items-center justify-center mb-8 text-amber-700 dark:text-amber-400">
+                  <i data-lucide="check" class="w-10 h-10"></i>
+                </div>
+                <h3 class="font-display text-4xl font-bold text-gray-900 dark:text-white mb-4">Request Transmitted.</h3>
+                <p class="text-lg text-gray-500 dark:text-gray-400 font-light max-w-sm mb-10 leading-relaxed">
+                  Our producer has received your production request. You will receive a formal confirmation via email within 24 hours.
+                </p>
+                <a href="../index.html" class="px-10 py-4 bg-amber-700 hover:bg-amber-800 text-white font-bold text-[10px] uppercase tracking-[0.3em] rounded-xl transition-all shadow-xl shadow-amber-900/20 active:scale-95">
+                  Return to Archive
+                </a>
+              </div>
+            </form>
+          </div>
+
+          <!-- Sidebar (2/5) -->
+          <aside class="lg:col-span-2 space-y-6">
+            <!-- Trust Symbols -->
+            <div class="bg-white dark:bg-white/[0.02] rounded-[2.5rem] p-8 border border-gray-100 dark:border-white/5 shadow-sm">
+              <h3 class="text-[10px] font-bold uppercase tracking-[0.4em] text-amber-600 mb-8">What to Expect</h3>
+              
+              <div class="space-y-8">
+                <!-- Expect 1 -->
+                <div class="flex gap-4">
+                  <div class="w-10 h-10 rounded-xl bg-gray-50 dark:bg-white/5 flex items-center justify-center shrink-0">
+                    <i data-lucide="mail-check" class="w-5 h-5 text-gray-900 dark:text-white"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-sm font-bold text-gray-900 dark:text-white mb-1">Production Brief</h4>
+                    <p class="text-[13px] text-gray-500 dark:text-gray-400 font-light leading-relaxed">A confirmation email will trigger an automated production brief for your team.</p>
+                  </div>
+                </div>
+
+                <!-- Expect 2 -->
+                <div class="flex gap-4">
+                  <div class="w-10 h-10 rounded-xl bg-gray-50 dark:bg-white/5 flex items-center justify-center shrink-0">
+                    <i data-lucide="credit-card" class="w-5 h-5 text-gray-900 dark:text-white"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-sm font-bold text-gray-900 dark:text-white mb-1">50% Retainer</h4>
+                    <p class="text-[13px] text-gray-500 dark:text-gray-400 font-light leading-relaxed">To validate your calendar slot, a 50% technical deposit invoice will be generated.</p>
+                  </div>
+                </div>
+
+                <!-- Expect 3 -->
+                <div class="flex gap-4">
+                  <div class="w-10 h-10 rounded-xl bg-gray-50 dark:bg-white/5 flex items-center justify-center shrink-0">
+                    <i data-lucide="zap" class="w-5 h-5 text-gray-900 dark:text-white"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-sm font-bold text-gray-900 dark:text-white mb-1">48-Hour Turn</h4>
+                    <p class="text-[13px] text-gray-500 dark:text-gray-400 font-light leading-relaxed">From session completion to high-res gallery delivery: precisely 48 hours.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Trust Signal Bar -->
+              <div class="mt-12 pt-8 border-t border-gray-100 dark:border-white/5 grid grid-cols-2 gap-4">
+                <div class="text-center p-4 bg-gray-50 dark:bg-gray-900/50 rounded-2xl">
+                  <div class="text-2xl font-display font-bold text-gray-900 dark:text-white mb-0.5">500+</div>
+                  <div class="text-[9px] font-bold uppercase tracking-widest text-amber-600">Clients</div>
+                </div>
+                <div class="text-center p-4 bg-gray-50 dark:bg-gray-900/50 rounded-2xl">
+                  <div class="text-2xl font-display font-bold text-gray-900 dark:text-white mb-0.5">100%</div>
+                  <div class="text-[9px] font-bold uppercase tracking-widest text-amber-600">Quality</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Inquire Alternative -->
+            <div class="bg-white dark:bg-white/[0.02] border border-gray-100 dark:border-white/5 rounded-[2.5rem] p-8 shadow-sm dark:shadow-2xl overflow-hidden relative group transition-all duration-500">
+              <div class="absolute inset-0 bg-gradient-to-br from-amber-600/5 to-transparent dark:from-amber-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+              <div class="relative z-10">
+                <h3 class="text-gray-900 dark:text-white text-lg font-bold mb-4 tracking-tight">Need Custom Logistics?</h3>
+                <p class="text-gray-500 dark:text-gray-400 text-sm font-light mb-6 leading-relaxed">
+                  For complex multi-site requirements or special licensing, our executive producer is available for a direct consult.
+                </p>
+                <a href="contact.html" class="inline-flex items-center gap-2 text-amber-600 font-bold text-[10px] uppercase tracking-[0.3em] group/link">
+                  Direct Consultation
+                  <i data-lucide="arrow-right" class="w-4 h-4 group-hover/link:translate-x-1 transition-transform"></i>
+                </a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-950 border-t border-white/5 text-gray-400 py-3 sm:py-5 lg:py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Main Footer Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-y-8 lg:gap-x-12">
+
+        <!-- Brand Column -->
+        <div class="lg:col-span-4 space-y-6">
+          <a href="../index.html" class="flex items-center gap-3 shrink-0 mb-6" aria-label="FramedPro Home">
+            <img src="../assets/images/logo.svg" alt="" class="w-10 h-10 shrink-0">
+            <span class="text-3xl font-display font-bold text-white tracking-tight">
+              Framed<span class="text-amber-500">Pro</span>
+            </span>
+          </a>
+          <p class="text-gray-500 text-sm leading-relaxed max-w-sm">
+            Premium corporate headshots and executive portraits for innovative teams since 2012. Our mission is built on
+            precision, authority, and exceptional visual identity.
+          </p>
+          <!-- Social Icons -->
+          <div class="flex items-center gap-4 pt-2">
+            <a href="#"
+              class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 hover:bg-amber-500/5 transition-all duration-300"
+              aria-label="Facebook">
+              <i data-lucide="facebook" class="w-5 h-5"></i>
+            </a>
+            <a href="#"
+              class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 hover:bg-amber-500/5 transition-all duration-300"
+              aria-label="Instagram">
+              <i data-lucide="instagram" class="w-5 h-5"></i>
+            </a>
+            <a href="#"
+              class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 hover:bg-amber-500/5 transition-all duration-300"
+              aria-label="Twitter">
+              <i data-lucide="twitter" class="w-5 h-5"></i>
+            </a>
+            <a href="#"
+              class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-500 hover:border-amber-500/50 hover:bg-amber-500/5 transition-all duration-300"
+              aria-label="LinkedIn">
+              <i data-lucide="linkedin" class="w-5 h-5"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-2 space-y-6">
+          <h4 class="text-white text-xs font-bold uppercase tracking-[.2em]">Quick Links</h4>
+          <ul class="space-y-4 text-sm font-medium">
+            <li><a href="../index.html" class="text-gray-500 hover:text-white transition-colors">Home</a></li>
+            <li><a href="about.html" class="text-gray-500 hover:text-white transition-colors">About Us</a></li>
+            <li><a href="portfolio.html" class="text-gray-500 hover:text-white transition-colors">Portfolio</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Resources -->
+        <div class="lg:col-span-2 space-y-6">
+          <h4 class="text-white text-xs font-bold uppercase tracking-[.2em]">Resources</h4>
+          <ul class="space-y-4 text-sm font-medium">
+            <li><a href="services.html" class="text-gray-500 hover:text-white transition-colors">Services</a></li>
+            <li><a href="pricing.html" class="text-gray-500 hover:text-white transition-colors">Pricing</a></li>
+            <li><a href="blog.html" class="text-gray-500 hover:text-white transition-colors">Insights & Blog</a>
+            </li>
+            <li><a href="booking.html" class="text-gray-500 hover:text-white transition-colors">Book session</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Newsletter -->
+        <div class="lg:col-span-4 space-y-6">
+          <h4 class="text-white text-xs font-bold uppercase tracking-[.2em]">Newsletter</h4>
+          <p class="text-gray-500 text-sm leading-relaxed max-w-sm">
+            Stay updated with our latest photography tips and industry insights.
+          </p>
+          <form action="#" method="POST" class="max-w-sm relative group">
+            <div class="relative flex items-center">
+              <input type="email" placeholder="Email address" required
+                class="w-full bg-white/[0.03] border border-white/10 rounded-full py-3.5 pl-6 pr-28 text-sm text-white focus:outline-none focus:ring-1 focus:ring-amber-600/50 focus:border-amber-600/50 focus:bg-white/[0.05] transition-all duration-300 placeholder:text-gray-600">
+              <button type="submit"
+                class="absolute right-1.5 top-1.5 bottom-1.5 px-6 rounded-full bg-amber-700 hover:bg-amber-600 text-white text-[10px] font-bold uppercase tracking-[0.2em] transition-all">
+                JOIN
+              </button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div
+        class="mt-6 pt-6 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6 text-[10px] font-bold tracking-[.2em] text-gray-600 uppercase">
+        <p>© 2025 <span class="text-gray-400">FRAMEDPRO</span>. ALL RIGHTS RESERVED.</p>
+        <div class="flex items-center gap-8">
+          <a href="#" class="hover:text-white transition-colors">PRIVACY POLICY</a>
+          <a href="#" class="hover:text-white transition-colors">TERMS OF SERVICE</a>
+          <a href="#" class="hover:text-white transition-colors">COOKIES</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../assets/js/main.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Initialize Lucide Icons
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      }
+
+      updateWizardUI(); // Initial UI setup
+    });
+
+    let currentStep = 1;
+    const totalSteps = 3;
+
+    function moveStep(delta) {
+      if (currentStep + delta < 1 || currentStep + delta > totalSteps) return;
+      
+      // Validation (simple check for step 2)
+      if (delta > 0 && currentStep === 2) {
+        const dateInput = document.getElementById('booking-date');
+        if (!dateInput.value) {
+          dateInput.classList.add('border-red-500/50');
+          return;
+        } else {
+          dateInput.classList.remove('border-red-500/50');
+        }
+      }
+
+      goToStep(currentStep + delta);
+    }
+
+    function goToStep(step) {
+      // Don't allow jumping ahead without validation
+      if (step > currentStep + 1 && step !== 1) return;
+
+      currentStep = step;
+      updateWizardUI();
+    }
+
+    function updateWizardUI() {
+      // Update Step Displays
+      document.querySelectorAll('.wizard-step').forEach((el, index) => {
+        if (index + 1 === currentStep) {
+          el.classList.remove('hidden');
+        } else {
+          el.classList.add('hidden');
+        }
+      });
+
+      // Update Progress Bar
+      const progressLine = document.getElementById('step-progress-line');
+      const percentage = ((currentStep - 1) / (totalSteps - 1)) * 100;
+      progressLine.style.width = percentage + '%';
+
+      // Update Indicators
+      for (let i = 1; i <= totalSteps; i++) {
+        const indicator = document.getElementById(`step-indicator-${i}`);
+        const label = document.getElementById(`step-label-${i}`);
+        const stepName = label.nextElementSibling;
+
+        if (i < currentStep) {
+          // Completed
+          indicator.classList.remove('bg-gray-100', 'dark:bg-white/10', 'text-gray-400', 'bg-amber-600', 'text-white', 'shadow-[0_0_20px_rgba(217,119,6,0.3)]');
+          indicator.classList.add('bg-amber-600', 'text-white');
+          indicator.innerHTML = '<i data-lucide="check" class="w-5 h-5"></i>';
+          label.classList.replace('text-gray-400', 'text-amber-600');
+          stepName.classList.replace('text-gray-500', 'text-gray-900');
+          stepName.classList.replace('dark:text-gray-400', 'dark:text-white');
+        } else if (i === currentStep) {
+          // Active
+          indicator.classList.remove('bg-gray-100', 'dark:bg-white/10', 'text-gray-400');
+          indicator.classList.add('bg-amber-600', 'text-white', 'shadow-[0_0_20px_rgba(217,119,6,0.3)]');
+          indicator.innerHTML = i;
+          label.classList.replace('text-gray-400', 'text-amber-600');
+          stepName.classList.replace('text-gray-500', 'text-gray-900');
+          stepName.classList.replace('dark:text-gray-400', 'dark:text-white');
+        } else {
+          // Upcoming
+          indicator.classList.remove('bg-amber-600', 'text-white', 'shadow-[0_0_20px_rgba(217,119,6,0.3)]');
+          indicator.classList.add('bg-gray-100', 'dark:bg-white/10', 'text-gray-400');
+          indicator.innerHTML = i;
+          label.classList.replace('text-amber-600', 'text-gray-400');
+          stepName.classList.replace('text-gray-900', 'text-gray-500');
+          stepName.classList.replace('dark:text-white', 'dark:text-gray-400');
+        }
+      }
+
+      // Update Buttons
+      const prevBtn = document.getElementById('wizard-prev');
+      const nextBtn = document.getElementById('wizard-next');
+      
+      if (currentStep === 1) {
+        prevBtn.classList.add('opacity-0', 'pointer-events-none');
+      } else {
+        prevBtn.classList.remove('opacity-0', 'pointer-events-none');
+      }
+
+      if (currentStep === totalSteps) {
+        nextBtn.querySelector('span').textContent = 'Confirm Booking';
+        nextBtn.onclick = submitBooking;
+      } else {
+        nextBtn.querySelector('span').textContent = 'Continue';
+        nextBtn.onclick = () => moveStep(1);
+      }
+
+      // Refresh Icons
+      if (typeof lucide !== 'undefined') lucide.createIcons();
+
+      // Update Summary if on step 3
+      if (currentStep === 3) updateSummary();
+    }
+
+    function updateSummary() {
+      const pkg = document.querySelector('input[name="booking-package"]:checked').value;
+      const date = document.getElementById('booking-date').value;
+      const time = document.getElementById('booking-time').value;
+
+      const pkgNames = {
+        'executive': 'The Executive Session',
+        'team': 'The Consensus Protocol',
+        'enterprise': 'The Corporate Index'
+      };
+      
+      const pkgPrices = {
+        'executive': '$350 USD',
+        'team': '$85 Per Head',
+        'enterprise': 'Custom Quote'
+      };
+
+      document.getElementById('summary-package').textContent = pkgNames[pkg];
+      document.getElementById('summary-price').textContent = pkgPrices[pkg];
+      document.getElementById('summary-date').textContent = date || 'Not Selected';
+      document.getElementById('summary-time').textContent = time;
+    }
+
+    function submitBooking() {
+      // Validate Step 3
+      const name = document.getElementById('booker-name');
+      const email = document.getElementById('booker-email');
+      const company = document.getElementById('booker-company');
+
+      if (!name.value || !email.value || !company.value) {
+        [name, email, company].forEach(el => !el.value ? el.classList.add('border-red-500/30') : el.classList.remove('border-red-500/30'));
+        return;
+      }
+
+      const nextBtn = document.getElementById('wizard-next');
+      nextBtn.disabled = true;
+      nextBtn.querySelector('span').textContent = 'Processing...';
+
+      setTimeout(() => {
+        document.getElementById('booking-success').classList.remove('hidden');
+      }, 1500);
+    }
+  </script>
+</body>
+</html>

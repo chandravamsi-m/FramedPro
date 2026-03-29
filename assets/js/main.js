@@ -112,7 +112,8 @@
       if (!href || href.startsWith('#')) return;
 
       const linkFile = href.split('/').pop();
-      const isLinkHome1 = linkFile === 'index.html' || href === './' || href === '../';
+      const isLinkHome1 = (linkFile === 'index.html' && !href.includes('admin/') && !href.includes('dashboard/')) || 
+                          href === './' || href === '../' || href === '/';
       const isLinkHome2 = linkFile === 'home-2.html';
       
       let isMatch = false;
