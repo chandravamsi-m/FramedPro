@@ -1,0 +1,67 @@
+/* 
+ * rtl.css
+ * Bi-directional layout consistency for FramedPro.
+ */
+
+/* ── Dashboard Layout Consistency ────────── */
+
+/* LTR Base (Defaults for reference - these stay in style.css or are overridden here) */
+.db-content {
+  margin-left: var(--sidebar-w);
+}
+.db-sidebar.collapsed ~ .db-content {
+  margin-left: var(--sidebar-w-sm);
+}
+.db-sidebar {
+  left: 0;
+  transform: translateX(0);
+}
+
+/* RTL Overrides */
+[dir="rtl"] .db-sidebar {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .db-content {
+  margin-left: 0 !important;
+  margin-right: var(--sidebar-w);
+}
+
+[dir="rtl"] .db-sidebar.collapsed ~ .db-content {
+  margin-left: 0 !important;
+  margin-right: var(--sidebar-w-sm);
+}
+
+@media (max-width: 1023px) {
+  .db-sidebar { transform: translateX(-100%); }
+  .db-sidebar.mobile-open { transform: translateX(0); }
+
+  [dir="rtl"] .db-sidebar {
+    right: 0;
+    left: auto;
+    transform: translateX(100%);
+  }
+  [dir="rtl"] .db-sidebar.mobile-open {
+    transform: translateX(0);
+  }
+}
+
+/* ── UI Components Symmetry ─────────────── */
+
+.portfolio-overlay div:first-child {
+  transform-origin: left;
+}
+
+[dir="rtl"] .portfolio-overlay div:first-child {
+  transform-origin: right !important;
+}
+
+[dir="rtl"] .marquee-track {
+  flex-direction: row-reverse;
+}
+
+/* ── Global Utility Overrides ───────────── */
+[dir="rtl"] .rotate-180 {
+  transform: rotate(-180deg);
+}

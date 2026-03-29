@@ -59,17 +59,11 @@ h1, h2, h3, h4, h5 { font-family: var(--font-display); }
 .db-sidebar.collapsed { width: var(--sidebar-w-sm); }
 
 .db-content {
-  margin-left: var(--sidebar-w);
-  transition: margin-left 0.25s ease;
-}
-.db-sidebar.collapsed ~ .db-content {
-  margin-left: var(--sidebar-w-sm);
+  transition: margin 0.25s ease;
 }
 
 @media (max-width: 1023px) {
-  .db-sidebar { transform: translateX(-100%); }
-  .db-sidebar.mobile-open { transform: translateX(0); }
-  .db-content { margin-left: 0 !important; }
+  .db-content { margin-left: 0 !important; margin-right: 0 !important; }
 }
 
 /* Proof Grid Status Indicators */
@@ -92,9 +86,6 @@ h1, h2, h3, h4, h5 { font-family: var(--font-display); }
 .active-card {
   transition: all 0.3s ease;
   box-shadow: 0 20px 50px rgba(0,0,0,0.1);
-}
-.dark .active-card {
-  box-shadow: 0 20px 50px rgba(0,0,0,0.4);
 }
 .active-card:hover {
   transform: translateY(-5px);
@@ -139,7 +130,6 @@ h1, h2, h3, h4, h5 { font-family: var(--font-display); }
   background: var(--color-brand-500);
   margin-bottom: 0.75rem;
   transform: scaleX(0);
-  transform-origin: left;
   transition: transform 0.4s 0.1s ease;
 }
 
@@ -167,51 +157,7 @@ h1, h2, h3, h4, h5 { font-family: var(--font-display); }
   width: 100%;
 }
 
-/* --- Navbar Dark Over Hero (home-2 special case) --- */
-.is-transparent-dark .nav-link,
-.is-transparent-dark #home-dropdown-btn:not(.text-amber-700),
-.is-transparent-dark #mob-home-btn:not(.text-amber-700),
-.is-transparent-dark [data-dir-toggle],
-.is-transparent-dark [data-theme-toggle] i,
-.is-transparent-dark [data-theme-toggle] svg {
-  color: #fff !important;
-  stroke: #fff !important;
-}
-
-/* Remove hover bg on toggles initially over dark hero background */
-.is-transparent-dark [data-theme-toggle]:hover,
-.is-transparent-dark [data-dir-toggle]:hover {
-  background-color: transparent !important;
-}
-
-/* RTL Toggle text specifically */
-.is-transparent-dark .dir-toggle-text {
-  color: #fff !important;
-}
-
-/* Active Link override for dark hero (top level) */
-.is-transparent-dark .text-amber-700,
-.is-transparent-dark .dark\:text-amber-400 {
-  color: #b45309 !important; /* Amber-700 as requested */
-}
-
-/* Ensure Logo text "Framed" is white over dark hero background */
-.is-transparent-dark .text-gray-900 {
-  color: #fff !important;
-}
-
-/* Ensure Dropdown items stay visible (Dark text on white bg) */
-.is-transparent-dark [role="menu"] a:not(.text-amber-700) {
-  color: #374151 !important;
-}
-.dark .is-transparent-dark [role="menu"] a:not(.text-amber-700) {
-  color: #e5e7eb !important;
-}
-
-/* Ensure Active link inside dropdown is still visible (amber) */
-.is-transparent-dark [role="menu"] a.text-amber-700 {
-  color: #b45309 !important; /* amber-700 for dropdown white bg */
-}
+/* --- Navbar Dark Over Hero (home-2 special case handled in dark-mode.css) --- */
 
 /* ========================================
    Portfolio Infinite Scroll
