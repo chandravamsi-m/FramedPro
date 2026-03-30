@@ -61,7 +61,7 @@
         </div>
 
         <!-- Professional Refined Form -->
-        <form action="../dashboard/index.html" id="login-form" class="space-y-5">
+        <form action="../pages/user-dashboard.html" id="login-form" class="space-y-5">
           <div class="space-y-1.5">
             <label for="work-email" class="block text-[10px] font-bold uppercase tracking-widest text-amber-600 ml-1">Work Email</label>
             <input type="email" id="work-email" required placeholder="name@company.com"
@@ -133,7 +133,7 @@
       if (typeof lucide !== 'undefined') lucide.createIcons();
       const form = document.getElementById('login-form');
       if (form) {
-        form.addEventListener('submit', function(e) { e.preventDefault(); window.location.href = '../dashboard/index.html'; });
+        form.addEventListener('submit', function(e) { e.preventDefault(); window.location.href = '../pages/user-dashboard.html'; });
       }
 
       // Password Toggle Logic

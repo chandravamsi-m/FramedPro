@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" class="">
 <head>
   <meta charset="UTF-8">
@@ -20,7 +20,7 @@
 </head>
 <body class="font-body bg-gray-100 dark:bg-gray-950 text-gray-900 dark:text-gray-100 transition-colors duration-300">
   <!-- Sidebar -->
-  <aside id="admin-sidebar" class="db-sidebar fixed inset-y-0 w-[240px] bg-white dark:bg-gray-900 border-e border-gray-100 dark:border-gray-800 z-40 transition-transform -translate-x-full lg:translate-x-0" aria-label="Admin navigation">
+  <aside id="db-sidebar" class="db-sidebar fixed inset-y-0 w-[240px] bg-white dark:bg-gray-900 border-e border-gray-100 dark:border-gray-800 z-40 transition-transform -translate-x-full lg:translate-x-0" aria-label="Admin navigation">
     <div class="h-full flex flex-col p-6">
       
       <!-- Logo -->
@@ -70,7 +70,7 @@
     </div>
   </aside>
 
-  <div class="db-content transition-[margin] min-h-screen flex flex-col" id="db-layout">
+  <div class="db-content lg:ml-[240px] transition-[margin] min-h-screen flex flex-col" id="db-layout">
     <!-- Header -->
     <header class="h-[72px] flex items-center justify-between px-6 bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800 sticky top-0 z-30" id="db-topbar">
       <div class="flex items-center gap-3">
@@ -824,6 +824,9 @@
         sections.forEach(sec => sec.classList.add('hidden'));
         const targetSection = document.getElementById(`section-${sectionId}`);
         if(targetSection) targetSection.classList.remove('hidden');
+
+        // Reset scroll position to top
+        window.scrollTo({ top: 0, behavior: 'instant' });
 
         navLinks.forEach(link => {
           if(link.getAttribute('data-section') === sectionId) {

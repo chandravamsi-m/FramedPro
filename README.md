@@ -171,7 +171,7 @@ The client dashboard is accessed by HR contacts, recruiters, or executive assist
 
 | Page | Filename | Purpose |
 |---|---|---|
-| **Overview** | `dashboard/index.html` | Summary cards: total photos approved, pending proofs, active galleries, reorders in progress; recent activity feed |
+| **Overview** | `pages/user-dashboard.html` | Summary cards: total photos approved, pending proofs, active galleries, reorders in progress; recent activity feed |
 | **My Galleries** | `dashboard/galleries.html` | List/grid of all galleries associated with the client's company, each showing shoot date, photo count, status badge (Proofing / Approved / Delivered) |
 | **Gallery View** | `dashboard/gallery-view.html` | Full photo viewer for a single shoot: image grid, individual approve/flag actions, selection checkboxes, bulk approve button, notes/comment field per photo |
 | **Approved Photos** | `dashboard/approved.html` | Consolidated view of all approved images across shoots; filter by date, shoot name, or subject; bulk download controls |
@@ -198,7 +198,7 @@ Same sidebar/header structure as the client dashboard but with a visually distin
 
 | Page | Filename | Purpose |
 |---|---|---|
-| **Admin Overview** | `admin/index.html` | KPI cards: active clients, galleries pending upload, photos awaiting approval, open reorders, recent revenue; activity timeline |
+| **Admin Overview** | `pages/admin-dashboard.html` | KPI cards: active clients, galleries pending upload, photos awaiting approval, open reorders, recent revenue; activity timeline |
 | **Client Management** | `admin/clients.html` | Full list of client companies with contact details, account status, and last activity; create/edit/deactivate accounts |
 | **Client Detail** | `admin/client-detail.html` | Individual client view: all their galleries, contacts, order history, notes, and invoices in one place |
 | **Gallery Management** | `admin/galleries.html` | List of all shoots/galleries across all clients; filter by status (Draft / Published / Archived); create new gallery |
@@ -472,34 +472,11 @@ framedpro/
 │   ├── signup.html             # Access request form (not open registration)
 │   └── locked.html
 │
-├── dashboard/
-│   ├── index.html              # Client Overview
-│   ├── galleries.html
-│   ├── gallery-view.html
-│   ├── approved.html
-│   ├── downloads.html
-│   ├── reorder.html
-│   ├── orders.html
-│   ├── invoices.html
-│   ├── team.html
-│   ├── settings.html
-│   └── support.html
-│
-├── admin/
-│   ├── index.html              # Admin Overview
-│   ├── clients.html
-│   ├── client-detail.html
-│   ├── galleries.html
-│   ├── gallery-upload.html
-│   ├── photos.html
-│   ├── reorders.html
-│   ├── invoices.html
-│   ├── inquiries.html
-│   ├── blog.html
-│   ├── portfolio.html
-│   ├── testimonials.html
-│   ├── reports.html
-│   └── settings.html
+├── pages/
+│   ├── about.html
+│   ├── services.html
+│   ├── admin-dashboard.html     # ⭐ Consolidated Admin Interface
+│   ├── user-dashboard.html      # ⭐ Consolidated Client Portal
 │
 ├── documentation/
 │   ├── 01-installation.md

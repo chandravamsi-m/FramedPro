@@ -91,8 +91,7 @@
   function initActiveNav() {
     const path = window.location.pathname;
     const isHome2 = path.includes('/pages/home-2.html') || path.includes('\\pages\\home-2.html');
-    const isHome1 = (path.endsWith('index.html') || path === '/' || path.endsWith('/')) && 
-                    !path.includes('/admin/') && !path.includes('/dashboard/') && !path.includes('/pages/');
+    const isHome1 = (path.endsWith('index.html') || path === '/' || path.endsWith('/')) && !path.includes('/pages/');
     const isHomePage = isHome1 || isHome2;
 
     // Helper to apply active styles
@@ -112,7 +111,7 @@
       if (!href || href.startsWith('#')) return;
 
       const linkFile = href.split('/').pop();
-      const isLinkHome1 = (linkFile === 'index.html' && !href.includes('admin/') && !href.includes('dashboard/')) || 
+      const isLinkHome1 = (linkFile === 'index.html' && !href.includes('/pages/')) || 
                           href === './' || href === '../' || href === '/';
       const isLinkHome2 = linkFile === 'home-2.html';
       
@@ -144,23 +143,7 @@
     });
   }
 
-  // --- 4. Dashboard Features ---
-  function initDashboard() {
-    const sidebar = document.getElementById('db-sidebar');
-    const layout = document.getElementById('db-layout');
-    const collapseBtn = document.getElementById('sidebar-collapse-btn');
 
-    if (sidebar && collapseBtn) {
-      const toggle = (force) => {
-        const isCollapsed = force !== undefined ? force : sidebar.classList.toggle('collapsed');
-        layout?.classList.toggle('lg:ml-[240px]', !isCollapsed);
-        layout?.classList.toggle('lg:ml-[64px]', isCollapsed);
-        localStorage.setItem('fp-sidebar-collapsed', isCollapsed);
-      };
-      collapseBtn.addEventListener('click', () => toggle());
-      if (localStorage.getItem('fp-sidebar-collapsed') === 'true') toggle(true);
-    }
-  }
 
   // --- 5. Simplified Utilities ---
   function initFormValidation() {
@@ -222,7 +205,36 @@
     initActiveNav();
     initAccordions();
     initDashboard();
+
     initFormValidation();
+  }
+
+  // --- 4. Dashboard Toggle ---
+  function initDashboard() {
+    const sidebar = document.getElementById('db-sidebar');
+    const mobileToggle = document.getElementById('sidebar-mobile-toggle');
+    const layout = document.getElementById('db-layout');
+
+    if (sidebar && mobileToggle) {
+      mobileToggle.addEventListener('click', () => {
+        const isOpen = sidebar.classList.contains('translate-x-0');
+        if (isOpen) {
+          sidebar.classList.remove('translate-x-0');
+          sidebar.classList.add('-translate-x-full');
+        } else {
+          sidebar.classList.add('translate-x-0');
+          sidebar.classList.remove('-translate-x-full');
+        }
+      });
+
+      // Close sidebar if clicking outside on mobile
+      document.addEventListener('click', (e) => {
+        if (window.innerWidth < 1024 && !sidebar.contains(e.target) && !mobileToggle.contains(e.target)) {
+          sidebar.classList.remove('translate-x-0');
+          sidebar.classList.add('-translate-x-full');
+        }
+      });
+    }
   }
 
   if (document.readyState === 'loading') {
