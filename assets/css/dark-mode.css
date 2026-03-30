@@ -29,9 +29,15 @@
 .is-transparent-dark #mob-home-btn:not(.text-amber-700),
 .is-transparent-dark [data-dir-toggle],
 .is-transparent-dark [data-theme-toggle] i,
-.is-transparent-dark [data-theme-toggle] svg {
+.is-transparent-dark [data-theme-toggle] svg,
+.is-transparent-dark [href="booking.html"] {
   color: #fff !important;
   stroke: #fff !important;
+}
+
+/* Secondary Button Border Visibility */
+.is-transparent-dark .border-gray-200 {
+  border-color: rgba(255, 255, 255, 0.4) !important;
 }
 
 /* Remove hover bg on toggles initially over dark hero background */
