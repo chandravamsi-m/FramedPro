@@ -388,8 +388,9 @@
         </p>
       </div>
 
-      <div class="bg-gray-100 dark:bg-white/[0.02] rounded-[2rem] border border-gray-200 dark:border-white/5 overflow-hidden shadow-md overflow-x-auto">
-        <table class="w-full text-sm min-w-[600px] sm:min-w-0">
+      <!-- Desktop Table (Hidden on Mobile) -->
+      <div class="hidden sm:block bg-gray-100 dark:bg-white/[0.02] rounded-[2rem] border border-gray-200 dark:border-white/5 overflow-hidden shadow-md">
+        <table class="w-full text-sm">
           <thead>
             <tr class="border-b border-gray-100 dark:border-white/5">
               <th class="py-5 px-8 text-start text-gray-400 font-bold text-[9px] uppercase tracking-[0.2em]">Specification</th>
@@ -419,6 +420,55 @@
             </tr>
           </tbody>
         </table>
+      </div>
+
+      <!-- Mobile List (Visible only on Mobile) -->
+      <div class="sm:hidden space-y-4">
+        <!-- Item 1 -->
+        <div class="bg-gray-100 dark:bg-white/[0.02] border border-gray-200 dark:border-white/5 rounded-2xl p-6 shadow-sm">
+          <span class="text-gray-400 font-bold text-[9px] uppercase tracking-[.2em] block mb-2">Specification</span>
+          <p class="font-semibold text-gray-900 dark:text-white text-sm mb-4 leading-snug">Background Neutralization (Per Image)</p>
+          <div class="flex items-center justify-between border-t border-gray-200 dark:border-white/5 pt-4">
+            <span class="text-gray-400 font-bold text-[9px] uppercase tracking-[.2em]">Investment</span>
+            <span class="font-bold text-amber-600 tracking-tight">$5</span>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="bg-gray-100 dark:bg-white/[0.02] border border-gray-200 dark:border-white/5 rounded-2xl p-6 shadow-sm">
+          <span class="text-gray-400 font-bold text-[9px] uppercase tracking-[.2em] block mb-2">Specification</span>
+          <p class="font-semibold text-gray-900 dark:text-white text-sm mb-4 leading-snug">Additional Master Retouching Round</p>
+          <div class="flex items-center justify-between border-t border-gray-100 dark:border-white/5 pt-4">
+            <span class="text-gray-400 font-bold text-[9px] uppercase tracking-[.2em]">Investment</span>
+            <span class="font-bold text-amber-600 tracking-tight">$25 / Image</span>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="bg-gray-100 dark:bg-white/[0.02] border border-gray-200 dark:border-white/5 rounded-2xl p-6 shadow-sm">
+          <span class="text-gray-400 font-bold text-[9px] uppercase tracking-[.2em] block mb-2">Specification</span>
+          <p class="font-semibold text-gray-900 dark:text-white text-sm mb-4 leading-snug">Video Portraiture (Executive Loop)</p>
+          <div class="flex items-center justify-between border-t border-gray-200 dark:border-white/5 pt-4">
+            <span class="text-gray-400 font-bold text-[9px] uppercase tracking-[.2em]">Investment</span>
+            <span class="font-bold text-amber-600 tracking-tight">From $150 / Person</span>
+          </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="bg-gray-100 dark:bg-white/[0.02] border border-gray-200 dark:border-white/5 rounded-2xl p-6 shadow-sm">
+          <span class="text-gray-400 font-bold text-[9px] uppercase tracking-[.2em] block mb-2">Specification</span>
+          <p class="font-semibold text-gray-900 dark:text-white text-sm mb-4 leading-snug">Next-Day Executive Turnaround (Non-Contract)</p>
+          <div class="flex items-center justify-between border-t border-gray-200 dark:border-white/5 pt-4">
+            <span class="text-gray-400 font-bold text-[9px] uppercase tracking-[.2em]">Investment</span>
+            <span class="font-bold text-amber-600 tracking-tight">+$75</span>
+          </div>
+        </div>
+        <!-- Item 5 -->
+        <div class="bg-gray-100 dark:bg-white/[0.02] border border-gray-200 dark:border-white/5 rounded-2xl p-6 shadow-sm">
+          <span class="text-gray-400 font-bold text-[9px] uppercase tracking-[.2em] block mb-2">Specification</span>
+          <p class="font-semibold text-gray-900 dark:text-white text-sm mb-4 leading-snug">Mobile Studio Logic (Outside Logistics Zone)</p>
+          <div class="flex items-center justify-between border-t border-gray-200 dark:border-white/5 pt-4">
+            <span class="text-gray-400 font-bold text-[9px] uppercase tracking-[.2em]">Investment</span>
+            <span class="font-bold text-amber-600 tracking-tight">$1.20 / Mile</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>

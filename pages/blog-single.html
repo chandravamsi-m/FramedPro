@@ -139,7 +139,6 @@
   <div id="mobile-drawer"
     class="fixed inset-0 z-[100] translate-x-full rtl:-translate-x-full lg:hidden transition-all duration-300 pointer-events-none"
     role="dialog" aria-modal="true" aria-label="Mobile navigation">
-    <div id="drawer-overlay" class="absolute inset-0 bg-black/50 opacity-0 transition-opacity hidden pointer-events-auto" aria-hidden="true"></div>
     <div
       class="absolute right-0 rtl:right-auto rtl:left-0 top-0 bottom-0 w-80 bg-white dark:bg-gray-900 shadow-2xl pointer-events-auto overflow-hidden flex flex-col">
       <!-- Drawer Header -->
@@ -273,7 +272,7 @@
   <!-- Article Content + Sidebar -->
   <div class="bg-gray-100 dark:bg-gray-900/40 transition-colors duration-500">
     <div class="py-16 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-3 gap-12">
+      <div class="grid lg:grid-cols-3 gap-8 lg:gap-12">
 
       <!-- Article Body -->
       <article class="lg:col-span-2 prose prose-lg dark:prose-invert max-w-none">

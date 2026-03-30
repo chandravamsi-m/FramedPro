@@ -268,6 +268,8 @@
   </div>
 
   <main id="main-content">
+    <!-- Primary Content Wrapper -->
+    <div id="booking-main-content">
     <!-- Hero Section -->
     <section class="pt-32 pb-16 lg:pt-40 lg:pb-24 bg-white dark:bg-gray-950 transition-colors duration-500 overflow-hidden" aria-labelledby="booking-hero-heading">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
@@ -499,19 +501,6 @@
                 </button>
               </div>
 
-              <!-- Success State -->
-              <div id="booking-success" class="hidden absolute inset-0 z-50 bg-white dark:bg-gray-950 rounded-[2.5rem] p-8 sm:p-12 flex flex-col items-center justify-center text-center animate-in zoom-in-95 duration-500">
-                <div class="w-20 h-20 bg-amber-100 dark:bg-amber-800/50 rounded-full flex items-center justify-center mb-8 text-amber-700 dark:text-amber-400">
-                  <i data-lucide="check" class="w-10 h-10"></i>
-                </div>
-                <h3 class="font-display text-4xl font-bold text-gray-900 dark:text-white mb-4">Request Transmitted.</h3>
-                <p class="text-lg text-gray-500 dark:text-gray-400 font-light max-w-sm mb-10 leading-relaxed">
-                  Our producer has received your production request. You will receive a formal confirmation via email within 24 hours.
-                </p>
-                <a href="../index.html" class="px-10 py-4 bg-amber-700 hover:bg-amber-800 text-white font-bold text-[10px] uppercase tracking-[0.3em] rounded-xl transition-all shadow-xl shadow-amber-900/20 active:scale-95">
-                  Return to Archive
-                </a>
-              </div>
             </form>
           </div>
 
@@ -584,6 +573,31 @@
               </div>
             </div>
           </aside>
+        </div>
+      </div>
+    </section>
+    </div>
+
+    <!-- Professional Success View (Hidden by Default) -->
+    <section id="booking-success-view" class="hidden min-h-[70vh] flex flex-col items-center justify-center py-20 animate-in fade-in zoom-in-95 duration-700 bg-white dark:bg-gray-950 transition-colors duration-500">
+      <div class="max-w-xl mx-auto px-4 text-center">
+        <div class="w-24 h-24 bg-amber-100 dark:bg-amber-900/30 rounded-full flex items-center justify-center mb-10 mx-auto text-amber-700 dark:text-amber-500 shadow-xl shadow-amber-900/10">
+          <i data-lucide="check" class="w-12 h-12"></i>
+        </div>
+        <h2 class="font-display text-4xl sm:text-6xl font-bold text-gray-900 dark:text-white mb-6 tracking-tighter">
+          Request <br> <span class="italic font-normal serif text-amber-600">Transmitted.</span>
+        </h2>
+        <p class="text-lg sm:text-xl text-gray-500 dark:text-gray-400 font-light mb-12 leading-relaxed">
+          Our producer has received your production request. You will receive a formal confirmation via email within 24 hours.
+        </p>
+        <div class="inline-block w-12 h-[1px] bg-amber-600/30 mb-10"></div>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+          <a href="../index.html" class="w-full sm:w-auto px-10 py-4 bg-amber-700 hover:bg-amber-800 text-white font-bold text-[10px] uppercase tracking-[0.3em] rounded-xl transition-all shadow-xl shadow-amber-900/20 active:scale-95 text-center">
+            Return to Archive
+          </a>
+          <a href="portfolio.html" class="w-full sm:w-auto px-10 py-4 border border-gray-200 dark:border-white/10 text-gray-900 dark:text-white font-bold text-[10px] uppercase tracking-[0.3em] rounded-xl hover:bg-gray-100 dark:hover:bg-white/5 transition-all text-center">
+            View Work
+          </a>
         </div>
       </div>
     </section>
@@ -842,7 +856,9 @@
       nextBtn.querySelector('span').textContent = 'Processing...';
 
       setTimeout(() => {
-        document.getElementById('booking-success').classList.remove('hidden');
+        document.getElementById('booking-main-content').classList.add('hidden');
+        document.getElementById('booking-success-view').classList.remove('hidden');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       }, 1500);
     }
   </script>

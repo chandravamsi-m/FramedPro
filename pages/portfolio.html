@@ -282,31 +282,31 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <!-- Refined Industry Filters -->
-        <div class="flex flex-col md:flex-row md:items-center justify-center gap-4 mb-12">
+        <div class="flex flex-col md:flex-row md:items-center justify-center gap-4 mb-8">
           <div
-            class="flex flex-wrap items-center justify-center gap-2 p-1.5 bg-white dark:bg-white/5 rounded-2xl border border-gray-200 dark:border-white/5"
+            class="flex flex-nowrap items-center justify-start md:justify-center gap-2 p-1.5 bg-white dark:bg-white/5 rounded-2xl border border-gray-200 dark:border-white/5 overflow-x-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
             role="tablist" data-tabs>
             <button data-tab="all"
-              class="px-6 py-2.5 rounded-xl bg-amber-600 text-white text-[10px] font-bold uppercase tracking-widest shadow-lg shadow-amber-900/20 transition-all active:scale-95"
+              class="px-5 py-2.5 rounded-xl bg-amber-600 text-white text-[10px] font-bold uppercase tracking-widest shadow-lg shadow-amber-900/20 transition-all active:scale-95 whitespace-nowrap"
               aria-selected="true" role="tab">The Collective</button>
             <button data-tab="executive"
-              class="px-6 py-2.5 rounded-xl text-gray-400 hover:text-gray-900 dark:hover:text-white text-[10px] font-bold uppercase tracking-widest transition-all active:scale-95"
+              class="px-5 py-2.5 rounded-xl text-gray-400 hover:text-gray-900 dark:hover:text-white text-[10px] font-bold uppercase tracking-widest transition-all active:scale-95 whitespace-nowrap"
               aria-selected="false" role="tab">Executive</button>
             <button data-tab="legal"
-              class="px-6 py-2.5 rounded-xl text-gray-400 hover:text-gray-900 dark:hover:text-white text-[10px] font-bold uppercase tracking-widest transition-all active:scale-95"
+              class="px-5 py-2.5 rounded-xl text-gray-400 hover:text-gray-900 dark:hover:text-white text-[10px] font-bold uppercase tracking-widest transition-all active:scale-95 whitespace-nowrap"
               aria-selected="false" role="tab">Legal</button>
             <button data-tab="tech"
-              class="px-6 py-2.5 rounded-xl text-gray-400 hover:text-gray-900 dark:hover:text-white text-[10px] font-bold uppercase tracking-widest transition-all active:scale-95"
+              class="px-5 py-2.5 rounded-xl text-gray-400 hover:text-gray-900 dark:hover:text-white text-[10px] font-bold uppercase tracking-widest transition-all active:scale-95 whitespace-nowrap"
               aria-selected="false" role="tab">Technology</button>
           </div>
         </div>
 
         <!-- Consistent Archive Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:auto-rows-[300px] mb-8" id="portfolio-grid">
+        <div class="grid grid-cols-2 md:grid-cols-4 grid-flow-dense gap-3 sm:gap-6 auto-rows-[200px] md:auto-rows-[300px] mb-8" id="portfolio-grid">
 
           <!-- Archive Entry 01 (Executive) -->
           <article
-            class="md:col-span-2 md:row-span-2 group relative overflow-hidden rounded-[2.5rem] bg-gray-100 dark:bg-gray-900 transition-all duration-700"
+            class="col-span-2 md:col-span-2 row-span-1 md:row-span-2 group relative overflow-hidden rounded-3xl md:rounded-[2.5rem] bg-gray-100 dark:bg-gray-900 transition-all duration-700"
             data-category="executive">
             <img src="../assets/images/executive-2.jpg" alt="Executive Portrait"
               class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
@@ -324,7 +324,7 @@
 
           <!-- Archive Entry 02 (Legal) -->
           <article
-            class="md:col-span-1 md:row-span-1 group relative overflow-hidden rounded-[2rem] bg-gray-100 dark:bg-gray-900 transition-all duration-700"
+            class="col-span-1 md:col-span-1 md:row-span-1 group relative overflow-hidden rounded-2xl md:rounded-[2rem] bg-gray-100 dark:bg-gray-900 transition-all duration-700"
             data-category="legal">
             <img src="../assets/images/legal-1.jpg" alt="Legal Associate"
               class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
@@ -342,7 +342,7 @@
 
           <!-- Archive Entry 03 (Tech) -->
           <article
-            class="md:col-span-1 md:row-span-2 group relative overflow-hidden rounded-[2rem] bg-gray-100 dark:bg-gray-900 transition-all duration-700"
+            class="col-span-1 md:col-span-1 row-span-1 md:row-span-2 group relative overflow-hidden rounded-2xl md:rounded-[2rem] bg-gray-100 dark:bg-gray-900 transition-all duration-700"
             data-category="tech">
             <img src="../assets/images/tech-1.jpg" alt="Tech Lead"
               class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
@@ -360,7 +360,7 @@
 
           <!-- Archive Entry 04 (Finance) -->
           <article
-            class="md:col-span-1 md:row-span-1 group relative overflow-hidden rounded-[2rem] bg-gray-100 dark:bg-gray-900 transition-all duration-700"
+            class="col-span-2 md:col-span-1 md:row-span-1 group relative overflow-hidden rounded-2xl md:rounded-[2rem] bg-gray-100 dark:bg-gray-900 transition-all duration-700"
             data-category="finance">
             <img src="../assets/images/finance-1.jpg" alt="Finance Analyst"
               class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
@@ -378,7 +378,7 @@
 
           <!-- Archive Entry 05 (Healthcare) -->
           <article
-            class="md:col-span-2 md:row-span-1 group relative overflow-hidden rounded-[2.5rem] bg-gray-100 dark:bg-gray-900 transition-all duration-700"
+            class="col-span-2 md:col-span-2 md:row-span-1 group relative overflow-hidden rounded-3xl md:rounded-[2.5rem] bg-gray-100 dark:bg-gray-900 transition-all duration-700"
             data-category="healthcare">
             <img src="../assets/images/healthcare-1.jpg" alt="Physician"
               class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
@@ -396,7 +396,7 @@
 
           <!-- Archive Entry 06 (Legal) -->
           <article
-            class="md:col-span-1 md:row-span-1 group relative overflow-hidden rounded-[2rem] bg-gray-100 dark:bg-gray-900 transition-all duration-700"
+            class="col-span-1 md:col-span-1 md:row-span-1 group relative overflow-hidden rounded-2xl md:rounded-[2rem] bg-gray-100 dark:bg-gray-900 transition-all duration-700"
             data-category="legal">
             <img src="../assets/images/legal-2.jpg" alt="Partner"
               class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
@@ -414,7 +414,7 @@
 
           <!-- Archive Entry 07 (Tech) -->
           <article
-            class="md:col-span-1 md:row-span-1 group relative overflow-hidden rounded-[2rem] bg-gray-100 dark:bg-gray-900 transition-all duration-700"
+            class="col-span-1 md:col-span-1 md:row-span-1 group relative overflow-hidden rounded-2xl md:rounded-[2rem] bg-gray-100 dark:bg-gray-900 transition-all duration-700"
             data-category="tech">
             <img src="../assets/images/tech-2.jpg" alt="Developer"
               class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
