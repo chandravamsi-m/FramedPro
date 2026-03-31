@@ -213,25 +213,22 @@
   function initDashboard() {
     const sidebar = document.getElementById('db-sidebar');
     const mobileToggle = document.getElementById('sidebar-mobile-toggle');
+    const closeBtn = document.getElementById('sidebar-close-btn');
     const layout = document.getElementById('db-layout');
 
     if (sidebar && mobileToggle) {
       mobileToggle.addEventListener('click', () => {
-        const isOpen = sidebar.classList.contains('translate-x-0');
-        if (isOpen) {
-          sidebar.classList.remove('translate-x-0');
-          sidebar.classList.add('-translate-x-full');
-        } else {
-          sidebar.classList.add('translate-x-0');
-          sidebar.classList.remove('-translate-x-full');
-        }
+        sidebar.classList.toggle('mobile-open');
+      });
+
+      closeBtn?.addEventListener('click', () => {
+        sidebar.classList.remove('mobile-open');
       });
 
       // Close sidebar if clicking outside on mobile
       document.addEventListener('click', (e) => {
         if (window.innerWidth < 1024 && !sidebar.contains(e.target) && !mobileToggle.contains(e.target)) {
-          sidebar.classList.remove('translate-x-0');
-          sidebar.classList.add('-translate-x-full');
+          sidebar.classList.remove('mobile-open');
         }
       });
     }
