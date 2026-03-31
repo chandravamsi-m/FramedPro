@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="../assets/css/dark-mode.css">
   <style>
     .nav-link.active {
-      @apply bg-amber-50 dark:bg-amber-900/20 text-amber-700 dark:text-amber-400 font-bold;
+      @apply bg-amber-50 dark:bg-amber-900/10 text-amber-600 dark:text-amber-500 font-bold;
     }
     .timeline-dot::after {
       content: '';
@@ -683,13 +683,12 @@
         // Update Active Link styling
         navLinks.forEach(link => {
           if(link.getAttribute('data-section') === sectionId) {
-            link.classList.add('active');
-            link.classList.remove('text-gray-500', 'dark:text-gray-400');
+            link.classList.add('active', 'text-amber-600', 'dark:text-amber-500');
+            link.classList.remove('text-gray-500', 'dark:text-gray-400', 'text-amber-700');
             pageTitle.innerText = link.querySelector('span') ? link.querySelector('span').innerText : 'Dashboard';
           } else {
-            link.classList.remove('active');
+            link.classList.remove('active', 'text-amber-600', 'dark:text-amber-500');
             link.classList.add('text-gray-500', 'dark:text-gray-400');
-            link.classList.remove('text-amber-700', 'dark:text-amber-500');
           }
         });
       }
