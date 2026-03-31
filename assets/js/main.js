@@ -231,6 +231,11 @@
           sidebar.classList.remove('mobile-open');
         }
       });
+
+      // Global utility to close sidebar (used by dashboard layout switches)
+      window.closeSidebar = () => {
+        sidebar.classList.remove('mobile-open');
+      };
     }
   }
 

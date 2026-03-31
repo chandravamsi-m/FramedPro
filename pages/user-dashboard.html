@@ -671,6 +671,9 @@
 
       function switchSection(sectionId) {
         sections.forEach(sec => sec.classList.add('hidden'));
+        
+        // Auto-close sidebar on mobile
+        if (window.closeSidebar) window.closeSidebar();
         const targetSection = document.getElementById(`section-${sectionId}`);
         if(targetSection) targetSection.classList.remove('hidden');
 
