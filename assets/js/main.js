@@ -7,6 +7,10 @@
   'use strict';
 
   // --- 1. Global Initialization ---
+  /**
+   * Initializes base level theming, checks local storage for user preferences,
+   * handles system prefers-color-scheme, and manages dark/light theme toggles.
+   */
   function initBase() {
     const html = document.documentElement;
     const isDark = localStorage.getItem('fp-theme') === 'dark' || 
@@ -22,6 +26,10 @@
     });
   }
 
+  /**
+   * Initializes bi-directional (LTR/RTL) support.
+   * Tracks user layout preferences and updates typography direction.
+   */
   function initDirection() {
     const html = document.documentElement;
     const toggleBtns = document.querySelectorAll('[data-dir-toggle]');
@@ -46,6 +54,10 @@
     });
   }
 
+  /**
+   * Initializes main navigation logic.
+   * Handles scroll-based transparency, mobile hamburger toggles, and drawer state.
+   */
   function initNavbar() {
     const navbar = document.getElementById('main-navbar');
     if (!navbar) return;
@@ -88,6 +100,10 @@
     }
   }
 
+  /**
+   * Sets the active navigation link based on the current window location.
+   * Handles relative pathing across the /pages directory vs the root homepages.
+   */
   function initActiveNav() {
     const path = window.location.pathname;
     const isHome2 = path.includes('/pages/home-2.html') || path.includes('\\pages\\home-2.html');
@@ -129,6 +145,10 @@
   }
 
   // --- 3. UI Interactions ---
+  /**
+   * Initializes accordion UI elements (e.g., FAQs).
+   * Handles ARIA states, visibility toggling, and icon rotation.
+   */
   function initAccordions() {
     document.querySelectorAll('[data-accordion-trigger]').forEach(btn => {
       btn.addEventListener('click', () => {
@@ -146,6 +166,11 @@
 
 
   // --- 5. Simplified Utilities ---
+  /**
+   * Basic client-side form validation.
+   * Highlights empty required fields with error borders.
+   * TODO: Implement server-side validation logic once endpoint is available.
+   */
   function initFormValidation() {
     document.querySelectorAll('form[data-validate]').forEach(form => {
       form.addEventListener('submit', e => {
@@ -164,6 +189,11 @@
   }
 
   // --- Carousel Global Access ---
+  /**
+   * Initializes a testimonial/image carousel.
+   * Exposed to global window object so individual pages can trigger it specifically.
+   * @param {string} id - The DOM ID of the carousel container to initialize
+   */
   window.initCarousel = function(id) {
     const container = document.getElementById(id);
     if (!container) return;
@@ -197,6 +227,11 @@
   };
 
   // --- Bootstrap ---
+  /**
+   * Main application bootstrap function.
+   * Synchronously initializes theme, direction, navigation, and core UI components.
+   * TODO: Modularize dependencies if bundle size grows over 50kb.
+   */
   function bootstrap() {
     initBase();
     initDirection();
@@ -210,6 +245,11 @@
   }
 
   // --- 4. Dashboard Toggle ---
+  /**
+   * Initializes the client/admin dashboard specific logic.
+   * Handles sidebar toggling and mobile responsive layouts.
+   * TODO: Connect dashboard API endpoints when transitioning active framework.
+   */
   function initDashboard() {
     const sidebar = document.getElementById('db-sidebar');
     const mobileToggle = document.getElementById('sidebar-mobile-toggle');
