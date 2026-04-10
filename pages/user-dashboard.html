@@ -150,11 +150,11 @@
     </header>
 
     <!-- Main Content Sections -->
-    <main class="flex-1 p-6" id="main-content">
+    <main class="flex-1 p-4 sm:p-6 lg:p-4 xl:p-8" id="main-content">
       
       <!-- Dashboard Section -->
       <section id="section-dashboard" class="content-section">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-8">
           <div class="bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-6 rounded-2xl shadow-sm">
             <p class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-2">Pending Selection</p>
             <h3 class="text-3xl font-display font-bold text-amber-600">42 Photos</h3>
@@ -186,8 +186,8 @@
             </div>
             
             <div class="bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-2xl p-8 shadow-sm">
-               <h4 class="font-bold text-sm uppercase tracking-widest text-gray-400 mb-8 font-display border-b border-gray-50 dark:border-gray-800 pb-3">Session Timeline</h4>
-               <div class="relative flex items-center justify-between pl-4 pr-4">
+                <h4 class="font-bold text-sm uppercase tracking-widest text-gray-400 mb-8 font-display border-b border-gray-50 dark:border-gray-800 pb-3">Session Timeline</h4>
+                <div class="relative flex items-center justify-between gap-2 overflow-x-auto sm:overflow-visible pb-4 sm:pb-0 scrollbar-hide px-2">
                   <div class="text-center relative timeline-dot">
                     <div class="w-10 h-10 rounded-full bg-green-50 dark:bg-green-900/30 text-green-600 flex items-center justify-center mx-auto mb-2"><i data-lucide="check" class="w-5 h-5"></i></div>
                     <p class="text-[10px] font-bold uppercase tracking-wider text-gray-500">Booked</p>
@@ -231,10 +231,10 @@
 
       <!-- Proofing Section -->
       <section id="section-proofing" class="content-section hidden">
-        <div class="grid lg:grid-cols-4 gap-8">
+        <div class="grid lg:grid-cols-2 xl:grid-cols-4 gap-8">
           
           <!-- Proofing Controls & Header -->
-          <div class="lg:col-span-3 space-y-6">
+          <div class="lg:col-span-2 xl:col-span-3 space-y-6">
             <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 bg-white dark:bg-gray-900 p-8 rounded-3xl border border-gray-100 dark:border-gray-800 shadow-sm relative overflow-hidden">
                <div>
                  <p class="text-amber-700 dark:text-amber-400 text-[10px] font-bold tracking-[0.2em] uppercase mb-2">Studio Session #482</p>
@@ -270,7 +270,7 @@
 
             <!-- Selection Context Header (Sticky) -->
             <div id="bulk-action-bar" class="sticky top-[72px] lg:top-[73px] z-20 flex flex-col sm:flex-row items-center justify-between bg-white/95 dark:bg-gray-900/95 backdrop-blur-md border border-gray-100 dark:border-gray-800 p-4 sm:p-5 rounded-2xl shadow-xl shadow-black/5 transition-all group mb-6">
-               <div class="flex items-center gap-4 mb-4 sm:mb-0">
+               <div class="flex items-center gap-4 lg:gap-2 xl:gap-4 mb-4 sm:mb-0">
                   <div class="w-10 h-10 rounded-xl bg-amber-50 dark:bg-amber-900/20 flex items-center justify-center text-amber-600 animate-pulse transition-transform group-hover:scale-110">
                      <i data-lucide="check-square" class="w-5 h-5"></i>
                   </div>
@@ -279,18 +279,18 @@
                      <p class="text-[9px] font-medium text-gray-400 uppercase tracking-widest mt-0.5">Ready for final retouching</p>
                   </div>
                </div>
-               <div class="flex items-center gap-3 w-full sm:w-auto">
-                  <button class="flex-1 sm:flex-none px-4 py-2.5 border border-gray-100 dark:border-gray-800 rounded-xl text-[9px] font-bold uppercase tracking-widest hover:bg-gray-50 dark:hover:bg-gray-800 transition-all flex items-center justify-center gap-2">
-                     <i data-lucide="download" class="w-3.5 h-3.5"></i> Download Review
+               <div class="flex items-center gap-3 lg:gap-1.5 xl:gap-3 w-full sm:w-auto">
+                  <button class="flex-1 sm:flex-none px-4 lg:px-2.5 xl:px-4 py-2.5 border border-gray-100 dark:border-gray-800 rounded-xl text-[9px] font-bold uppercase tracking-widest hover:bg-gray-50 dark:hover:bg-gray-800 transition-all flex items-center justify-center gap-2">
+                     <i data-lucide="download" class="w-3.5 h-3.5"></i> Download <span class="hidden xl:inline">Review</span>
                   </button>
-                  <button class="flex-1 sm:flex-none px-8 py-2.5 bg-amber-700 hover:bg-amber-600 text-white font-bold rounded-xl text-[9px] uppercase tracking-widest shadow-xl shadow-amber-900/20 active:scale-95 transition-all">
-                     Submit Selections
+                  <button class="flex-1 sm:flex-none px-8 lg:px-4 xl:px-8 py-2.5 bg-amber-700 hover:bg-amber-600 text-white font-bold rounded-xl text-[9px] uppercase tracking-widest shadow-xl shadow-amber-900/20 active:scale-95 transition-all">
+                     Submit <span class="hidden xl:inline">Selections</span>
                   </button>
                </div>
             </div>
 
             <!-- Extended Grid -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 lg:max-h-[600px] lg:overflow-y-auto pr-0 lg:pr-2 proof-grid-container px-1">
+            <div class="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-4 lg:max-h-[600px] lg:overflow-y-auto pr-0 lg:pr-2 proof-grid-container px-1">
               <!-- Newly Generated Proofs -->
               <div class="relative group aspect-[4/5] bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-2xl overflow-hidden cursor-pointer shadow-sm transition-all border-2 border-amber-500 active-proof shadow-xl shadow-amber-900/10" data-proof-id="IMG_4821" data-proof-img="../assets/images/proof-1.png">
                 <img src="../assets/images/proof-1.png" alt="Proof 1" class="w-full h-full object-cover">
@@ -326,7 +326,7 @@
           
           <!-- Detailed Proof Selection Panel (Right Sidebar) -->
           <div class="space-y-6">
-            <div id="proof-details-panel" class="bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-3xl p-6 shadow-sm sticky top-24">
+            <div id="proof-details-panel" class="bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-3xl p-6 lg:p-4 xl:p-6 shadow-sm sticky top-24">
               <h4 class="font-bold text-[10px] uppercase tracking-widest text-gray-400 mb-6 font-display flex items-center gap-2"><i data-lucide="info" class="w-4 h-4 text-amber-600"></i> Selection Inspector</h4>
               
               <!-- Large Preview -->
@@ -501,7 +501,7 @@
         <div class="space-y-10">
            
            <!-- Financial HUD -->
-           <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+           <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-6">
               <div class="bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-6 sm:p-8 rounded-3xl shadow-sm relative overflow-hidden group">
                  <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400 mb-2">Lifetime Investment</p>
                  <h3 class="text-2xl sm:text-3xl font-display font-bold text-gray-900 dark:text-white">$14,280.00</h3>
