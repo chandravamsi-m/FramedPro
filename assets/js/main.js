@@ -107,7 +107,7 @@
   function initActiveNav() {
     const path = window.location.pathname;
     const isHome2 = path.includes('/pages/home-2.html') || path.includes('\\pages\\home-2.html');
-    const isHome1 = (path.endsWith('index.html') || path === '/' || path.endsWith('/')) && !path.includes('/pages/');
+    const isHome1 = (path.endsWith('index.html') || path === '/' || path.endsWith('/'));
     const isHomePage = isHome1 || isHome2;
 
     // Helper to apply active styles
@@ -127,7 +127,7 @@
       if (!href || href.startsWith('#')) return;
 
       const linkFile = href.split('/').pop();
-      const isLinkHome1 = (linkFile === 'index.html' && !href.includes('/pages/')) || 
+      const isLinkHome1 = (linkFile === 'index.html') || 
                           href === './' || href === '../' || href === '/';
       const isLinkHome2 = linkFile === 'home-2.html';
       

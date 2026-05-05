@@ -147,9 +147,9 @@ All auth pages share a split-layout shell: left panel — brand visual (headshot
 
 | Page | Filename | Key Elements |
 |---|---|---|
-| **Login** | `auth/login.html` | Email + password fields, "Remember me" checkbox, login button, link to contact photographer for access |
-| **Sign Up** | `auth/signup.html` | Not public self-registration. This page is an "Access Request" form — company name, contact name, email, phone, and a message field. Submission triggers an admin-approval flow. |
-| **Account Locked** | `auth/locked.html` | Message indicating account is pending approval or temporarily locked; contact link |
+| **Login** | `pages/login.html` | Email + password fields, "Remember me" checkbox, login button, link to contact photographer for access |
+| **Sign Up** | `pages/register.html` | Not public self-registration. This page is an "Access Request" form — company name, contact name, email, phone, and a message field. Submission triggers an admin-approval flow. |
+| **Account Locked** | `pages/locked.html` | Message indicating account is pending approval or temporarily locked; contact link |
 
 > **Note:** Sign-up is approval-gated — clients cannot self-register. The photographer must create accounts from the Admin panel. The "Sign Up" page functions as an access inquiry form only. No password recovery flow is included in this template — these are static UI shells with no real authentication implementation. Password management should be handled entirely at the backend/application layer by the developer integrating this template.
 
@@ -467,9 +467,8 @@ framedpro/
 │   ├── 404.html
 │   └── coming-soon.html
 │
-├── auth/
 │   ├── login.html
-│   ├── signup.html             # Access request form (not open registration)
+│   ├── register.html
 │   └── locked.html
 │
 ├── pages/
@@ -588,7 +587,7 @@ Large:    > 1280px
   - `Service` schema on Services page
 - **Canonical Tags:** All pages include `<link rel="canonical">` to prevent duplicate content
 - **XML Sitemap:** `sitemap.xml` includes all public pages; exclude auth and dashboard pages
-- **robots.txt:** Disallow `/admin/`, `/dashboard/`, `/auth/`; allow all public pages
+- **robots.txt:** Disallow `/admin/`, `/dashboard/`; allow all public pages
 - **Open Graph & Twitter Card:** All pages include OG title, description, image tags for social sharing
 
 ### 14.2 Performance Targets
